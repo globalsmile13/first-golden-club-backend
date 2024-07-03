@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  node-app:
+    build: .
+    ports:
+      - "8083:8083"
+    environment:
+      - PORT=${PORT}
+      - MONGODB=${MONGODB}
+      - JWT_TOKEN_KEY=${JWT_TOKEN_KEY}
