@@ -230,7 +230,7 @@ exports.forgotPassword = async (req, res, next) => {
   }
 
   const username = req.body.username.trim();
-  const recovery_code = req.body.recovery_code;
+  const recovery_code = req.body.recovery_code.split(' ').join('').trim();
 
   let loadedUser = await User.findOne({username:username})
 

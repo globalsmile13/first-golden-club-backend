@@ -268,13 +268,13 @@ exports.initiatePayment = async (req, res, next) => {
         
     ])
 
-    let userLevel = await Level.findOne({_id: loadedUser.level_id})
+    let userLevel = await Level.findOne({_id: loadedUser.level_id});
     let level_amount;
     if(!userLevel){
-        level_amount = 1000
+        level_amount = 1000;
     }
     else{
-        level_amount = userLevel.nextlevel_upgrade
+        level_amount = userLevel.nextlevel_upgrade;
     }
 
     if(!loadedUser){
@@ -290,21 +290,19 @@ exports.initiatePayment = async (req, res, next) => {
         
         if(userProfile.isAdmin){
             
-            const userWallet = await Wallet.findOne({user_id: userId})
-            await createNotification(userId, "Payment intiated ", "success", "allocated member admin payment")
+            const userWallet = await Wallet.findOne({user_id: userId});
+            await createNotification(userId, "Payment intiated ", "success", "allocated member admin payment");
 
             let level;
             if(loadedUser.level_id === null){
-                level = await Level.findOne({level_number: 1})
-
-                loadedUser.level_id = level._id
+                level = await Level.findOne({level_number: 1});
+                loadedUser.level_id = level._id;
                 
             }
             else{
-                userLevel = await Level.findOne({_id: loadedUser.level_id})
-                level = await Level.findOne({level_number: userLevel.level_number + 1})
-                loadedUser.level_id = level._id
-   
+                userLevel = await Level.findOne({_id: loadedUser.level_id});
+                level = await Level.findOne({level_number: userLevel.level_number + 1});
+                loadedUser.level_id = level._id;
             }
 
             loadedAssignedMembers.upline_paid = true;
@@ -336,7 +334,7 @@ exports.initiatePayment = async (req, res, next) => {
                 transaction_id:  transactionUser._id
             }
 
-            return res.send(SuccessResponse(201, "Root admin upgraded successfully", data, null))
+            return res.send(SuccessResponse(201, "Root admin upgraded successfully", data, null));
         }
         
         const parentId = userProfile.parent_id
@@ -345,8 +343,6 @@ exports.initiatePayment = async (req, res, next) => {
         }
 
         const parentLevel = await User.findById(parentId).populate('level_id');
-        
-
         
         const [parentTransaction, parentWallet, parentProfile, userWallet] = await Promise.all([
             Transaction.findOne({
@@ -368,7 +364,7 @@ exports.initiatePayment = async (req, res, next) => {
         // else{
         //     amount = 1000
         // }
-        amount = level_amount
+        amount = level_amountk;
         
         //returns upline transaction details if it already exists
         if(parentTransaction){
@@ -378,7 +374,7 @@ exports.initiatePayment = async (req, res, next) => {
                 parent_profile: parentProfile,
                 transaction_id:  parentTransaction._id
             }
-            return res.send(SuccessResponse(201, "Parent User details retrieved successfully", data, null))
+            return res.send(SuccessResponse(201, "Parent User details retrieved successfully", data, null));
         }
 
         const transactionParent = await new Transaction({
@@ -389,7 +385,7 @@ exports.initiatePayment = async (req, res, next) => {
             transaction_status: "pending",
             transaction_reason: "member payment",
             amount: amount
-        })
+        });
 
         const transactionUser = await new Transaction({
             wallet_id: userWallet._id,
@@ -399,28 +395,28 @@ exports.initiatePayment = async (req, res, next) => {
             transaction_status: "pending",
             transaction_reason: "allocated member payment",
             amount: amount
-        })
+        });
 
-        await createNotification(userId, "Payment to allocated member initialized", "pending", "payment")
-        await createNotification(parentId, "Pending payment approval from a member", "pending", "approval")
+        await createNotification(userId, "Payment to allocated member initialized", "pending", "payment");
+        await createNotification(parentId, "Pending payment approval from a member", "pending", "approval");
 
         await Promise.all([
             transactionParent.save(),
             transactionUser.save()
-        ])
+        ]);
         
         const data = {
             profile: {...userProfile},
             parent_wallet: parentWallet,
             parent_profile: parentProfile,
             transaction_id:  transactionParent._id
-        }
+        };
 
-        return res.send(SuccessResponse(201, "Parent User details retrieved successfully", data, null))
+        return res.send(SuccessResponse(201, "Parent User details retrieved successfully", data, null));
     }
     catch(error){
         console.log(error)
-        return res.status(500).send(ErrorResponse(500, "Internal server error", error, null)) 
+        return res.status(500).send(ErrorResponse(500, "Internal server error", error, null));
       }
 }
 
@@ -428,8 +424,7 @@ exports.initiatePayment = async (req, res, next) => {
 exports.approvePayment = async (req, res, next) => {
     const {error} = validate.validateApproveTransaction(req.body);
     if(error){
-
-        return res.send(ErrorResponse(422, error.details[0].message, null, null))
+        return res.send(ErrorResponse(422, error.details[0].message, null, null));
     }
 
     try{
@@ -441,7 +436,7 @@ exports.approvePayment = async (req, res, next) => {
         User.findOne({_id:userId}),
         Profile.findOne({user_id: userId}),
         Transaction.findOne({_id: transaction_id})
-    ])
+    ]);
 
     if(!loadedUser){
         return res.status(401).send(ErrorResponse(401, `An account with this userId does not exist`, null, null));
@@ -474,7 +469,7 @@ exports.approvePayment = async (req, res, next) => {
             AssignedMembers.findOne({user_id: downlineUserId})
         ]);
 
-        let downlineUserLevel = await Level.findOne({_id: downlineUser.level_id})
+        let downlineUserLevel = await Level.findOne({_id: downlineUser.level_id});
 
         // if(!downlineUser.level_id){
         //     downlineLevel = await Level.findOne({level_number: 1})
@@ -491,42 +486,41 @@ exports.approvePayment = async (req, res, next) => {
         //updating the downline level
         let downlineLevel;
         if(!downlineUser.level_id){
-            downlineLevel = await Level.findOne({level_number: 1})
+            downlineLevel = await Level.findOne({level_number: 1});
         }else{
             console.log("downlineUserLevel => ",downlineUserLevel)
-            let level_number = downlineUserLevel?.level_number || 1
+            let level_number = downlineUserLevel?.level_number || 1;
             console.log("downlineUserLevel => ",level_number)
             if(level_number <= 1){
-                downlineLevel = await Level.findOne({level_number: level_number+1})
+                downlineLevel = await Level.findOne({level_number: level_number+1});
             }
             else{
-                downlineLevel = downlineUserLevel
+                downlineLevel = downlineUserLevel;
             }
         }
         
-        downlineUser.level_id =  downlineLevel._id
-        downlineAssignedMembers.level_id = downlineLevel._id
+        downlineUser.level_id =  downlineLevel._id;
+        downlineAssignedMembers.level_id = downlineLevel._id;
         if(!userProfile.isAdmin){
-            downlineProfile.parent_id = null
+            downlineProfile.parent_id = null;
         }
-        downlineProfile.deleted_at = null
-        downlineUser.deleted_at = null
-        downlineAssignedMembers.deleted_at = null
-        downlineProfile.parents.push(userId)
+        downlineProfile.deleted_at = null;
+        downlineUser.deleted_at = null;
+        downlineAssignedMembers.deleted_at = null;
+        downlineProfile.parents.push(userId);
 
         console.log("downlineLevel => ",downlineLevel)
 
         if(downlineLevel.level_number === 5 && downlineProfile.isAdmin !== true){
-            let downlineSubscription = await Subscription.findOne({user_id: downlineUser._id})
+            let downlineSubscription = await Subscription.findOne({user_id: downlineUser._id});
             if(downlineSubscription.isActive === false){
-                downlineSubscription.isActive = true
-                downlineSubscription.subscription_paid = false
-                downlineSubscription.subscription_date = null
-                downlineSubscription.amount = 500
-                await createNotification(downlineUser._id, "Subscription: This account needs to subscribe", "success", "subscription")
+                downlineSubscription.isActive = true;
+                downlineSubscription.subscription_paid = false;
+                downlineSubscription.subscription_date = null;
+                downlineSubscription.amount = 500;
+                await createNotification(downlineUser._id, "Subscription: This account needs to subscribe", "success", "subscription");
             }
             await downlineSubscription.save()
-            
         }
 
 
@@ -545,23 +539,21 @@ exports.approvePayment = async (req, res, next) => {
         console.log("userLevel => ",userLevel)
         console.log("userAssignedMembers => ",userAssignedMembers)
 
-        let downlineLevelNumber = downlineLevel?.level_number ?? 0
+        let downlineLevelNumber = downlineLevel?.level_number ?? 0;
 
-        let parentLevelNumber = userLevel?.level_number ?? 0
+        let parentLevelNumber = userLevel?.level_number ?? 0;
 
-        let diffLevel = parentLevelNumber - downlineLevelNumber
+        let diffLevel = parentLevelNumber - downlineLevelNumber;
 
-        let paidCount = 0
+        let paidCount = 0;
 
         if(userProfile.isAdmin  && diffLevel >= 1){
-            paidCount = userAssignedMembers.paid_count + 0
-            userAssignedMembers.paid_count += 0
+            paidCount = userAssignedMembers.paid_count + 0;
+            userAssignedMembers.paid_count += 0;
         }
-
         else{
-            paidCount = userAssignedMembers.paid_count + 1
-            userAssignedMembers.paid_count += 1
-
+            paidCount = userAssignedMembers.paid_count + 1;
+            userAssignedMembers.paid_count += 1;
             // if(!userProfile.isAdmin && paidCount === 2){
             //     downlineAssignedMembers.upline_paid = false;
             // }
@@ -576,8 +568,8 @@ exports.approvePayment = async (req, res, next) => {
                 userAssignedMembers.state = "achieved";
                 userAssignedMembers.count = 0;
                 userAssignedMembers.paid_count = 0;
-                userAssignedMembers.upgrade_date = new Date()
-                await createNotification(userId, "Upgrade: This account is ready for upgrade", "success", "upgrade")
+                userAssignedMembers.upgrade_date = new Date();
+                await createNotification(userId, "Upgrade: This account is ready for upgrade", "success", "upgrade");
             }
             else if(userLevel.level_number === 10){
                 userAssignedMembers.upline_paid = false;
@@ -589,25 +581,25 @@ exports.approvePayment = async (req, res, next) => {
                 loadedUser.deleted_at = new Date();
             }
             else{
-                console.log("old member: ", userLevel)
-                nextLevel = await Level.findOne({level_number: userLevel.level_number + 1})
-                loadedUser.level_id = nextLevel._id
+                console.log("old member: ", userLevel);
+                nextLevel = await Level.findOne({level_number: userLevel.level_number + 1});
+                loadedUser.level_id = nextLevel._id;
                 userAssignedMembers.upline_paid = false;
                 userAssignedMembers.state = "unachieved";
                 userAssignedMembers.count = 0;
                 userAssignedMembers.paid_count = 0;
-                await createNotification(userId, "Upgrade: This account has been upgraded", "success", "upgrade")
+                await createNotification(userId, "Upgrade: This account has been upgraded", "success", "upgrade");
         
             }
         }
 
         if(userLevel.admin_count <= paidCount &&  userProfile.isAdmin){
             userAssignedMembers.upline_paid = true;
-            userAssignedMembers.upgrade_date = new Date()
+            userAssignedMembers.upgrade_date = new Date();
             userAssignedMembers.state = "achieved";
             userAssignedMembers.count = 0;
             userAssignedMembers.paid_count = 0;
-            await createNotification(userId, "Upgrade: This account is ready for upgrade", "success", "upgrade")
+            await createNotification(userId, "Upgrade: This account is ready for upgrade", "success", "upgrade");
         }
 
         //updating wallet balance
@@ -631,7 +623,7 @@ exports.approvePayment = async (req, res, next) => {
 
 
         //updating the transaction for the downline
-        downlineTransactionsDetails.transaction_status = "success"
+        downlineTransactionsDetails.transaction_status = "success";
 
         await Promise.all([
             userAssignedMembers.save(), 
@@ -644,24 +636,23 @@ exports.approvePayment = async (req, res, next) => {
             downlineTransactionsDetails.save(),
             loadedUser.save(),
             // downlineSubscription.save()
-        ])
+        ]);
 
-        await createNotification(downlineUserId, "Allocated member has approved payment", "success", "payment")
-        await createNotification(userId, "Approved payment for a member", "success", "approve")
+        await createNotification(downlineUserId, "Allocated member has approved payment", "success", "payment");
+        await createNotification(userId, "Approved payment for a member", "success", "approve");
 
         const data = {
             profile,
             asssigned_members: userAssignedMembers,
             wallet: userWallet
-        }
+        };
         
-        return res.send(SuccessResponse(201, "Transaction approved successfully", data, null))
-
+        return res.send(SuccessResponse(201, "Transaction approved successfully", data, null));
 
     }
     catch(error){
-        console.log(error)
-        return res.send(ErrorResponse(500, "Internal server error", error, null)) 
+        console.log(error);
+        return res.send(ErrorResponse(500, "Internal server error", error, null));
       }
       
 }
