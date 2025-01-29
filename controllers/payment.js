@@ -11,251 +11,171 @@ const { ErrorResponse, SuccessResponse } = require('../lib/apiResponse');
 const { createNotification } = require('./notification');
 
 exports.activateAccount = async (req, res, next) => {
+    try {
+        const userId = req.userId;
 
+        // Fetch current user details
+        const currentUser = await User.findById(userId)
+            .populate('profile')
+            .populate('level_id')
+            .populate('assigned_members')
+            .lean();
 
-  try {
-    const userId = req.userId
-    // First, get the level_number of the current user
-    await User.findById(userId)
-    .populate('profile') 
-    .populate('level_id').populate('assigned_members') // Assuming you have set up the reference properly
-    .exec(async(err, currentUser) => {
-        if (err) {
-            console.error('Error finding current user:', err);
-            return res.status(401).send(ErrorResponse(401, `Unauthorized access`, null, null));
+        if (!currentUser) {
+            return res.status(401).send(ErrorResponse(401, 'User not found', null, null));
         }
 
-        if(currentUser.assigned_members.state === "unachieved" && currentUser.assigned_members.upgrade_date === null){
-            return res.status(401).send(ErrorResponse(401, `You have not reached required members`, null, null));
+        // Check for invalid state or max level restrictions
+        if (
+            currentUser.assigned_members.state === 'unachieved' &&
+            currentUser.assigned_members.upgrade_date === null
+        ) {
+            return res
+                .status(401)
+                .send(ErrorResponse(401, 'You have not reached required members', null, null));
         }
 
-        if(!currentUser.profile.isAdmin && 
-            currentUser.assigned_members.state === "achieved" && currentUser.level_id &&
-            currentUser.level_id.level_number === 10){
-            return res.status(401).send(ErrorResponse(401, `You have reached the maximum level`, null, null));
+        if (
+            currentUser.level_id &&
+            currentUser.assigned_members.state === 'achieved' &&
+            currentUser.level_id.level_number === 10
+        ) {
+            return res
+                .status(401)
+                .send(ErrorResponse(401, 'You have reached the maximum level', null, null));
         }
 
-        if(currentUser.profile.isAdmin && 
-            currentUser.assigned_members.state === "achieved" && currentUser.level_id &&
-            currentUser.level_id.level_number === 11){
-            return res.status(401).send(ErrorResponse(401, `You have reached the maximum level`, null, null));
+        // Check if user already has a parent
+        const userProfile = await Profile.findOne({ user_id: userId }).lean();
+        if (!userProfile) {
+            return res.status(400).send(ErrorResponse(400, 'User profile not found', null, null));
         }
 
-        let profileCheck = await Profile.findOne({user_id:userId}).lean()
-        
-        if(profileCheck.parent_id !== null){
-            
-              const [retrievedParentUser, populatedUser, parentWallet] = await Promise.all([
-                User.findById(profileCheck.parent_id).select('-password').populate({
-                    path: 'profile',
-                    select: '-password -recovery_code' // Excluding password
-                }).populate('assigned_members').populate('level_id').lean(),
-                User.findById(userId).select('-password').populate({
-                    path: 'profile',
-                    select: '-password -recovery_code' // Excluding password
-                }).lean(),
-                await Wallet.findOne({user_id: profileCheck.parent_id})
-            ])
-            
-            
+        if (userProfile.parent_id) {
+            const [retrievedParentUser, populatedUser, parentWallet] = await Promise.all([
+                User.findById(userProfile.parent_id)
+                    .select('-password')
+                    .populate('profile')
+                    .populate('assigned_members')
+                    .populate('level_id')
+                    .lean(),
+                User.findById(userId).select('-password').populate('profile').lean(),
+                Wallet.findOne({ user_id: userProfile.parent_id }).lean(),
+            ]);
+
             const loadedData = {
                 ...populatedUser,
                 parent: retrievedParentUser,
-                parent_wallet: parentWallet
-            }
+                parent_wallet: parentWallet,
+            };
 
-            return res.send(SuccessResponse(201, "Parent User retrieved successfully", loadedData, null))
+            return res.send(SuccessResponse(201, 'Parent User retrieved successfully', loadedData, null));
         }
 
-        if(profileCheck.isAdmin){
-            const loadedData = {
-                ...profileCheck,
-                parent: null,
-                parent_wallet: null
-            }
-            return res.send(SuccessResponse(201, "User is admin, details retrieved successfully", loadedData, null))
-        }
-
-        let currentUserLevelNumber = 0
-        if(currentUser.level_id){
-            currentUserLevelNumber = currentUser.level_id?.level_number;
-        }
-        
-        // Find users with levels higher than the current user's level_number
-        User.find({
-            _id: { $ne: userId }, // Exclude the current user
+        // Fetch all potential parents
+        let users = await User.find({
+            _id: { $ne: userId }, // Exclude current user
+            'profile.deleted_at': null,
             $or: [
-                { 
-                    'profile.parents': { $nin: [userId] },
-                    'profile.deleted_at': null // Ensure profile.deleted_at is null
+                { 'profile.isAdmin': false },
+                {
+                    'assigned_members.state': 'unachieved',
+                    'assigned_members.upgrade_date': null,
+                    'assigned_members.count': { $lt: 'level_id.members_number' },
                 },
-                { 
-                    'profile.isAdmin': true,
-                    'profile.deleted_at': null // Ensure profile.deleted_at is null for admins as well
-                }
-            ]
+            ],
         })
-        .populate('profile')
-        .populate('level_id')
-        .populate('assigned_members')
-        .exec(async(err, users) => {
-            if (err) {
-            console.error('Error finding users with higher levels:', err);
-            return res.send(ErrorResponse(422, "Error finding users with higher levels", null, null));
-            }
+            .populate('profile')
+            .populate('level_id')
+            .populate('assigned_members')
+            .lean();
 
-            let rootAdmin = await Profile.findOne({isAdmin: true})
+        // Filter for users with valid level_id
+        users = users.filter(
+            (user) =>
+                user.level_id &&
+                user.level_id.level_number !== null &&
+                user.assigned_members &&
+                user.assigned_members.state !== undefined
+        );
 
-            let parentsArray;
+        // If no valid users found, fallback to admins
+        if (users.length === 0) {
+            users = await User.find({
+                _id: { $ne: userId },
+                'profile.isAdmin': true,
+                'profile.deleted_at': null,
+            })
+                .populate('profile')
+                .populate('level_id')
+                .populate('assigned_members')
+                .lean();
+        }
 
-            if(profileCheck.parents.includes(rootAdmin.user_id)){
-                parentsArray = users.filter(user => {
-                    return user.profile.isAdmin
-                })
-            }
-            else{
-                const userAdmin = users.filter(user => {
-                    return user.profile.isAdmin && user.assigned_members.upgrade_date === null &&
-                    user.assigned_members.count < user.level_id.admin_count && user.assigned_members.state === "unachieved" 
-                    && user.level_id.level_number === currentUserLevelNumber + 1
-                })
-                
-    
-                const usersWithHigherLevels = users.filter(user => {
-                    const restriction = user.assigned_members.paid_count === 2 && user.assigned_members.upline_paid === false
-                    return !restriction && user.assigned_members && user.level_id && user.assigned_members.upgrade_date === null && user.level_id.level_number === currentUserLevelNumber + 1 &&  // Level is one greater
-                           user.assigned_members.state === "unachieved" && user.assigned_members.count < user.level_id.members_number && user.profile.deleted_at === null;    // Members count meets requirement
-                });
-    
-               
-                parentsArray = Array.from(new Set(userAdmin.concat(usersWithHigherLevels)));
-    
-            }
+        // If still no users, return an error
+        if (users.length === 0) {
+            return res.status(400).send(ErrorResponse(400, 'No available parent user at the moment', null, null));
+        }
 
-            
-            // console.log("parentsArray => ", parentsArray)
+        // Determine the target level
+        let targetLevel = null;
+        if (currentUser.level_id && currentUser.level_id.level_number) {
+            targetLevel = currentUser.level_id.level_number + 1;
+        }
 
-            let parentUser;
-            if (parentsArray.length > 0) {
-                // Sort users by created_at in ascending order and get the first user (oldest)
-                parentUser = parentsArray.sort((a, b) => a.createdAt - b.createdAt)[0];
-                console.log('User with one level number above and oldest createdAt:', parentUser);
-                
-            } else {
-                // If no user with higher level exists, find the oldest created_at among all users
-                
-                parentUser = users.sort((a, b) => a.createdAt - b.createdAt)[0];
-                console.log('Oldest created_at among all users:', parentUser.createdAt);
-            }
-            
+        // Filter users to prioritize those matching the target level
+        const parentsArray = targetLevel
+            ? users.filter(
+                  (user) =>
+                      user.level_id.level_number === targetLevel &&
+                      user.assigned_members.state === 'unachieved' &&
+                      user.assigned_members.count < user.level_id.members_number
+              )
+            : [];
 
-            // checking whether there is an extra count for admin for that level
-            // const upgradeLevel = await Level.findOne({level_number: currentUserLevelNumber + 1})
+        // Select a parent, prioritize eligible ones; fallback to random if none match
+        const parentUser =
+            parentsArray.length > 0
+                ? parentsArray[Math.floor(Math.random() * parentsArray.length)]
+                : users[Math.floor(Math.random() * users.length)];
 
-            // if(upgradeLevel.level_count !== 0){
-                
-            //     parentUser = await User.findOne({_id: rootAdmin.user_id })
-            //     upgradeLevel.level_count -= 1
-            //     await upgradeLevel.save()
-            // }
-            
+        if (!parentUser) {
+            return res.status(400).send(ErrorResponse(400, 'No suitable parent user found', null, null));
+        }
 
-            if(!parentUser || parentUser === undefined){
-                return res.status(400).send(ErrorResponse(400, "No available parent user", error, null))
-            }
+        // Update parent-child relationship
+        const [parentAssignedMembers] = await Promise.all([
+            AssignedMembers.findOne({ user_id: parentUser._id }),
+        ]);
 
+        userProfile.parent_id = parentUser._id;
+        parentAssignedMembers.count += 1;
 
-            try{
-                const [userProfile, userLevel, parentAssignedMembers, parentProfile, parentLevel] = await Promise.all([
-                    Profile.findOne({user_id: currentUser._id}),
-                    Level.findOne({_id: currentUser.level_id}),
-                    AssignedMembers.findOne({user_id: parentUser._id}),
-                    Profile.findOne({user_id: parentUser._id}),
-                    Level.findOne({_id: parentUser.level_id})
-                ])
-                
-                userProfile.parent_id = parentUser._id
+        await Promise.all([Profile.updateOne({ user_id: currentUser._id }, userProfile), parentAssignedMembers.save()]);
 
-                // let userLevelNumber = userLevel?.level_number ?? 0
+        const parentWallet = await Wallet.findOne({ user_id: parentUser._id }).lean();
 
-                let parentLevelNumber = parentLevel?.level_number ?? 0  
+        const [populatedParentUser, populatedUser] = await Promise.all([
+            User.findById(parentUser._id)
+                .select('-password')
+                .populate('profile')
+                .populate('assigned_members')
+                .populate('level_id')
+                .lean(),
+            User.findById(userProfile.user_id).select('-password').populate('profile').lean(),
+        ]);
 
-                let diffLevel = parentLevelNumber - currentUserLevelNumber
+        const loadedData = {
+            ...populatedUser,
+            parent: populatedParentUser,
+            parent_wallet: parentWallet,
+        };
 
-                // checking if the user is an admin that is a parent or an admin that is getting extra count for stranglers below
-                if(parentProfile.isAdmin && diffLevel !== 1){
-                    console.log("user is lower than one level to the admin")
-                    parentAssignedMembers.count += 0
-                }
-                else if(parentProfile.isAdmin && diffLevel === 1){
-                    parentAssignedMembers.count += 1
-                }
-                else{
-                    // let currentNumber = parentAssignedMembers.paid_count + 1
-                    parentAssignedMembers.count += 1 
-                    
-                    // const currentLevelFunds = parentAssignedMembers.count * parentLevel.member_amount
-                    
-                    // // if(currentLevelFunds === userLevel.nextlevel_upgrade && userAssignedMembers.upline_paid && !userProfile.isAdmin && userLevel.level_number > 1){
-                    // if(currentNumber === 2 && parentAssignedMembers.upline_paid && parentLevel.level_number > 1 && !userProfile.isAdmin){
-                    //     parentAssignedMembers.upgrade_date = new Date()
-                    //     parentAssignedMembers.upline_paid = false;
-                    //     parentAssignedMembers.state = "achieved";
-                    //     await createNotification(parentAssignedMembers.user_id, "Upgrade: This account is ready for upgrade", "success", "upgrade")
-                    // }
-                    
-                }
-                
-                
-                await Promise.all([
-                    userProfile.save(),
-                    parentAssignedMembers.save()
-                ])
-            
-                let parentWallet
-                try {
-                    parentWallet = await Wallet.findOne({user_id: parentUser._id}).lean();
-                    
-                } catch (error) {
-                    console.error('Error finding parent wallet:', error);
-                }
-                
-                const [populatedParentUser, populatedUser] = await Promise.all([
-                    User.findById(parentUser._id).select('-password').populate({
-                        path: 'profile',
-                        select: '-password -recovery_code' // Excluding password
-                    }).populate('assigned_members').populate('level_id').lean(),
-                    User.findById(userProfile._id).select('-password').populate({
-                        path: 'profile',
-                        select: '-password -recovery_code' // Excluding password
-                    }).lean()
-                ])
-
-                
-                loadedData = {
-                    ...populatedUser,
-                    parent: populatedParentUser,
-                    parent_wallet: parentWallet
-                }
-
-                return res.send(SuccessResponse(201, "Parent User retrieved successfully", loadedData, null))
-            }
-
-            catch(error){
-                console.log(error)
-                return res.status(500).send(ErrorResponse(500, "Internal server error", error, null))
-            }
-
-
-        });
-    });
-
-    // return res.send(SuccessResponse(201, "User registered successfully", loadedData, null))
-  } catch(error){
-    console.log(error)
-    return res.send(ErrorResponse(500, "Internal server error", error, null))
-  }
-
+        return res.send(SuccessResponse(201, 'Parent User assigned successfully', loadedData, null));
+    } catch (error) {
+        console.error('Error activating account:', error);
+        return res.status(500).send(ErrorResponse(500, 'Internal server error', error, null));
+    }
 };
 
 exports.initiatePayment = async (req, res, next) => {
@@ -364,7 +284,7 @@ exports.initiatePayment = async (req, res, next) => {
         // else{
         //     amount = 1000
         // }
-        amount = level_amountk;
+        amount = level_amount;
         
         //returns upline transaction details if it already exists
         if(parentTransaction){

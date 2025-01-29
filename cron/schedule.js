@@ -12,11 +12,11 @@ const { createNotification } = require('../controllers/notification');
 const upgrade_cron = async () => {
   try {
 
-    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000); 
+    //const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000); 
 
     const defaultingAccounts = await AssignedMembers.find({
         upgrade_date: {
-            $lte: oneHourAgo,
+            //$lte: oneHourAgo,
             $ne: null
         },
         deleted_at:{
@@ -29,8 +29,8 @@ const upgrade_cron = async () => {
     let rootProfile;
     let rootUser;
 
-    if(defaultingAccounts.length >0){
-      rootProfile = await Profile.findOne({ isAdmin: true });
+    if(defaultingAccounts.length > 0){
+      rootProfile = await Profile.findOne({ isAdmin: false });
       rootUser = await User.findOne({ _id: rootProfile.user_id });
     }
 
@@ -182,7 +182,7 @@ const subscription_cron = async() =>{
         // Iterate over each account and update the corresponding user profile
         for (const account of defaultingAccounts) {
             const userProfile = await Profile.findOne({ user_id: account.user_id });
-            const adminProfile = await Profile.findOne({isAdmin: true});
+            const adminProfile = await Profile.findOne({isAdmin: false});
         
             
             if (userProfile && adminProfile) {
@@ -279,13 +279,13 @@ const upgrade_account_cron = async () => {
 }
 
 let upgrade_rule = new schedule.RecurrenceRule();
-upgrade_rule.minute = [0,1,2,3,4, 5,6,6,7,8,9, 10,11,12,13,14, 15,16,17,18,19, 20,21,22,23,24, 25,26, 30,31,32,33,34, 35, 40,41, 42,43,44, 45,46,47,48,49,50, 51,,52,53,54, 55,56,57,58,59];
+upgrade_rule.minute = [0,1,2,3,4, 5,6,7,8,9, 10,11,12,13,14, 15,16,17,18,19, 20,21,22,23,24, 25,26, 27,28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,39, 40,41, 42,43,44, 45,46,47,48,49,50, 51,52,53,54, 55,56,57,58,59];
 
 let subscription_rule = new schedule.RecurrenceRule();
 subscription_rule.minute = [0, 5, 10, 15, 20,25, 30, 35, 45, 50, 55];
 
 let upgrade_account_rule = new schedule.RecurrenceRule();
-upgrade_account_rule.minute = [0,1,2,3,4, 5,6,6,7,8,9, 10,11,12,13,14, 15,16,17,18,19, 20,21,22,23,24, 25,26, 30,31,32,33,34, 35, 40,41, 42,43,44, 45,46,47,48,49,50, 51,,52,53,54, 55,56,57,58,59];
+upgrade_account_rule.minute = [0,1,2,3,4, 5,6,7,8,9, 10,11,12,13,14, 15,16,17,18,19, 20,21,22,23,24, 25,26,27,28,29, 30,31,32,33,34, 35,36,37,38,39, 40,41, 42,43,44, 45,46,47,48,49,50, 51,52,53,54, 55,56,57,58,59];
 
 // Define the cron job
 schedule.scheduleJob(upgrade_rule, upgrade_cron);
