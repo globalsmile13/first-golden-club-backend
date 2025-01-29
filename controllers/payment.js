@@ -26,23 +26,12 @@ exports.activateAccount = async (req, res, next) => {
         }
 
         // Check for invalid state or max level restrictions
-        if (
-            currentUser.assigned_members.state === 'unachieved' &&
-            currentUser.assigned_members.upgrade_date === null
-        ) {
-            return res
-                .status(401)
-                .send(ErrorResponse(401, 'You have not reached required members', null, null));
+        if (currentUser.assigned_members.state === 'unachieved' && currentUser.assigned_members.upgrade_date === null) {
+            return res.status(401).send(ErrorResponse(401, 'You have not reached required members', null, null));
         }
 
-        if (
-            currentUser.level_id &&
-            currentUser.assigned_members.state === 'achieved' &&
-            currentUser.level_id.level_number === 10
-        ) {
-            return res
-                .status(401)
-                .send(ErrorResponse(401, 'You have reached the maximum level', null, null));
+        if (currentUser.level_id && currentUser.assigned_members.state === 'achieved' && currentUser.level_id.level_number === 10) {
+            return res.status(401).send(ErrorResponse(401, 'You have reached the maximum level', null, null));
         }
 
         // Check if user already has a parent
@@ -72,34 +61,23 @@ exports.activateAccount = async (req, res, next) => {
             return res.send(SuccessResponse(201, 'Parent User retrieved successfully', loadedData, null));
         }
 
-        // Fetch all potential parents
+        // Fetch potential parents **in one query**
         let users = await User.find({
             _id: { $ne: userId }, // Exclude current user
             'profile.deleted_at': null,
-            $or: [
-                { 'profile.isAdmin': false },
-                {
-                    'assigned_members.state': 'unachieved',
-                    'assigned_members.upgrade_date': null,
-                    'assigned_members.count': { $lt: 'level_id.members_number' },
-                },
-            ],
+            'assigned_members.state': 'unachieved',
+            'assigned_members.upgrade_date': null,
+            'assigned_members.count': { $lt: 'level_id.members_number' },
         })
             .populate('profile')
             .populate('level_id')
             .populate('assigned_members')
             .lean();
 
-        // Filter for users with valid level_id
-        users = users.filter(
-            (user) =>
-                user.level_id &&
-                user.level_id.level_number !== null &&
-                user.assigned_members &&
-                user.assigned_members.state !== undefined
-        );
+        // Remove users without a valid level_id
+        users = users.filter(user => user.level_id && user.level_id.level_number !== null);
 
-        // If no valid users found, fallback to admins
+        // If no valid users found, **fallback to admins**
         if (users.length === 0) {
             users = await User.find({
                 _id: { $ne: userId },
@@ -112,56 +90,46 @@ exports.activateAccount = async (req, res, next) => {
                 .lean();
         }
 
-        // If still no users, return an error
+        // **If still no valid users, return error**
         if (users.length === 0) {
             return res.status(400).send(ErrorResponse(400, 'No available parent user at the moment', null, null));
         }
 
-        // Determine the target level
-        let targetLevel = null;
-        if (currentUser.level_id && currentUser.level_id.level_number) {
-            targetLevel = currentUser.level_id.level_number + 1;
+        // **Determine the best level match**
+        const targetLevel = currentUser.level_id?.level_number ? currentUser.level_id.level_number + 1 : 1;
+
+        // **Prioritize users at the target level**
+        let potentialParents = users.filter(user => user.level_id.level_number === targetLevel);
+
+        // **Shuffle available parents to distribute users evenly**
+        function shuffleArray(array) {
+            return array.sort(() => Math.random() - 0.5);
         }
+        potentialParents = shuffleArray(potentialParents);
 
-        // Filter users to prioritize those matching the target level
-        const parentsArray = targetLevel
-            ? users.filter(
-                  (user) =>
-                      user.level_id.level_number === targetLevel &&
-                      user.assigned_members.state === 'unachieved' &&
-                      user.assigned_members.count < user.level_id.members_number
-              )
-            : [];
-
-        // Select a parent, prioritize eligible ones; fallback to random if none match
-        const parentUser =
-            parentsArray.length > 0
-                ? parentsArray[Math.floor(Math.random() * parentsArray.length)]
-                : users[Math.floor(Math.random() * users.length)];
+        // If no parents match the target level, pick a random one from all users
+        const parentUser = potentialParents.length > 0 ? potentialParents[0] : shuffleArray(users)[0];
 
         if (!parentUser) {
             return res.status(400).send(ErrorResponse(400, 'No suitable parent user found', null, null));
         }
 
-        // Update parent-child relationship
-        const [parentAssignedMembers] = await Promise.all([
-            AssignedMembers.findOne({ user_id: parentUser._id }),
-        ]);
+        // **Update parent-child relationship**
+        const [parentAssignedMembers] = await Promise.all([AssignedMembers.findOne({ user_id: parentUser._id })]);
 
         userProfile.parent_id = parentUser._id;
         parentAssignedMembers.count += 1;
 
-        await Promise.all([Profile.updateOne({ user_id: currentUser._id }, userProfile), parentAssignedMembers.save()]);
+        await Promise.all([
+            Profile.updateOne({ user_id: currentUser._id }, userProfile),
+            parentAssignedMembers.save()
+        ]);
 
+        // Fetch parent wallet
         const parentWallet = await Wallet.findOne({ user_id: parentUser._id }).lean();
 
         const [populatedParentUser, populatedUser] = await Promise.all([
-            User.findById(parentUser._id)
-                .select('-password')
-                .populate('profile')
-                .populate('assigned_members')
-                .populate('level_id')
-                .lean(),
+            User.findById(parentUser._id).select('-password').populate('profile').populate('assigned_members').populate('level_id').lean(),
             User.findById(userProfile.user_id).select('-password').populate('profile').lean(),
         ]);
 
@@ -177,6 +145,7 @@ exports.activateAccount = async (req, res, next) => {
         return res.status(500).send(ErrorResponse(500, 'Internal server error', error, null));
     }
 };
+
 
 exports.initiatePayment = async (req, res, next) => {
     const userId = req.userId;
