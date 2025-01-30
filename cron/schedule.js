@@ -9,132 +9,152 @@ const Level = require('../models/level'); // Ensure Level model is imported
 const { ErrorResponse, SuccessResponse } = require('../lib/apiResponse');
 const { createNotification } = require('../controllers/notification');
 
-// Helper function to shuffle an array using Fisher-Yates algorithm
-const shuffleArray = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-};
-
-// Stores recently assigned parents to avoid immediate reassignments
-const recentlyAssignedParents = new Set();
-
 const upgrade_cron = async () => {
   try {
-    // Fetch all users needing an upgrade
+
+    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000); 
+
     const defaultingAccounts = await AssignedMembers.find({
-      upgrade_date: { $ne: null },
-      deleted_at: { $eq: null },
-    }).lean();
+        upgrade_date: {
+            $lte: oneHourAgo,
+            $ne: null
+        },
+        deleted_at:{
+            $eq: null 
+        }
+    });
 
-    console.log("Defaulting accounts fetched:", defaultingAccounts.length);
+    console.log(defaultingAccounts);
 
-    if (!defaultingAccounts.length) return console.log("No accounts require upgrades.");
+    let rootProfile;
+    let rootUser;
 
-    // Fetch root profile dynamically
-    const rootProfile = await AssignedMembers.findOne({
-      state: 'unachieved',
-      upgrade_date: null,
-      deleted_at: { $eq: null },
-    })
-      .sort({ createdAt: 1 })
-      .lean();
-
-    if (!rootProfile) throw new Error("No eligible parent found in AssignedMembers.");
-
-    const rootUser = await User.findOne({ _id: rootProfile.user_id }).lean();
-    if (!rootUser) throw new Error("Root user not found.");
-
-    // Fetch a larger pool of potential parents
-    let potentialParents = await User.find({
-      "profile.deleted_at": null,
-      "assigned_members.state": "unachieved",
-      "assigned_members.upgrade_date": null,
-    })
-      .populate("profile")
-      .populate("level_id")
-      .populate("assigned_members")
-      .lean();
-
-    if (potentialParents.length < 5) {
-      const lastLevelUsers = await User.find({
-        "profile.deleted_at": null,
-        "assigned_members.state": "unachieved",
-        "assigned_members.count": { $gte: 1 },
-      })
-        .populate("profile")
-        .populate("level_id")
-        .populate("assigned_members")
-        .lean();
-
-      potentialParents = [...potentialParents, ...lastLevelUsers];
+    if(defaultingAccounts.length >0){
+      rootProfile = await Profile.findOne({ isAdmin: true });
+      rootUser = await User.findOne({ _id: rootProfile.user_id });
     }
 
-    const shuffledParents = shuffleArray(potentialParents);
-
+    // Iterate over each account and update the corresponding user profile
     for (const account of defaultingAccounts) {
-      try {
-        const userProfile = await Profile.findOne({ user_id: account.user_id }).lean();
-        if (!userProfile || userProfile.isAdmin) continue;
+      // console.log("hey")
+      const userProfile = await Profile.findOne({ user_id: account.user_id });
 
-        let parentId = userProfile.parent_id || userProfile.parents?.slice(-1)[0];
+      console.log(userProfile)
 
-        if (!parentId || recentlyAssignedParents.has(parentId)) {
-          const user = await User.findOne({ _id: account.user_id }).populate("level_id").lean();
-          const targetLevel = user.level_id?.level_number || 1;
+      if( userProfile.isAdmin){
+        return
+      }
+    
+      if (userProfile) {
+        const parentId = userProfile.parent_id || userProfile.parents[-1];
 
-          let levelFilteredParents = shuffledParents.filter(
-            (parent) =>
-              parent.level_id &&
-              parent.level_id.level_number === targetLevel &&
-              !recentlyAssignedParents.has(parent._id)
-          );
+        if(parentId === null || parentId === undefined){
+          const [
+            loadedUser,
+            userAssignedMembers,
+          ] = await Promise.all([
+            User.findOne({ _id: account.user_id }),
+            AssignedMembers.findOne({ user_id: account.user_id })
+          ]);
+          userProfile.parents.push(rootUser._id);
+          userProfile.parent_id = rootUser._id;
+          userProfile.deleted_at = new Date();
+          loadedUser.deleted_at = new Date();
+          userAssignedMembers.deleted_at = new Date();
 
-          if (levelFilteredParents.length > 0) {
-            parentId = shuffleArray(levelFilteredParents)[0]._id;
-          } else if (shuffledParents.length > 0) {
-            parentId = shuffleArray(shuffledParents)[0]._id;
-          } else {
-            console.log(`No available parents for user ${account.user_id}, reassigning to root.`);
-            parentId = rootUser._id;
-          }
+          return await Promise.all([userAssignedMembers.save(), userProfile.save(), loadedUser.save()]);
 
-          await Profile.updateOne({ user_id: account.user_id }, { parent_id: parentId });
-          recentlyAssignedParents.add(parentId);
-          setTimeout(() => recentlyAssignedParents.delete(parentId), 600000); // Remove after 10 mins
         }
 
-        // Fetch all required data in parallel
-        const [parentUser, parentProfile, userAssignedMembers, parentAssignedMembers] = await Promise.all([
-          User.findOne({ _id: parentId }).lean(),
-          Profile.findOne({ user_id: parentId }).lean(),
-          AssignedMembers.findOne({ user_id: account.user_id }).lean(),
-          AssignedMembers.findOne({ user_id: parentId }).lean(),
+        console.log(parentId)
+        
+        const [
+          parentUser,
+          parentProfile,
+          loadedUser,
+          userAssignedMembers,
+          parentAssignedMembers,
+          transactionUser,
+          transactionParent
+        ] = await Promise.all([
+          User.findOne({ _id: parentId }),
+          Profile.findOne({ user_id: parentId }),
+          User.findOne({ _id: account.user_id }),
+          AssignedMembers.findOne({ user_id: account.user_id }),
+          AssignedMembers.findOne({ user_id: parentId }),
+          Transaction.findOne({
+            user_id: account.user_id,
+            ref_id: parentId,
+            transaction_type: "debit",
+            transaction_status: "pending",
+            transaction_reason: "allocated member payment"
+          }),
+          Transaction.findOne({
+            user_id: parentId,
+            ref_id: account.user_id,
+            transaction_type: "credit",
+            transaction_status: "pending",
+            transaction_reason: "member payment"
+          })
         ]);
 
-        if (!parentUser || !parentProfile || !userAssignedMembers || !parentAssignedMembers) {
-          console.log(`Incomplete data for account_id: ${account.user_id}. Skipping.`);
-          continue;
+        // let isLevelCount = false;
+        const parentLevel = await Level.findOne({ _id: parentUser.level_id });
+        const userLevel = await Level.findOne({ _id: loadedUser.level_id });
+        const userNumber = userLevel?.level_number || 0;
+
+        const diff_level = parentLevel?.level_number - userNumber;
+
+        // if (parentProfile.isAdmin) {
+        //   const diff = parentLevel.level_number - userNumber;
+        //   if (diff !== 1) {
+        //     parentLevel.level_count -= 1;
+        //     await parentLevel.save();
+        //     isLevelCount = true;
+        //   }
+        // }
+
+        if (transactionParent) {
+          transactionUser.transaction_status = "failure";
+          transactionParent.transaction_status = "failure";
+          await Promise.all([transactionUser.save(), transactionParent.save()]);
         }
 
-        const parentLevel = await Level.findOne({ _id: parentUser.level_id }).lean();
-        const userLevel = await Level.findOne({ _id: account.user_id }).lean();
-        const diff_level = (parentLevel?.level_number || 0) - (userLevel?.level_number || 0);
+        // if (parentAssignedMembers && !isLevelCount) {
+        //   if(parentAssignedMembers.count >= 0 ){
+        //     parentAssignedMembers.count -= 1;
+        //   }
+        //   await parentAssignedMembers.save();
 
-        if (parentAssignedMembers && diff_level <= 1 && parentAssignedMembers.count > 0) {
+        //   if (userNumber > 1) {
+        //     const count = userLevel.members_number - userAssignedMembers.count;
+        //     parentLevel.level_count -= count;
+        //     await parentLevel.save();
+        //   }
+        // }
+
+        if(parentAssignedMembers && diff_level <= 1 && parentAssignedMembers.count > 0){
           parentAssignedMembers.count -= 1;
-          await AssignedMembers.updateOne({ user_id: parentId }, { count: parentAssignedMembers.count });
+          await parentAssignedMembers.save();
         }
 
-        console.log(`Successfully updated account_id: ${account.user_id}`);
-      } catch (accountError) {
-        console.error(`Error processing account_id: ${account.user_id}`, accountError);
+        userProfile.parents = userProfile.parents.filter(item => item !== userProfile.parent_id) || [];
+        userProfile.parents.push(rootUser._id);
+        userProfile.parent_id = rootUser._id;
+        userProfile.deleted_at = new Date();
+        loadedUser.deleted_at = new Date();
+        userAssignedMembers.deleted_at = new Date();
+
+        await Promise.all([userAssignedMembers.save(), userProfile.save(), loadedUser.save()]);
+
+        console.log(`Updated deleted_at for user profile with account_id: ${account.user_id}`);
+        await createNotification(account.user_id, "Failed Upgrade: This account has been deactivated", "error", "upgrade");
+      } else {
+        console.log(`User profile not found or is admin for account_id: ${account.user_id}`);
       }
     }
   } catch (error) {
-    console.error("Critical error in upgrade_cron:", error);
+    console.error('Error occurred:', error);
   }
 };
 
@@ -162,7 +182,7 @@ const subscription_cron = async() =>{
         // Iterate over each account and update the corresponding user profile
         for (const account of defaultingAccounts) {
             const userProfile = await Profile.findOne({ user_id: account.user_id });
-            const adminProfile = await Profile.findOne({isAdmin: false});
+            const adminProfile = await Profile.findOne({isAdmin: true});
         
             
             if (userProfile && adminProfile) {
@@ -259,16 +279,19 @@ const upgrade_account_cron = async () => {
 }
 
 let upgrade_rule = new schedule.RecurrenceRule();
-upgrade_rule.minute = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55];
+upgrade_rule.minute = [0,1,2,3,4, 5,6,6,7,8,9, 10,11,12,13,14, 15,16,17,18,19, 20,21,22,23,24, 25,26, 30,31,32,33,34, 35, 40,41, 42,43,44, 45,46,47,48,49,50, 51,,52,53,54, 55,56,57,58,59];
 
 let subscription_rule = new schedule.RecurrenceRule();
-subscription_rule.minute = [0, 5, 10, 15, 20, 25, 30, 35, 45, 50, 55];
+subscription_rule.minute = [0, 5, 10, 15, 20,25, 30, 35, 45, 50, 55];
 
 let upgrade_account_rule = new schedule.RecurrenceRule();
-upgrade_account_rule.minute = [0, 10, 20, 30, 40, 50];
+upgrade_account_rule.minute = [0,1,2,3,4, 5,6,6,7,8,9, 10,11,12,13,14, 15,16,17,18,19, 20,21,22,23,24, 25,26, 30,31,32,33,34, 35, 40,41, 42,43,44, 45,46,47,48,49,50, 51,,52,53,54, 55,56,57,58,59];
 
+// Define the cron job
 schedule.scheduleJob(upgrade_rule, upgrade_cron);
+
 schedule.scheduleJob(subscription_rule, subscription_cron);
+
 schedule.scheduleJob(upgrade_account_rule, upgrade_account_cron);
 
-console.log("Cron script started.");
+console.log('Cron script started.');
