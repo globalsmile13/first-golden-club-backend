@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const multer = require('multer');
 // const logger = require("./config/logger");
-const cronScript = require('./cron/schedule');
+//const cronScript = require('./cron/schedule');
 
 const feedRoutes = require('./routes/feed');
 const levelRoutes = require('./routes/level');
