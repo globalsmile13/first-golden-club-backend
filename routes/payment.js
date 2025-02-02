@@ -9,6 +9,8 @@ const router = express.Router();
 
 router.get('/activate-account', isAuth, paymentController.activateAccount)
 
+router.post('/reassign-user', isAuth, paymentController.reassignUser)
+
 router.get('/initiate-payment', isAuth, paymentController.initiatePayment)
 
 router.post('/approve-payment', isAuth, paymentController.approvePayment)

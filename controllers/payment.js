@@ -9,6 +9,106 @@ const AssignedMembers = require('../models/assignedMembers');
 const Subscription = require('../models/subscription');
 const { ErrorResponse, SuccessResponse } = require('../lib/apiResponse');
 const { createNotification } = require('./notification');
+//const Payment = require('../models/payment');
+
+exports.reassignUser = async (req, res, next) => {
+    try {
+        const userId = req.userId;
+
+        // Find the current user
+        const currentUser = await User.findById(userId)
+            .populate('profile level_id assigned_members')
+            .lean();
+
+        if (!currentUser) {
+            return res.status(401).send(ErrorResponse(401, "Unauthorized access", null, null));
+        }
+
+        // Validate assigned_members state
+        if (!currentUser.assigned_members || currentUser.assigned_members.state !== "achieved") {
+            return res.status(401).send(ErrorResponse(401, "You have not reached required members", null, null));
+        }
+
+        // Prevent reassignment if max level reached
+        if (!currentUser.profile.isAdmin && currentUser.level_id?.level_number === 10) {
+            return res.status(401).send(ErrorResponse(401, "You have reached the maximum level", null, null));
+        }
+        if (currentUser.profile.isAdmin && currentUser.level_id?.level_number === 11) {
+            return res.status(401).send(ErrorResponse(401, "You have reached the maximum level", null, null));
+        }
+
+        // Get current parent information
+        const profileCheck = await Profile.findOne({ user_id: userId }).lean();
+        if (!profileCheck || !profileCheck.parent_id) {
+            return res.status(400).send(ErrorResponse(400, "User does not have an existing parent", null, null));
+        }
+
+        // Remove old parent assignment
+        await Profile.findOneAndUpdate({ user_id: userId }, { parent_id: null });
+
+        // Find available parents excluding the previous parent
+        const users = await User.find({
+            _id: { $ne: userId, $ne: profileCheck.parent_id }, // Exclude self and old parent
+            'profile.deleted_at': null
+        })
+            .populate('profile level_id assigned_members')
+            .lean();
+
+        let availableParents = users.filter(user => {
+            return (
+                user.assigned_members &&
+                user.level_id &&
+                user.assigned_members.state === "unachieved" &&
+                user.assigned_members.count < user.level_id.members_number
+            );
+        });
+
+        availableParents.sort((a, b) => a.assigned_members.count - b.assigned_members.count);
+        let parentUser = availableParents.length > 0 ? availableParents[0] : null;
+
+        if (!parentUser) {
+            return res.status(400).send(ErrorResponse(400, "No available parent user", null, null));
+        }
+
+        // Assign the new parent
+        await Profile.findOneAndUpdate({ user_id: userId }, { parent_id: parentUser._id });
+
+        // Update the assigned members count for the new parent
+        await AssignedMembers.findOneAndUpdate(
+            { user_id: parentUser._id },
+            { $inc: { count: 1 } }
+        );
+
+        // Get parent's wallet details
+        let parentWallet = await Wallet.findOne({ user_id: parentUser._id }).lean();
+
+        // Get fresh user data with populated fields
+        const [populatedParentUser, populatedUser] = await Promise.all([
+            User.findById(parentUser._id)
+                .select('-password')
+                .populate('profile assigned_members level_id')
+                .lean(),
+            User.findById(userId)
+                .select('-password')
+                .populate('profile')
+                .lean()
+        ]);
+
+        // Return the response with newUser directly in the response data.
+        return res.send(SuccessResponse(201, "Parent User reassigned successfully", {
+            newUser: populatedParentUser, // new parent's details directly under newUser
+            parent_wallet: parentWallet,
+            user: populatedUser
+        }, null));
+
+    } catch (error) {
+        console.error(error);
+        return res.status(500).send(ErrorResponse(500, "Internal server error", error, null));
+    }
+};
+
+
+
 
 exports.activateAccount = async (req, res, next) => {
     try {
