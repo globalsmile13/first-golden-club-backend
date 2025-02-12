@@ -42,39 +42,47 @@ exports.reassignUser = async (req, res, next) => {
         if (!profileCheck) {
             return res.status(400).send(ErrorResponse(400, "User profile not found", null, null));
         }
-        // Remove any existing parent assignment (if present).
+        // Note: We assume activateAccount already assigned a parent.
+        // Here, we want to reassign to the NEXT available parent.
+        // So we exclude the currently assigned parent.
+        // Remove the current parent assignment.
         await Profile.findOneAndUpdate({ user_id: userId }, { parent_id: null });
 
-        // Determine current user's level.
         const currentUserLevelNumber = currentUser.level_id ? currentUser.level_id.level_number : 0;
 
         // Find eligible parent candidates.
-        // We use the same query logic as activateAccount: the candidate's level must be exactly one greater than currentUser's level.
+        // Only consider users whose level is exactly one greater than current user's level.
         const users = await User.find({
-            _id: { $ne: userId, $ne: profileCheck.parent_id }, // Exclude self and old parent (if any)
+            _id: { $ne: userId, $ne: profileCheck.parent_id }, // Exclude self and current parent's candidate
             'profile.deleted_at': null
         })
             .populate('profile level_id assigned_members')
             .lean();
 
+        // Filter available parents:
+        //   - Must have assigned_members and level_id,
+        //   - Their assigned_members state is "unachieved",
+        //   - Their assigned_members.count is less than the allowed members number,
+        //   - And their level number equals currentUserLevelNumber + 1.
         let availableParents = users.filter(user => {
             if (!user.assigned_members || !user.level_id) return false;
-            // Optional: you can include additional restrictions as in activateAccount
             const restriction = user.assigned_members?.paid_count === 2 && user.assigned_members?.upline_paid === false;
             return !restriction &&
-                user.assigned_members.upgrade_date === null &&
-                user.level_id.level_number === (currentUserLevelNumber + 1) &&
-                user.assigned_members.state === "unachieved" &&
-                user.assigned_members.count < user.level_id.members_number &&
-                user.profile.deleted_at === null;
+                   user.assigned_members.upgrade_date === null &&
+                   user.level_id.level_number === (currentUserLevelNumber + 1) &&
+                   user.assigned_members.state === "unachieved" &&
+                   user.assigned_members.count < user.level_id.members_number &&
+                   user.profile.deleted_at === null;
         });
 
-        // Sort candidates by how many members they have assigned (ascending).
-        availableParents.sort((a, b) => a.assigned_members.count - b.assigned_members.count);
+        // Sort eligible parents using FIFO logic: oldest createdAt first.
+        availableParents.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+
+        // The next available parent candidate is the first in this sorted list.
         let parentUser = availableParents.length > 0 ? availableParents[0] : null;
 
         if (!parentUser) {
-            return res.status(400).send(ErrorResponse(400, "No available parent user", null, null));
+            return res.status(400).send(ErrorResponse(400, "No available parent user in level " + (currentUserLevelNumber + 1), null, null));
         }
 
         // Assign the new parent.
@@ -86,10 +94,10 @@ exports.reassignUser = async (req, res, next) => {
             { $inc: { count: 1 } }
         );
 
-        // Retrieve parent's wallet details.
+        // Get the new parent's wallet details.
         let parentWallet = await Wallet.findOne({ user_id: parentUser._id }).lean();
 
-        // Retrieve fresh populated user data.
+        // Retrieve fresh populated data.
         const [populatedParentUser, populatedUser] = await Promise.all([
             User.findById(parentUser._id)
                 .select('-password')
@@ -101,21 +109,17 @@ exports.reassignUser = async (req, res, next) => {
                 .lean()
         ]);
 
-        // Return the response with the new parent's details under newUser.
         return res.send(SuccessResponse(201, "Parent User reassigned successfully", {
-            newUser: populatedParentUser,
+            newUser: populatedParentUser, // new parent's details
             parent_wallet: parentWallet,
             user: populatedUser
         }, null));
 
     } catch (error) {
-        console.error(error);
+        console.error("Error in activateAccount (reassignUser):", error);
         return res.status(500).send(ErrorResponse(500, "Internal server error", error, null));
     }
 };
-
-
-
 
 
 
