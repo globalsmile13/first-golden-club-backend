@@ -1,66 +1,4 @@
 {
-  "_id": "66618a2c9c034d00280ba613",
-  "deleted_at": null,
-  "username": "Anyidon",
-  "profile": "66618a2c9c034d00280ba616",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66618a2c9c034d00280ba619",
-  "password": "$2a$12$SoXH2gAJ19OeB5mwl6LaLuYK.cWzARVLWwQsdbOEm9ETLnBPHflMm",
-  "createdAt": "2024-06-06T10:06:36.564Z",
-  "updatedAt": "2024-06-06T10:27:09.266Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6668af3589d181002968cd8c",
-  "deleted_at": null,
-  "username": "Aderibigbe",
-  "profile": "6668af3589d181002968cd8f",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6668af3589d181002968cd92",
-  "password": "$2a$12$3dEm7QB7Z2O7de6omPahr.IbvYsTsN2Am0.BAqH3KIP/2aS3sFvZu",
-  "createdAt": "2024-06-11T20:10:29.424Z",
-  "updatedAt": "2024-06-11T22:18:24.825Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "6668ce5889d181002968d3cd",
   "deleted_at": null,
   "username": "Sunny",
@@ -163,37 +101,6 @@
   "password": "$2a$12$eGrt1fp2wpLOq80eATDUOO1kYqM4aidfOV5oWogN0JwVebiRJD17W",
   "createdAt": "2024-06-12T11:30:53.126Z",
   "updatedAt": "2024-06-15T09:23:58.380Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "66698fd789d181002968f769",
-  "deleted_at": null,
-  "username": "Might",
-  "profile": "66698fd889d181002968f76c",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66698fd889d181002968f76f",
-  "password": "$2a$12$yMSYWRa4grf1JaLqex8Bm.a0YZXGuAFltTEfYUh5XgJh41I.KUv0e",
-  "createdAt": "2024-06-12T12:08:55.965Z",
-  "updatedAt": "2024-06-12T12:27:02.072Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -340,37 +247,6 @@
 }
 
 {
-  "_id": "666af69389d1810029691c0f",
-  "deleted_at": null,
-  "username": "Nelo",
-  "profile": "666af69389d1810029691c12",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666af69389d1810029691c15",
-  "password": "$2a$12$974fScNx0utbd4b7MqHDGuJfF/3l6WNjYFHUTOgf8.8kFS2mQIeAC",
-  "createdAt": "2024-06-13T13:39:31.433Z",
-  "updatedAt": "2024-06-13T14:05:25.807Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "666b165d89d181002969214f",
   "deleted_at": null,
   "username": "Emma5",
@@ -495,37 +371,6 @@
 }
 
 {
-  "_id": "666b72df89d1810029693e5e",
-  "deleted_at": null,
-  "username": "Gabby",
-  "profile": "666b72e089d1810029693e61",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666b72e089d1810029693e64",
-  "password": "$2a$12$Thm11NV6mR5Aquo.ee/Qvu/ESVsJCzi1mA9iirJLmkQcq2wsEktLq",
-  "createdAt": "2024-06-13T22:29:51.993Z",
-  "updatedAt": "2024-06-13T23:53:52.856Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "666b75c489d1810029693f51",
   "deleted_at": null,
   "username": "Maria emm",
@@ -566,37 +411,6 @@
   "password": "$2a$12$NfIxkccjqtaCtleW/26ZvOFeAiQVj/VbGY7fsnbMpKyaviPITeuCC",
   "createdAt": "2024-06-14T06:05:21.446Z",
   "updatedAt": "2024-06-14T06:29:40.040Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "666c03eb89d1810029696640",
-  "deleted_at": null,
-  "username": "Wisdom",
-  "profile": "666c03eb89d1810029696643",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666c03eb89d1810029696646",
-  "password": "$2a$12$xI0Q1BFkpQZ0PpaaX3fQ1.dlpJJV5mfQ9l4RvY8FIrlnmJw/gVnGC",
-  "createdAt": "2024-06-14T08:48:43.423Z",
-  "updatedAt": "2024-06-14T08:58:30.160Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -1394,37 +1208,6 @@
 }
 
 {
-  "_id": "666c835d89d181002969acea",
-  "deleted_at": null,
-  "username": "Offiachukwu",
-  "profile": "666c835d89d181002969aced",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666c835d89d181002969acf0",
-  "password": "$2a$12$O77dNftb1EjHKaU2kj92KeEXtMWcPwSoTy6aonTyYs3joTMIsGwSG",
-  "createdAt": "2024-06-14T17:52:29.219Z",
-  "updatedAt": "2024-06-15T05:33:04.423Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "666cb67489d181002969b8e2",
   "deleted_at": null,
   "username": "Humphrey1",
@@ -1434,37 +1217,6 @@
   "password": "$2a$12$gwg0.mdNKRiOy8JZppObPeiGyUfjNxSpnCurghY7MqyZv71219KUW",
   "createdAt": "2024-06-14T21:30:28.101Z",
   "updatedAt": "2024-06-15T05:33:06.350Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "666cd1b989d181002969c206",
-  "deleted_at": null,
-  "username": "EllaJerry",
-  "profile": "666cd1b989d181002969c209",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666cd1b989d181002969c20c",
-  "password": "$2a$12$ADK6Yj1Xz3o.CEhQoOzYQOhNT.v.Rkm9KPudoitlOk.GFxSk6LTU2",
-  "createdAt": "2024-06-14T23:26:49.903Z",
-  "updatedAt": "2024-06-15T10:00:20.717Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -1642,68 +1394,6 @@
 }
 
 {
-  "_id": "666dfda6ad006000288ca0ce",
-  "deleted_at": null,
-  "username": "Erickk",
-  "profile": "666dfda6ad006000288ca0d1",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666dfda6ad006000288ca0d4",
-  "password": "$2a$12$EQAPtcdN8i6Qs428.g7cf.76A63fXepamTXe9dcf.HrbqoqBKKcXi",
-  "createdAt": "2024-06-15T20:46:30.375Z",
-  "updatedAt": "2024-06-15T22:30:17.062Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "666e0270ad006000288ca217",
-  "deleted_at": null,
-  "username": "Gabriel",
-  "profile": "666e0270ad006000288ca21a",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666e0270ad006000288ca21d",
-  "password": "$2a$12$qw22Q3Ub.6ObPzYXCDyV0.iKXMrZoR6UAfaeKHq97vOoovXkijPuy",
-  "createdAt": "2024-06-15T21:06:56.414Z",
-  "updatedAt": "2024-06-15T22:48:55.022Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "666e11aaad006000288ca555",
   "deleted_at": null,
   "username": "Chichi",
@@ -1735,37 +1425,6 @@
 }
 
 {
-  "_id": "666e9b8eb2786f001d9577f8",
-  "deleted_at": null,
-  "username": "Nelson00",
-  "profile": "666e9b8eb2786f001d9577fb",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666e9b8eb2786f001d9577fe",
-  "password": "$2a$12$Co1HBy3rOh8lBrbYPttZk.iyE4VMcf4FW9AI9NHwubc/pBDdDHaOO",
-  "createdAt": "2024-06-16T08:00:14.569Z",
-  "updatedAt": "2024-06-16T08:21:19.427Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "666e9baeb2786f001d95781e",
   "deleted_at": null,
   "username": "okey123",
@@ -1775,37 +1434,6 @@
   "password": "$2a$12$zKqGNlwluFBjIj/qxo0ouOZGmzgw5vYXKPalUdtEaevdqYDQAaqay",
   "createdAt": "2024-06-16T08:00:46.305Z",
   "updatedAt": "2024-06-16T08:21:32.758Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "666ebe7fb2786f001d957e3a",
-  "deleted_at": null,
-  "username": "Chioma fine 01",
-  "profile": "666ebe7fb2786f001d957e3d",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "666ebe7fb2786f001d957e40",
-  "password": "$2a$12$i2xLlwucPievJtxMHctjOOnxtjjyWR.u8YfkYUv4W1MD9ujjEsQAi",
-  "createdAt": "2024-06-16T10:29:19.018Z",
-  "updatedAt": "2024-06-16T13:01:45.297Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -2014,37 +1642,6 @@
 }
 
 {
-  "_id": "66723e17c2281a00283cc25c",
-  "deleted_at": null,
-  "username": "One",
-  "profile": "66723e17c2281a00283cc25f",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66723e17c2281a00283cc262",
-  "password": "$2a$12$PrstKnJ2oLYrKDFY44A1IeUADyABkL4rgp4o/KXE7nddy1VCkJ3we",
-  "createdAt": "2024-06-19T02:10:31.135Z",
-  "updatedAt": "2025-01-18T14:03:41.132Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "6672649d3161ae0028dd657c",
   "deleted_at": null,
   "username": "Kodo",
@@ -2116,68 +1713,6 @@
   "password": "$2a$12$N.vDQ9nNdLQEK1Gt60ioQu0wR/m0uGu7OOW6g14yCpYy542tOyq8e",
   "createdAt": "2024-06-19T05:21:20.901Z",
   "updatedAt": "2024-06-19T13:15:05.547Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "66727d0d3161ae0028dd73e6",
-  "deleted_at": null,
-  "username": "Davoo90",
-  "profile": "66727d0d3161ae0028dd73e9",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66727d0d3161ae0028dd73ec",
-  "password": "$2a$12$GspL47H0SaZSNFOxU578..Yv.QOpR03b7xaTIKjjxu81pBIQda9Rm",
-  "createdAt": "2024-06-19T06:39:09.822Z",
-  "updatedAt": "2024-06-19T12:30:42.674Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6672be870fb88c002976dfd8",
-  "deleted_at": null,
-  "username": "Davoo10",
-  "profile": "6672be870fb88c002976dfdb",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6672be870fb88c002976dfde",
-  "password": "$2a$12$9Jw/nqgTvSWQFiJY904Y4OmrsTj24F4IDu9oQkoZXV0MB50jCanqW",
-  "createdAt": "2024-06-19T11:18:31.252Z",
-  "updatedAt": "2024-06-19T12:30:46.125Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -2488,37 +2023,6 @@
   "password": "$2a$12$06Iou4I1qxwDWDrRfntApOJHYV/STQId3YjKLvBTF05lGj1ja60jK",
   "createdAt": "2024-06-22T11:42:06.328Z",
   "updatedAt": "2024-06-22T11:50:35.898Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6676e1d5dbdff9002951850d",
-  "deleted_at": null,
-  "username": "archnenye",
-  "profile": "6676e1d5dbdff90029518510",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6676e1d5dbdff90029518513",
-  "password": "$2a$12$cL5tPTfd45aTYLXUe8wShuRZfchT4RmZhH8fPWkyYXeBc/ZnoyIFi",
-  "createdAt": "2024-06-22T14:38:13.293Z",
-  "updatedAt": "2024-06-22T18:17:43.912Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -3223,37 +2727,6 @@
 }
 
 {
-  "_id": "667ad4a1dbdff9002951f524",
-  "deleted_at": null,
-  "username": "Prosperity",
-  "profile": "667ad4a1dbdff9002951f527",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "667ad4a1dbdff9002951f52a",
-  "password": "$2a$12$AcRAqCuQGAMa6WcC6iAP7u541De420j.y4GOPa2Na6G/EXb/W4742",
-  "createdAt": "2024-06-25T14:30:57.651Z",
-  "updatedAt": "2024-06-25T14:35:20.888Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "667ad893dbdff9002951f6a0",
   "deleted_at": null,
   "username": "Tojah",
@@ -3750,37 +3223,6 @@
 }
 
 {
-  "_id": "667c494ddbdff90029522e80",
-  "deleted_at": null,
-  "username": "Month04",
-  "profile": "667c494ddbdff90029522e83",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "667c494ddbdff90029522e86",
-  "password": "$2a$12$0l3kkkyGI1bNWcN92rY3..spxVmfod5eiXtqEpntRBGngJeTT3qLu",
-  "createdAt": "2024-06-26T17:01:01.790Z",
-  "updatedAt": "2024-06-26T17:07:06.469Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "667c4ec3dbdff90029523052",
   "deleted_at": null,
   "username": "Mother05",
@@ -3914,68 +3356,6 @@
   "password": "$2a$12$zNk42c7r3jwHqmVHN8D3wOXJlf7dERrsCe9Ss6RWmbog3Sg8ygvUm",
   "createdAt": "2024-06-27T08:30:30.074Z",
   "updatedAt": "2024-06-27T08:41:51.077Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "667d3e0adbdff90029524efc",
-  "deleted_at": null,
-  "username": "Precious5",
-  "profile": "667d3e0adbdff90029524eff",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "667d3e0adbdff90029524f02",
-  "password": "$2a$12$mtLWS5lB1u6U7ZSRUe3p8uFzGYIB0otpNI0gDkiLMs4FHLXMYT.pi",
-  "createdAt": "2024-06-27T10:25:14.239Z",
-  "updatedAt": "2024-06-27T18:48:08.075Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "667d4182dbdff90029524fb8",
-  "deleted_at": null,
-  "username": "Nkiruka",
-  "profile": "667d4182dbdff90029524fbb",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "667d4182dbdff90029524fbe",
-  "password": "$2a$12$DR2FmtTQwN5BHZiL0RvivexNqubc/fv6GZC1jGpxXLCE69FaAE7WK",
-  "createdAt": "2024-06-27T10:40:02.754Z",
-  "updatedAt": "2024-06-27T11:31:15.429Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -4525,37 +3905,6 @@
 }
 
 {
-  "_id": "668685fdc8c7b800282d0576",
-  "deleted_at": null,
-  "username": "Formula",
-  "profile": "668685fdc8c7b800282d0579",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "668685fdc8c7b800282d057c",
-  "password": "$2a$12$zVEBB9N39M6Ti/5i.VCIy.aFrbP0XLaLogqnkmOrJzIXwWQ2bOiry",
-  "createdAt": "2024-07-04T11:22:37.717Z",
-  "updatedAt": "2024-07-04T12:01:00.871Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "668687a3c8c7b800282d063c",
   "deleted_at": null,
   "username": "Racer",
@@ -4773,68 +4122,6 @@
 }
 
 {
-  "_id": "669533fdc8c7b800282db96a",
-  "deleted_at": null,
-  "username": "Obm#1",
-  "profile": "669533fdc8c7b800282db96d",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "669533fdc8c7b800282db970",
-  "password": "$2a$12$mVh8gXcWlseOuVH3ymkC2eq8sxM6B3XgECKNDLMZt03bR5KEvA9OC",
-  "createdAt": "2024-07-15T14:36:45.352Z",
-  "updatedAt": "2024-07-15T14:45:42.732Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6696b502c8c7b800282dc9be",
-  "deleted_at": null,
-  "username": "Obm2",
-  "profile": "6696b502c8c7b800282dc9c1",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6696b502c8c7b800282dc9c4",
-  "password": "$2a$12$1.7c6MTiAIGAvHgtz1RYO.1LTkIKwG11MsQR7Kvvqkd32YEsXOpnK",
-  "createdAt": "2024-07-16T17:59:30.433Z",
-  "updatedAt": "2024-07-16T21:53:09.989Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "6696c0f1c8c7b800282dca66",
   "deleted_at": null,
   "username": "Ik 1",
@@ -4897,37 +4184,6 @@
 }
 
 {
-  "_id": "6697a83fc8c7b800282ddca1",
-  "deleted_at": null,
-  "username": "Obm3",
-  "profile": "6697a83fc8c7b800282ddca4",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6697a840c8c7b800282ddca7",
-  "password": "$2a$12$JuPNoF/D0EZt09OTgOjx7uWSJYIdoJFlTdg12xJFfn3jLtvmIA1HK",
-  "createdAt": "2024-07-17T11:17:19.944Z",
-  "updatedAt": "2024-07-17T12:36:58.419Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "6697bd88c8c7b800282de224",
   "deleted_at": null,
   "username": "Charles12",
@@ -4937,68 +4193,6 @@
   "password": "$2a$12$pyXKe1Xo3CjHnUGkBWTzZuVqYDalEXXRWqMGHzI7aiKP2qv1/OX0.",
   "createdAt": "2024-07-17T12:48:08.167Z",
   "updatedAt": "2024-07-17T14:48:13.311Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6697cd58c8c7b800282de3da",
-  "deleted_at": null,
-  "username": "Obm4",
-  "profile": "6697cd58c8c7b800282de3dd",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6697cd58c8c7b800282de3e0",
-  "password": "$2a$12$f.4bVncTY64oib2ct4LMku4OiXBAZuD0aFgeo60BhQ8bNxbuVnHiu",
-  "createdAt": "2024-07-17T13:55:36.210Z",
-  "updatedAt": "2024-07-17T14:10:49.643Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6697d30cc8c7b800282de5ef",
-  "deleted_at": null,
-  "username": "Obm5",
-  "profile": "6697d30cc8c7b800282de5f2",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6697d30cc8c7b800282de5f5",
-  "password": "$2a$12$mtqHeHVBtvGGpkVInmNHzOJlH69MTqg3Ib7e5Y2qMWgBs8s9ywmAW",
-  "createdAt": "2024-07-17T14:19:56.760Z",
-  "updatedAt": "2024-07-17T14:29:57.929Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -5207,37 +4401,6 @@
 }
 
 {
-  "_id": "66980f44c8c7b800282df906",
-  "deleted_at": null,
-  "username": "Odinaka",
-  "profile": "66980f44c8c7b800282df909",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66980f44c8c7b800282df90c",
-  "password": "$2a$12$Ekre7XRBY02xrXPYO23DLeOE1DbCECpRpcmsMRHQvVt3kWd2i4mN2",
-  "createdAt": "2024-07-17T18:36:52.460Z",
-  "updatedAt": "2024-07-18T09:39:36.973Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "66981048c8c7b800282df943",
   "deleted_at": null,
   "username": "Kelechi",
@@ -5247,37 +4410,6 @@
   "password": "$2a$12$PYP.DQ0trRFr4wrKOcNpE.xwAZjKuvfIhcRoCSm3u04IKEI90lWN.",
   "createdAt": "2024-07-17T18:41:12.808Z",
   "updatedAt": "2024-07-17T21:29:33.982Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "669810f2c8c7b800282df97c",
-  "deleted_at": null,
-  "username": "Bleble",
-  "profile": "669810f2c8c7b800282df97f",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "669810f2c8c7b800282df982",
-  "password": "$2a$12$Hqmg9gjTmziCLaZdRQloSuBMSgmyCsys58I3DstjRYzW6QhvxTYQu",
-  "createdAt": "2024-07-17T18:44:02.154Z",
-  "updatedAt": "2024-07-18T12:30:44.191Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -5703,37 +4835,6 @@
 }
 
 {
-  "_id": "66b33064c8c7b800282f3094",
-  "deleted_at": null,
-  "username": "Kingvine",
-  "profile": "66b33064c8c7b800282f3097",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66b33064c8c7b800282f309a",
-  "password": "$2a$12$E5UEw/9uf6Aif1Rm2c.DQ.0awDwbH4woPXddUA3AOH8tIPebNGHA2",
-  "createdAt": "2024-08-07T08:29:24.290Z",
-  "updatedAt": "2024-08-07T08:41:53.975Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "66b3363ec8c7b800282f3269",
   "deleted_at": null,
   "username": "Stormz",
@@ -5836,37 +4937,6 @@
   "password": "$2a$12$XWdDthJbs6utpmivbx0cy.yNwu5Xi4WeBY85hP8QYUlvieYyPBDAi",
   "createdAt": "2024-08-08T13:38:58.076Z",
   "updatedAt": "2024-08-12T12:10:25.768Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "66ba023dc8c7b800282f7e4d",
-  "deleted_at": null,
-  "username": "JBSkings",
-  "profile": "66ba023dc8c7b800282f7e50",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66ba023dc8c7b800282f7e53",
-  "password": "$2a$12$8z7QN9tGV26pAx.xpX3PQuv0dXLRnbTqOPJjhtmYmCTcKO7veM.nC",
-  "createdAt": "2024-08-12T12:38:21.269Z",
-  "updatedAt": "2024-08-12T13:14:51.342Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -6053,37 +5123,6 @@
   "password": "$2a$12$uK4R6EVTuV1sh6.n1XCao.D5RpOoHXGmL4DwMsrOKFzHnLu.Mq4CK",
   "createdAt": "2024-08-25T11:17:45.062Z",
   "updatedAt": "2024-08-25T11:50:12.796Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "66cb2485c8c7b80028303cfc",
-  "deleted_at": null,
-  "username": "Ifeoma",
-  "profile": "66cb2485c8c7b80028303cff",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "66cb2485c8c7b80028303d02",
-  "password": "$2a$12$pHYzF77U0fgCgC9TW/9EleAs9kDoi8feQxi32iySVFf27TFSzCjxa",
-  "createdAt": "2024-08-25T12:33:09.417Z",
-  "updatedAt": "2024-08-25T12:59:28.146Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -6478,37 +5517,6 @@
 }
 
 {
-  "_id": "6714f34c794085001e4ac6d0",
-  "deleted_at": null,
-  "username": "D Basic 3",
-  "profile": "6714f34c794085001e4ac6d3",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6714f34c794085001e4ac6d6",
-  "password": "$2a$12$3P3qbCsrFLhN8RpLGWDNJO.suIUJC26u4jt9y29IV4KNKSZRIHJAC",
-  "createdAt": "2024-10-20T12:10:52.425Z",
-  "updatedAt": "2024-10-20T12:55:20.905Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "6721d931794085001e4b6278",
   "deleted_at": null,
   "username": "Beauty05",
@@ -6571,99 +5579,6 @@
 }
 
 {
-  "_id": "67268c3c794085001e4b9720",
-  "deleted_at": null,
-  "username": "Ijokereke 1",
-  "profile": "67268c3c794085001e4b9723",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67268c3c794085001e4b9726",
-  "password": "$2a$12$MUbU13WVKQpQUsgzvLcGDuOIlNvw.cw2P6buV1JgHoRAZVPevY3UK",
-  "createdAt": "2024-11-02T20:31:56.872Z",
-  "updatedAt": "2024-11-02T22:06:29.198Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "672690ba794085001e4b97fc",
-  "deleted_at": null,
-  "username": "Ijokereke 2",
-  "profile": "672690ba794085001e4b97ff",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "672690bb794085001e4b9802",
-  "password": "$2a$12$Wgi5tdeHY/bEXpgcQJCN.OECABTZ3uV4usCNOuTR5LMYlnnPJ1Tl6",
-  "createdAt": "2024-11-02T20:51:06.935Z",
-  "updatedAt": "2024-11-02T22:06:33.401Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6729e102794085001e4bbfa7",
-  "deleted_at": null,
-  "username": "Aykerrigan",
-  "profile": "6729e102794085001e4bbfaa",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6729e102794085001e4bbfad",
-  "password": "$2a$12$oE8Ik92XCo7Tcy9mEckpFeGTB4.RnmbBWAnEKPiBGYId37HYPUGVO",
-  "createdAt": "2024-11-05T09:10:26.705Z",
-  "updatedAt": "2024-11-06T15:00:45.988Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "6729edd7794085001e4bc057",
   "deleted_at": null,
   "username": "Maryquin",
@@ -6673,68 +5588,6 @@
   "password": "$2a$12$rOlPpQYbb0p3Ap66pCm8EOV6OobnUsUiaOO5UEx1L3N89p5WZq1z6",
   "createdAt": "2024-11-05T10:05:11.242Z",
   "updatedAt": "2024-11-05T11:37:59.290Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "672a88bc794085001e4bc9c9",
-  "deleted_at": null,
-  "username": "Pauline",
-  "profile": "672a88bd794085001e4bc9cc",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "672a88bd794085001e4bc9cf",
-  "password": "$2a$12$6784WLb/.ayx3GN3c.0OIu3oAbEgfNlTKdL3Mp8o3yDYJj7zS88/O",
-  "createdAt": "2024-11-05T21:06:04.978Z",
-  "updatedAt": "2024-11-06T12:50:22.129Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "673a55fb794085001e4c753c",
-  "deleted_at": null,
-  "username": "Lalaboy",
-  "profile": "673a55fc794085001e4c753f",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "673a55fc794085001e4c7542",
-  "password": "$2a$12$3TvWRbVn8cKDLrnkMy2jJOJv9RddR/pvwBNmmGCoL6wsHjLywKTAm",
-  "createdAt": "2024-11-17T20:45:47.965Z",
-  "updatedAt": "2024-11-18T10:50:39.134Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -6859,37 +5712,6 @@
   "password": "$2a$12$79ekk8vcjXUrO.9HeydMJOmIVfTSQfSXwMPVt.whIKuEndodde0k2",
   "createdAt": "2024-11-19T10:54:45.953Z",
   "updatedAt": "2024-11-19T12:52:10.046Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "673c8eb9794085001e4c9ca8",
-  "deleted_at": null,
-  "username": "Samuel",
-  "profile": "673c8eb9794085001e4c9cab",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "673c8eb9794085001e4c9cae",
-  "password": "$2a$12$UNH3Fo2Y4fsUcVxMp9X8m.bpOqrXkq09ymMELASoshtQSpJn6LpJ.",
-  "createdAt": "2024-11-19T13:12:25.449Z",
-  "updatedAt": "2024-11-19T13:29:03.033Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -7129,37 +5951,6 @@
 }
 
 {
-  "_id": "673d8692794085001e4cc334",
-  "deleted_at": null,
-  "username": "Pribaby",
-  "profile": "673d8692794085001e4cc337",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "673d8692794085001e4cc33a",
-  "password": "$2a$12$7SkcmwlLakU0DZuVDIEWgu2GbCQL3NOsKeMGYQHYOa6vccY4Wd7h.",
-  "createdAt": "2024-11-20T06:49:54.499Z",
-  "updatedAt": "2024-11-22T06:17:17.036Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "673df4dc794085001e4ccb7d",
   "deleted_at": null,
   "username": "Favour091",
@@ -7191,37 +5982,6 @@
 }
 
 {
-  "_id": "673e11cd794085001e4cd065",
-  "deleted_at": null,
-  "username": "Adagold",
-  "profile": "673e11cd794085001e4cd068",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "673e11cd794085001e4cd06b",
-  "password": "$2a$12$d6oRcAnxF0o8y3Vi84fsQe64wPrD4nGYjcqev09LIaGVg4oTpylq2",
-  "createdAt": "2024-11-20T16:43:57.883Z",
-  "updatedAt": "2024-11-20T17:02:25.709Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "673e14fa794085001e4cd12a",
   "deleted_at": null,
   "username": "Paulede65",
@@ -7231,37 +5991,6 @@
   "password": "$2a$12$LaTVnW5IUG6PrrMT.rT5uecJ6m4BTpAHpyF/6tAZdwibPFhgNA7qa",
   "createdAt": "2024-11-20T16:57:30.556Z",
   "updatedAt": "2024-11-20T18:56:53.259Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "673e3611794085001e4cd930",
-  "deleted_at": null,
-  "username": "palmereck@gmail.com",
-  "profile": "673e3611794085001e4cd933",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "673e3611794085001e4cd936",
-  "password": "$2a$12$TGBqwzHx/V9VrnN6xFBmFu1ES7vDy3FGtHm0DtQ258DGcElIlbDle",
-  "createdAt": "2024-11-20T19:18:41.726Z",
-  "updatedAt": "2024-11-21T14:57:54.992Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -7532,68 +6261,6 @@
 }
 
 {
-  "_id": "673f19f0794085001e4cfc5d",
-  "deleted_at": null,
-  "username": "Basic4",
-  "profile": "673f19f0794085001e4cfc60",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "673f19f0794085001e4cfc63",
-  "password": "$2a$12$jJLQYu7Perho38eUxkKL3O.mNSe8Ua7E6PkBrjBEOrvZagYRvmFgK",
-  "createdAt": "2024-11-21T11:30:56.405Z",
-  "updatedAt": "2024-11-21T11:33:43.375Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "673f3c6f794085001e4d0369",
-  "deleted_at": null,
-  "username": "Kelvin23",
-  "profile": "673f3c6f794085001e4d036c",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "673f3c6f794085001e4d036f",
-  "password": "$2a$12$.ntB2ocTftCKFMmAJU3u8uPdJAf6VbEDLd6.qDWG2FoESFh700zcC",
-  "createdAt": "2024-11-21T13:58:07.527Z",
-  "updatedAt": "2024-11-21T14:21:24.942Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "673f4a15794085001e4d0587",
   "deleted_at": null,
   "username": "Aptech 777",
@@ -7749,130 +6416,6 @@
 }
 
 {
-  "_id": "6740349d794085001e4d2b53",
-  "deleted_at": null,
-  "username": "Walephilip",
-  "profile": "6740349d794085001e4d2b56",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6740349d794085001e4d2b59",
-  "password": "$2a$12$eKWOKKcmtEkrndvCk/Tol.egb4WCoPO99jNvRFmHCwfl5Cg8Qny2.",
-  "createdAt": "2024-11-22T07:37:01.586Z",
-  "updatedAt": "2025-01-18T14:03:43.350Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "67405641794085001e4d2ebf",
-  "deleted_at": null,
-  "username": "Wilson",
-  "profile": "67405641794085001e4d2ec2",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67405641794085001e4d2ec5",
-  "password": "$2a$12$O.dqXPBAz4Xdl5y1k1jwW.axsiHLGjraVcDHT7Ei9HdhcbvhyR1OC",
-  "createdAt": "2024-11-22T10:00:33.422Z",
-  "updatedAt": "2024-11-22T10:30:55.430Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "67405848794085001e4d2f11",
-  "deleted_at": null,
-  "username": "Mega20",
-  "profile": "67405848794085001e4d2f14",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67405848794085001e4d2f17",
-  "password": "$2a$12$OGgQEo66humPe5wyhrfHZuxsvZI.S6vplBTOEJrUtuDGZXwWJB.E6",
-  "createdAt": "2024-11-22T10:09:12.463Z",
-  "updatedAt": "2024-11-22T10:27:20.944Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "67405cb8794085001e4d314a",
-  "deleted_at": null,
-  "username": "Queen  dolamu",
-  "profile": "67405cb8794085001e4d314d",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67405cb8794085001e4d3150",
-  "password": "$2a$12$YbpDsfBsByJAgYye8CRVU.WKdZiWQvm/6j4us5Kb9U.MBkKLR0wj2",
-  "createdAt": "2024-11-22T10:28:08.152Z",
-  "updatedAt": "2024-11-22T17:15:00.380Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "67406541794085001e4d333b",
   "deleted_at": null,
   "username": "Fatfaith",
@@ -7882,37 +6425,6 @@
   "password": "$2a$12$lH25Kvli6b9f8IBtvR.2aeIisn2eY7h66AwLjrrDFpPQYyRqjiHjW",
   "createdAt": "2024-11-22T11:04:33.364Z",
   "updatedAt": "2024-11-22T19:00:20.157Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "67418046794085001e4d4989",
-  "deleted_at": null,
-  "username": "Akeem I",
-  "profile": "67418046794085001e4d498c",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67418046794085001e4d498f",
-  "password": "$2a$12$HlbOh1g4PGwOrndr8ug44uczZGsrOxY0OO1QSAlETa/1APsroUPfC",
-  "createdAt": "2024-11-23T07:12:06.699Z",
-  "updatedAt": "2024-11-23T07:34:38.698Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -7997,37 +6509,6 @@
 }
 
 {
-  "_id": "6741ff3b794085001e4d554d",
-  "deleted_at": null,
-  "username": "Udeze24",
-  "profile": "6741ff3b794085001e4d5550",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6741ff3b794085001e4d5553",
-  "password": "$2a$12$x.ixV/anJxv7KB/p8.kFH.UzPj/blK/1oRe824mJ8bl8MiKh5WwoG",
-  "createdAt": "2024-11-23T16:13:47.391Z",
-  "updatedAt": "2024-11-23T16:28:59.061Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "67420616794085001e4d5686",
   "deleted_at": null,
   "username": "Walephilip1",
@@ -8037,68 +6518,6 @@
   "password": "$2a$12$WJ6mQzBfWIfKNf90YQp6BeAYErOy6vIeYo4y9Z8IkJCLczhcEhBdO",
   "createdAt": "2024-11-23T16:43:02.767Z",
   "updatedAt": "2024-11-23T17:07:27.662Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "674317ab794085001e4d67b3",
-  "deleted_at": null,
-  "username": "Dove",
-  "profile": "674317ab794085001e4d67b6",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "674317ab794085001e4d67b9",
-  "password": "$2a$12$ueQn7QGLJhKUX3Xai3M2IuN/g7CbNtJ2z0lU/hU9/JUF5oEEWdtX.",
-  "createdAt": "2024-11-24T12:10:19.211Z",
-  "updatedAt": "2024-11-25T12:16:19.134Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "67437ab3794085001e4d6dbb",
-  "deleted_at": null,
-  "username": "Robert121",
-  "profile": "67437ab3794085001e4d6dbe",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67437ab3794085001e4d6dc1",
-  "password": "$2a$12$pnDTEud3hqZIp.mIMQvlaO0y7ww8XfqL8QmzD2cBUmus0Ab0PyBUa",
-  "createdAt": "2024-11-24T19:12:51.431Z",
-  "updatedAt": "2024-11-24T19:23:15.690Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -8152,37 +6571,6 @@
 }
 
 {
-  "_id": "67438e94794085001e4d707f",
-  "deleted_at": null,
-  "username": "Fatfaith1",
-  "profile": "67438e94794085001e4d7082",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67438e94794085001e4d7085",
-  "password": "$2a$12$A5nB4G5XFDQB9Dj5sVPyVufoQYNSaaSQWuEzWkFptLbt2srGGh7Ga",
-  "createdAt": "2024-11-24T20:37:40.583Z",
-  "updatedAt": "2024-11-25T10:00:30.911Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "67443440794085001e4d7c7a",
   "deleted_at": null,
   "username": "AKIEBE",
@@ -8192,68 +6580,6 @@
   "password": "$2a$12$C.jDzg9FBIMXVVYGnamqsulJZgM4.wBwQL4wKRVMhBI9UGlGitluO",
   "createdAt": "2024-11-25T08:24:32.872Z",
   "updatedAt": "2024-11-25T11:44:18.373Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "674468a5794085001e4d83b2",
-  "deleted_at": null,
-  "username": "Flakky123",
-  "profile": "674468a5794085001e4d83b5",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "674468a5794085001e4d83b8",
-  "password": "$2a$12$/wgPWeEnR7IrCZpVOD.WqOJ98GtAfQ4u7msThkkrA7HUMMxY9DMOC",
-  "createdAt": "2024-11-25T12:08:05.904Z",
-  "updatedAt": "2024-11-25T20:57:21.328Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "67446ac7794085001e4d848c",
-  "deleted_at": null,
-  "username": "Kim",
-  "profile": "67446ac7794085001e4d848f",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67446ac7794085001e4d8492",
-  "password": "$2a$12$ll1CL7xzfOHCKvhGbWuVmO4/wchBNaC7sSYtoY7PBEcSZQLUQimhK",
-  "createdAt": "2024-11-25T12:17:11.145Z",
-  "updatedAt": "2024-11-26T08:39:33.259Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -8347,37 +6673,6 @@
   "password": "$2a$12$NpJDuk4N6WOqqfE8gbgWNeCwTANbfxNqJxqvhKsa8O1P7zXA7StR.",
   "createdAt": "2024-11-26T12:30:09.080Z",
   "updatedAt": "2024-11-26T12:38:50.216Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "6745e9bb794085001e4da9bd",
-  "deleted_at": null,
-  "username": "joshegaman",
-  "profile": "6745e9bb794085001e4da9c0",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "6745e9bb794085001e4da9c3",
-  "password": "$2a$12$9hc1gZiLUfHdbycvJNaSkuhz/MqdgQ3uZ0hXhLn4/4aYD5Nniq6Fq",
-  "createdAt": "2024-11-26T15:31:07.286Z",
-  "updatedAt": "2024-11-26T19:14:42.179Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -8564,37 +6859,6 @@
   "password": "$2a$12$kQG6ES3pTpTugRgXSadIxeteLoHS/LJszhqsOSoa5rcVhjkW5S7im",
   "createdAt": "2024-11-28T05:02:16.357Z",
   "updatedAt": "2024-11-28T09:19:23.690Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
-  "_id": "67481646794085001e4de11b",
-  "deleted_at": null,
-  "username": "Ngozi 74",
-  "profile": "67481646794085001e4de11e",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "67481646794085001e4de121",
-  "password": "$2a$12$mBM2fTKe/GJkrB1HMZTdn.1VjE2jsAOhsXFYfk5uZOLulTFIZh/jy",
-  "createdAt": "2024-11-28T07:05:42.290Z",
-  "updatedAt": "2024-11-28T07:09:02.683Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
@@ -8989,37 +7253,6 @@
 }
 
 {
-  "_id": "674dda19794085001e4e4dea",
-  "deleted_at": null,
-  "username": "Joyforlife",
-  "profile": "674dda19794085001e4e4ded",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "674dda19794085001e4e4df0",
-  "password": "$2a$12$SRYiQl8/evahR6Pm9V/AIOiPyWWzP7HOGJXHO1APV6fND.KfF4SBC",
-  "createdAt": "2024-12-02T16:02:33.411Z",
-  "updatedAt": "2024-12-02T16:11:29.987Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "6755e38b794085001e4ea937",
   "deleted_at": null,
   "username": "Evangel01",
@@ -9144,37 +7377,6 @@
 }
 
 {
-  "_id": "676acdb8794085001e4f824f",
-  "deleted_at": null,
-  "username": "Emmy",
-  "profile": "676acdb8794085001e4f8252",
-  "level_id": "665f891665bb2b9930c74174",
-  "assigned_members": "676acdb8794085001e4f8255",
-  "password": "$2a$12$pY/WTmLimL5AQpwJLWCHguHkN2MmEHqZlAh8lFFvX6jD4guOcwOKa",
-  "createdAt": "2024-12-24T15:05:28.055Z",
-  "updatedAt": "2024-12-24T16:03:46.583Z",
-  "__v": 0,
-  "levelData": {
-    "_id": "665f891665bb2b9930c74174",
-    "level_count": 0,
-    "parents": [],
-    "deleted_at": null,
-    "level_name": "lv1",
-    "level_number": 1,
-    "members_number": 2,
-    "priority": "high",
-    "slug": "/lv1",
-    "upgrade_amount": 1000,
-    "member_amount": 1000,
-    "nextlevel_upgrade": 2000,
-    "admin_count": 2,
-    "__v": 0,
-    "createdAt": "2024-06-04T21:37:26.417Z",
-    "updatedAt": "2024-06-08T19:22:07.338Z"
-  }
-}
-
-{
   "_id": "677c4b35794085001e503217",
   "deleted_at": null,
   "username": "tazanuwa12",
@@ -9215,6 +7417,37 @@
   "password": "$2a$12$8O9v3sY2wM3x73W/DFupB.Ue93CoihkDKdrnswNLgl/9.Kh4MVfYq",
   "createdAt": "2025-01-11T13:31:20.010Z",
   "updatedAt": "2025-01-13T11:42:13.587Z",
+  "__v": 0,
+  "levelData": {
+    "_id": "665f891665bb2b9930c74174",
+    "level_count": 0,
+    "parents": [],
+    "deleted_at": null,
+    "level_name": "lv1",
+    "level_number": 1,
+    "members_number": 2,
+    "priority": "high",
+    "slug": "/lv1",
+    "upgrade_amount": 1000,
+    "member_amount": 1000,
+    "nextlevel_upgrade": 2000,
+    "admin_count": 2,
+    "__v": 0,
+    "createdAt": "2024-06-04T21:37:26.417Z",
+    "updatedAt": "2024-06-08T19:22:07.338Z"
+  }
+}
+
+{
+  "_id": "67ab21d682feff001e6d0062",
+  "deleted_at": null,
+  "username": "JoshuaGift",
+  "profile": "67ab21d682feff001e6d0065",
+  "level_id": "665f891665bb2b9930c74174",
+  "assigned_members": "67ab21d682feff001e6d0068",
+  "password": "$2a$12$vICNmkSUYNoRdttQhgHDhuSBaJaGdEnGFc7vKHaM0Lpbj2eZv8GdG",
+  "createdAt": "2025-02-11T10:09:26.498Z",
+  "updatedAt": "2025-02-11T11:31:39.260Z",
   "__v": 0,
   "levelData": {
     "_id": "665f891665bb2b9930c74174",
