@@ -119,7 +119,7 @@ exports.reassignUser = async (req, res, next) => {
 
 
 
-exports.activateAccount = async (req, res, next) => {
+exports.activateAccount = async (req, res, next) => { 
     try {
         const userId = req.userId;
 
@@ -151,6 +151,7 @@ exports.activateAccount = async (req, res, next) => {
 
                 let profileCheck = await Profile.findOne({ user_id: userId }).lean();
 
+                // If user already has a parent, return that parent's info
                 if (profileCheck.parent_id !== null) {
                     const [retrievedParentUser, populatedUser, parentWallet] = await Promise.all([
                         User.findById(profileCheck.parent_id)
@@ -186,7 +187,7 @@ exports.activateAccount = async (req, res, next) => {
                     _id: { $ne: userId },
                     $or: [
                         { 'profile.parents': { $nin: [userId] }, 'profile.deleted_at': null },
-                        { 'profile.isAdmin': true, 'profile.deleted_at': null }
+                        //{ 'profile.isAdmin': true, 'profile.deleted_at': null }
                     ]
                 })
                     .populate('profile')
@@ -198,15 +199,16 @@ exports.activateAccount = async (req, res, next) => {
                             return res.send(ErrorResponse(422, "Error finding users with higher levels", null, null));
                         }
 
-                        let rootAdmin = await Profile.findOne({ isAdmin: true });
-
+                        // Filter available parents:
+                        // They must have assigned_members,
+                        // Their level must be exactly one greater than current user's level,
+                        // Their assigned_members state is "unachieved",
+                        // Their assigned_members.count is less than their level's members_number,
+                        // And their profile is not deleted.
                         let availableParents = users.filter(user => {
-                            if (!user.assigned_members) return false;
-
+                            if (!user.assigned_members || !user.level_id) return false;
                             const restriction = user.assigned_members?.paid_count === 2 && user.assigned_members?.upline_paid === false;
-
                             return !restriction &&
-                                user.level_id &&
                                 user.assigned_members.upgrade_date === null &&
                                 user.level_id.level_number === currentUserLevelNumber + 1 &&
                                 user.assigned_members.state === "unachieved" &&
@@ -214,14 +216,16 @@ exports.activateAccount = async (req, res, next) => {
                                 user.profile.deleted_at === null;
                         });
 
-                        // Sort parents by assigned members count (ascending) to distribute fairly
-                        availableParents.sort((a, b) => a.assigned_members.count - b.assigned_members.count);
+                        // Sort available parents using FIFO logic:
+                        // 1. Oldest createdAt timestamp first.
+                        // 2. If equal, then by the assigned_members count (ascending).
+                        availableParents.sort((a, b) => {
+                            const timeDiff = new Date(a.createdAt) - new Date(b.createdAt);
+                            if (timeDiff !== 0) return timeDiff;
+                            return a.assigned_members.count - b.assigned_members.count;
+                        });
 
                         let parentUser = availableParents.length > 0 ? availableParents[0] : null;
-
-                        if (!parentUser) {
-                            parentUser = users.sort((a, b) => a.createdAt - b.createdAt)[0];
-                        }
 
                         if (!parentUser) {
                             return res.status(400).send(ErrorResponse(400, "No available parent user", null, null));
@@ -277,6 +281,7 @@ exports.activateAccount = async (req, res, next) => {
         return res.send(ErrorResponse(500, "Internal server error", error, null));
     }
 };
+
 
 
 
