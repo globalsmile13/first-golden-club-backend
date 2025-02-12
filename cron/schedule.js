@@ -6,6 +6,7 @@ const AssignedMembers = require('../models/assignedMembers');
 const Subscription = require('../models/subscription');
 const User = require('../models/user'); // Ensure User model is imported
 const Level = require('../models/level'); // Ensure Level model is imported
+const Wallet = require('../models/wallet'); // Ensure Level Model is imported
 const { ErrorResponse, SuccessResponse } = require('../lib/apiResponse');
 const { createNotification } = require('../controllers/notification');
 
@@ -277,6 +278,50 @@ const upgrade_account_cron = async () => {
     console.error('Error occurred:', error);
   }
 }
+
+const deleteDeactivatedAccountsCron = async () => {
+  try {
+    // Define cutoff: accounts deactivated more than one hour ago.
+    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+
+    // Find profiles with a deleted_at timestamp older than one hour.
+    const deactivatedProfiles = await Profile.find({
+      deleted_at: { $lte: oneHourAgo }
+    }).lean();
+
+    console.log("Deactivated profiles found:", deactivatedProfiles.length);
+
+    if (deactivatedProfiles.length === 0) {
+      console.log("No deactivated accounts to delete.");
+      return;
+    }
+
+    // Extract the user IDs from these profiles.
+    const userIdsToDelete = deactivatedProfiles.map(profile => profile.user_id.toString());
+    console.log("User IDs to delete:", userIdsToDelete);
+
+    // Delete users
+    const deleteUsersResult = await User.deleteMany({ _id: { $in: userIdsToDelete } });
+    console.log(`Deleted ${deleteUsersResult.deletedCount} users from Users collection.`);
+
+    // Optionally, delete their profiles
+    const deleteProfilesResult = await Profile.deleteMany({ user_id: { $in: userIdsToDelete } });
+    console.log(`Deleted ${deleteProfilesResult.deletedCount} profiles from Profiles collection.`);
+
+    // Optionally, delete their wallet documents
+    const deleteWalletsResult = await Wallet.deleteMany({ user_id: { $in: userIdsToDelete } });
+    console.log(`Deleted ${deleteWalletsResult.deletedCount} wallets from Wallets collection.`);
+    
+  } catch (error) {
+    console.error("Error in deleteDeactivatedAccountsCron:", error);
+  }
+};
+
+// Schedule the new cron job to run every minute.
+let delete_accounts_rule = new schedule.RecurrenceRule();
+delete_accounts_rule.minute = new schedule.Range(0, 59, 1);
+
+schedule.scheduleJob(delete_accounts_rule, deleteDeactivatedAccountsCron);
 
 let upgrade_rule = new schedule.RecurrenceRule();
 upgrade_rule.minute = [0,1,2,3,4, 5,6,6,7,8,9, 10,11,12,13,14, 15,16,17,18,19, 20,21,22,23,24, 25,26, 30,31,32,33,34, 35, 40,41, 42,43,44, 45,46,47,48,49,50, 51,,52,53,54, 55,56,57,58,59];
