@@ -38,8 +38,12 @@ const upgrade_cron = async () => {
     // Iterate over each account and update the corresponding user profile
     for (const account of defaultingAccounts) {
       // console.log("hey")
-      const userProfile = await Profile.findOne({ user_id: account.user_id });
+      const userProfile = await Profile.findOne({ user_id: account.user_id }).lean();
 
+      if (!userProfile) {
+        console.warn(`No Profile found for account_id: ${account.user_id}. Skipping.`);
+        return;
+      }
       console.log(userProfile)
 
       if( userProfile.isAdmin){
