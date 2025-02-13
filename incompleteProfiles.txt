@@ -1,0 +1,3009 @@
+[
+  {
+    "_id": "66634d2e89fb280028f305df",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-07T19:11:00.221Z",
+    "first_name": "Paul",
+    "last_name": "Okolie",
+    "username": "Pauldennis",
+    "phone_number": "08131916875",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66634d2e89fb280028f305dc",
+    "recovery_code": "$2a$12$WZRFLBLbUTZrSLEo0FQ3Q.l55Khvq2k93BQN70ErubvvyQl3iFNNe",
+    "createdAt": "2024-06-07T18:10:54.929Z",
+    "updatedAt": "2024-06-07T19:11:00.222Z",
+    "__v": 1
+  },
+  {
+    "_id": "666607e5d32bdd00294556bd",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-09T19:56:00.138Z",
+    "first_name": "Nwadike",
+    "last_name": "Emmanuel",
+    "username": "Emmanike",
+    "phone_number": "08066443607",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "666607e5d32bdd00294556ba",
+    "recovery_code": "$2a$12$hVaELzksp/4irdRRPB4tOu8P.ZZZKJLhc9ETbBnbx4NpVil.V9E4S",
+    "createdAt": "2024-06-09T19:52:05.319Z",
+    "updatedAt": "2024-06-09T19:56:00.140Z",
+    "__v": 1
+  },
+  {
+    "_id": "66681fb089d181002968b3ce",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-11T10:59:00.229Z",
+    "first_name": "Chukwudi",
+    "last_name": "Obiora",
+    "username": "Chuksman",
+    "phone_number": "07063298665",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66681fb089d181002968b3cb",
+    "recovery_code": "$2a$12$NHwT43BrvQbcMdMvEt5u1Onv4s5V/riX.CVExuCREw5LJQIjQxauC",
+    "createdAt": "2024-06-11T09:58:08.901Z",
+    "updatedAt": "2024-06-11T10:59:00.231Z",
+    "__v": 1
+  },
+  {
+    "_id": "6668a94089d181002968c9e7",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-11T20:46:00.237Z",
+    "first_name": "Stanley",
+    "last_name": "Chinemelum",
+    "username": "Anolia",
+    "phone_number": "08063630454",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6668a94089d181002968c9e4",
+    "recovery_code": "$2a$12$Ip8MCTggSaDCg4WiBwfzMOlLAlfqRv3uNHl50PEmAA/wCm57DG8oC",
+    "createdAt": "2024-06-11T19:45:04.659Z",
+    "updatedAt": "2024-06-11T20:46:00.239Z",
+    "__v": 1
+  },
+  {
+    "_id": "6668af3589d181002968cd8f",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Simon",
+    "last_name": "Folayemi",
+    "username": "Aderibigbe",
+    "phone_number": "07032372615",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6668af3589d181002968cd8c",
+    "recovery_code": "$2a$12$Hz73shNsOdzr/PkBMmLQs.aP2okdQFr2ffFk9bIjn8SzYlgT9crbW",
+    "createdAt": "2024-06-11T20:10:29.477Z",
+    "updatedAt": "2024-06-11T22:18:24.825Z",
+    "__v": 2
+  },
+  {
+    "_id": "66698fd889d181002968f76c",
+    "parents": [
+      "6660bff39c034d00280b8729"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Chizoba",
+    "last_name": "Ugwuoke",
+    "username": "Might",
+    "phone_number": "08105782345",
+    "parent_id": null,
+    "user_id": "66698fd789d181002968f769",
+    "recovery_code": "$2a$12$AQ53NzB4jITAs7mVramP7.YgSevDP7WAMB2khcVvtReH4IR5Hp78e",
+    "createdAt": "2024-06-12T12:08:56.016Z",
+    "updatedAt": "2024-06-12T12:27:02.072Z",
+    "__v": 1
+  },
+  {
+    "_id": "6669a7ee89d181002968fb27",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-12T14:52:00.191Z",
+    "first_name": "Maryann",
+    "last_name": "Chioma",
+    "username": "Loveleen",
+    "phone_number": "08062519492",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6669a7ee89d181002968fb24",
+    "recovery_code": "$2a$12$J7xXwYI0Wj65BNeHwuoUV.HxjeF8QK5r/i9KGKInh8Hzy5nSNejX.",
+    "createdAt": "2024-06-12T13:51:42.339Z",
+    "updatedAt": "2024-06-12T14:52:00.194Z",
+    "__v": 1
+  },
+  {
+    "_id": "666a0ff289d18100296907d4",
+    "parents": [
+      "6660d0259c034d00280b8a5d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ada",
+    "last_name": "Chu",
+    "username": "Adachukwu",
+    "phone_number": "08033162927",
+    "parent_id": null,
+    "user_id": "666a0ff289d18100296907d1",
+    "recovery_code": "$2a$12$xY/pxaToHDpfikG1znJ2de8i8Wk/mddRtYRPH.VIeY/tPF/AkPmT6",
+    "createdAt": "2024-06-12T21:15:30.321Z",
+    "updatedAt": "2024-06-12T21:48:09.582Z",
+    "__v": 1
+  },
+  {
+    "_id": "666af69389d1810029691c12",
+    "parents": [
+      "6660d0259c034d00280b8a5d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Chinelo",
+    "last_name": "Okwume",
+    "username": "Nelo",
+    "phone_number": "08029991909",
+    "parent_id": null,
+    "user_id": "666af69389d1810029691c0f",
+    "recovery_code": "$2a$12$TfiDb0QS9D08gVjN8fTpxem52z3HNTZBp8ZGxW.KX8OYzz5IX7OGi",
+    "createdAt": "2024-06-13T13:39:31.488Z",
+    "updatedAt": "2024-06-13T14:05:25.807Z",
+    "__v": 1
+  },
+  {
+    "_id": "666b72e089d1810029693e61",
+    "parents": [
+      "6660e4b89c034d00280b8e85"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "John",
+    "last_name": "Oka",
+    "username": "Gabby",
+    "phone_number": "08088044413",
+    "parent_id": null,
+    "user_id": "666b72df89d1810029693e5e",
+    "recovery_code": "$2a$12$wPZxtmyU06cQSJncFeA7.uNkM1xK2smzwT6lmpEVMY.88RWl.oFRu",
+    "createdAt": "2024-06-13T22:29:52.049Z",
+    "updatedAt": "2024-06-13T23:53:52.856Z",
+    "__v": 1
+  },
+  {
+    "_id": "666c03eb89d1810029696643",
+    "parents": [
+      "6660e65c9c034d00280b8ef8"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Andrew",
+    "last_name": "Chikezie",
+    "username": "Wisdom",
+    "phone_number": "09049117065",
+    "parent_id": null,
+    "user_id": "666c03eb89d1810029696640",
+    "recovery_code": "$2a$12$glbtLoIAJ33lTFJT08IHfuJfceDBEwOweIYo2kSvxkrbQAqwgKMqO",
+    "createdAt": "2024-06-14T08:48:43.473Z",
+    "updatedAt": "2024-06-14T08:58:30.160Z",
+    "__v": 1
+  },
+  {
+    "_id": "666c835d89d181002969aced",
+    "parents": [
+      "66616ad39c034d00280ba2ba"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ifeanyi",
+    "last_name": "Offia",
+    "username": "Offiachukwu",
+    "phone_number": "08066225685",
+    "parent_id": null,
+    "user_id": "666c835d89d181002969acea",
+    "recovery_code": "$2a$12$KJXvesQFy7fFCd/OCYjHbOuDeCfPeBIn/i6xOifDxIpI6dNiIgGsK",
+    "createdAt": "2024-06-14T17:52:29.270Z",
+    "updatedAt": "2024-06-15T05:33:04.423Z",
+    "__v": 1
+  },
+  {
+    "_id": "666cd1b989d181002969c209",
+    "parents": [
+      "66616d549c034d00280ba33a"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Emmanuella",
+    "last_name": "Chike",
+    "username": "EllaJerry",
+    "phone_number": "07067434400",
+    "parent_id": null,
+    "user_id": "666cd1b989d181002969c206",
+    "recovery_code": "$2a$12$ScXjK1jcBDrlU/HxlE7lmOgrdAt/LgJCiyNaKQdu64..ipZqthAH.",
+    "createdAt": "2024-06-14T23:26:49.959Z",
+    "updatedAt": "2024-06-15T10:00:20.717Z",
+    "__v": 1
+  },
+  {
+    "_id": "666d9272fcf786002a7b5412",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T09:49:00.647Z",
+    "first_name": "DESMOND",
+    "last_name": "OKECHUKWU",
+    "username": "desmond876",
+    "phone_number": "07032497958",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "666d9272fcf786002a7b540f",
+    "recovery_code": "$2a$12$t2s/gZju3HgzS.3qHWiaDeNLtpTZyLq4PvVLcKA8AJkBEWN0sxqVm",
+    "createdAt": "2024-06-15T13:09:06.740Z",
+    "updatedAt": "2024-06-19T09:49:00.648Z",
+    "__v": 1
+  },
+  {
+    "_id": "666dfda6ad006000288ca0d1",
+    "parents": [
+      "6661922a9c034d00280ba829"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Kelechi",
+    "last_name": "Erick",
+    "username": "Erickk",
+    "phone_number": "+2347015502234",
+    "parent_id": null,
+    "user_id": "666dfda6ad006000288ca0ce",
+    "recovery_code": "$2a$12$tTWNaDll2hYbTDrgaM86tuKoLPE8sSiXXPLF/mM3W/wgLb4lSd0Bi",
+    "createdAt": "2024-06-15T20:46:30.429Z",
+    "updatedAt": "2024-06-15T22:30:17.062Z",
+    "__v": 1
+  },
+  {
+    "_id": "666e0270ad006000288ca21a",
+    "parents": [
+      "6661933e9c034d00280ba896"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "James",
+    "last_name": "Monday",
+    "username": "Gabriel",
+    "phone_number": "08106448254",
+    "parent_id": null,
+    "user_id": "666e0270ad006000288ca217",
+    "recovery_code": "$2a$12$bdchcK4gYQOF.MRYYDXhZ.N5vs.wMWIqLLE5VNH8dNWM9MaBLtX6K",
+    "createdAt": "2024-06-15T21:06:56.463Z",
+    "updatedAt": "2024-06-15T22:48:55.022Z",
+    "__v": 1
+  },
+  {
+    "_id": "666e9b8eb2786f001d9577fb",
+    "parents": [
+      "666197139c034d00280baa9c"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Nelson",
+    "last_name": "Anyigor",
+    "username": "Nelson00",
+    "phone_number": "+2347013680447",
+    "parent_id": null,
+    "user_id": "666e9b8eb2786f001d9577f8",
+    "recovery_code": "$2a$12$IszHRy6KsaT9uauZVzoOu.SIsVvdtQI21P9yxdsC89eEFW13JiYcG",
+    "createdAt": "2024-06-16T08:00:14.628Z",
+    "updatedAt": "2024-06-16T08:21:19.427Z",
+    "__v": 1
+  },
+  {
+    "_id": "666eb9f9b2786f001d957d80",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T09:49:00.857Z",
+    "first_name": "Igwe",
+    "last_name": "Christopher",
+    "username": "Christopher igwe",
+    "phone_number": "08144776098",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "666eb9f8b2786f001d957d7d",
+    "recovery_code": "$2a$12$B6jjJyRZdZCOlBNyK8ohZ.MKeuXT.1v9wY82XnVrDs.bqTsnY5y6m",
+    "createdAt": "2024-06-16T10:10:01.028Z",
+    "updatedAt": "2024-06-19T09:49:00.859Z",
+    "__v": 1
+  },
+  {
+    "_id": "666ebe7fb2786f001d957e3d",
+    "parents": [
+      "666198979c034d00280bab0f"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Finecountry",
+    "last_name": "Iheme",
+    "username": "Chioma fine 01",
+    "phone_number": "07063339203",
+    "parent_id": null,
+    "user_id": "666ebe7fb2786f001d957e3a",
+    "recovery_code": "$2a$12$8iLdYjThx0y.UgelBgu9tewQTTowqncz0iRjC3xf9yCPS.FCpct.2",
+    "createdAt": "2024-06-16T10:29:19.068Z",
+    "updatedAt": "2024-06-16T13:01:45.297Z",
+    "__v": 1
+  },
+  {
+    "_id": "66723e17c2281a00283cc25f",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "One",
+    "last_name": "G",
+    "username": "One",
+    "phone_number": "1",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66723e17c2281a00283cc25c",
+    "recovery_code": "$2a$12$WteSkSlB8jZc/bh7ntS75.vsim34njpwU8zjiT9bNVlIBc1cKWr7i",
+    "createdAt": "2024-06-19T02:10:31.186Z",
+    "updatedAt": "2025-01-18T14:03:41.132Z",
+    "__v": 2
+  },
+  {
+    "_id": "66727d0d3161ae0028dd73e9",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "David",
+    "last_name": "Edosa",
+    "username": "Davoo90",
+    "phone_number": "08133664665",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66727d0d3161ae0028dd73e6",
+    "recovery_code": "$2a$12$JNjUtvujI8p38o97.xJ9iuT6xJ29GVMf7lRWpJy/qkambvpzrvF3G",
+    "createdAt": "2024-06-19T06:39:09.870Z",
+    "updatedAt": "2024-06-19T12:30:42.674Z",
+    "__v": 2
+  },
+  {
+    "_id": "6672981b3161ae0028dd7e4a",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T09:50:00.478Z",
+    "first_name": "Nweke",
+    "last_name": "Chibueze Mishael",
+    "username": "D Basic2",
+    "phone_number": "09070947739",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672981b3161ae0028dd7e47",
+    "recovery_code": "$2a$12$CzorPAPbL31OlHYpOpM2GODNsQAfnfsYrqWCokz3owAPUAQPtZTGW",
+    "createdAt": "2024-06-19T08:34:35.629Z",
+    "updatedAt": "2024-06-19T09:50:00.480Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672a2113161ae0028dd8121",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T10:18:00.245Z",
+    "first_name": "Two",
+    "last_name": "G",
+    "username": "Two",
+    "phone_number": "2",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672a2113161ae0028dd811e",
+    "recovery_code": "$2a$12$wV9ejn7qlRvStFXDFwLRtuB2ckjj7P8AX0ba1BqDIt9GoLlr8vxCm",
+    "createdAt": "2024-06-19T09:17:05.455Z",
+    "updatedAt": "2024-06-19T10:18:00.246Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672a2493161ae0028dd818c",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T10:19:00.228Z",
+    "first_name": "Three",
+    "last_name": "G",
+    "username": "Three",
+    "phone_number": "3",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672a2493161ae0028dd8189",
+    "recovery_code": "$2a$12$KFzAdW7Md/mMUhsJ90/ymufuPuJCR.WagvAn4i1SA8DxhdjDh8DC.",
+    "createdAt": "2024-06-19T09:18:01.062Z",
+    "updatedAt": "2024-06-19T10:19:00.230Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672a2763161ae0028dd81d5",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T10:19:00.440Z",
+    "first_name": "Four",
+    "last_name": "G",
+    "username": "Four",
+    "phone_number": "4",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672a2763161ae0028dd81d2",
+    "recovery_code": "$2a$12$9F0ug78qomz.KR8cFgJHoesa5/soDqmzkktDkvcyTkEAji2uwRKwO",
+    "createdAt": "2024-06-19T09:18:46.398Z",
+    "updatedAt": "2024-06-19T10:19:00.441Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672a2b23161ae0028dd822d",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T10:20:00.196Z",
+    "first_name": "Five",
+    "last_name": "G",
+    "username": "Five",
+    "phone_number": "5",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672a2b23161ae0028dd822a",
+    "recovery_code": "$2a$12$mevFPbqHOwW.EZxmn/wBc.Fpmo2G5/1cGViAlBH/.EeUVVeYYJNWK",
+    "createdAt": "2024-06-19T09:19:46.416Z",
+    "updatedAt": "2024-06-19T10:20:00.197Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672be870fb88c002976dfdb",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "David",
+    "last_name": "Edosa",
+    "username": "Davoo10",
+    "phone_number": "08133664665",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672be870fb88c002976dfd8",
+    "recovery_code": "$2a$12$MqxhiUX1mRtePcgBlRHJtuZh6IQQj6Ol4dRv4aQkV5fzuaFXw7HPq",
+    "createdAt": "2024-06-19T11:18:31.303Z",
+    "updatedAt": "2024-06-19T12:30:46.125Z",
+    "__v": 2
+  },
+  {
+    "_id": "6672bf490fb88c002976e013",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T12:22:00.215Z",
+    "first_name": "Hephzibah",
+    "last_name": "Ekara",
+    "username": "Hephzibahekara12",
+    "phone_number": "08154512323",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672bf490fb88c002976e010",
+    "recovery_code": "$2a$12$BB5/CymVqwmfBvc.hsLeCOC9.JzhD6l5wYILhUZ6VxFuUPf0P/SVe",
+    "createdAt": "2024-06-19T11:21:45.294Z",
+    "updatedAt": "2024-06-19T12:22:00.216Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672c0950fb88c002976e0a4",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T12:28:00.225Z",
+    "first_name": "Six",
+    "last_name": "G",
+    "username": "Six",
+    "phone_number": "6",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672c0950fb88c002976e0a1",
+    "recovery_code": "$2a$12$af3BuodyvbFjv3ReVji06.IpV3TKbIyU6C3C9rlpnXVNG0e75lw9G",
+    "createdAt": "2024-06-19T11:27:17.577Z",
+    "updatedAt": "2024-06-19T12:28:00.227Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672c1140fb88c002976e0f1",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T12:30:00.231Z",
+    "first_name": "Seven",
+    "last_name": "G",
+    "username": "Seven",
+    "phone_number": "7",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672c1140fb88c002976e0ee",
+    "recovery_code": "$2a$12$FEk5O0.itOXVhH4nq0sPH.Q0XmAN/f//0clAuHOzc5RSpS2eN7qrG",
+    "createdAt": "2024-06-19T11:29:24.540Z",
+    "updatedAt": "2024-06-19T12:30:00.232Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672c1460fb88c002976e13d",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T12:31:00.210Z",
+    "first_name": "Eight",
+    "last_name": "G",
+    "username": "Eight",
+    "phone_number": "8",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672c1460fb88c002976e13a",
+    "recovery_code": "$2a$12$4x1A4aRwuglp3vvUPjXwSeroaCFMGuOA.8w/VXqkpH0KUkuKDsiBK",
+    "createdAt": "2024-06-19T11:30:14.643Z",
+    "updatedAt": "2024-06-19T12:31:00.211Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672c2ed0fb88c002976e26a",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T12:38:00.211Z",
+    "first_name": "Hephzibah",
+    "last_name": "Ekara",
+    "username": "Hephzibahekara1",
+    "phone_number": "08154512323",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672c2ed0fb88c002976e267",
+    "recovery_code": "$2a$12$n8FBE8Xg3jFw088sLkU2W.8261K3Vvl3MmTliDC31v6Ecc/IhmPRS",
+    "createdAt": "2024-06-19T11:37:17.593Z",
+    "updatedAt": "2024-06-19T12:38:00.212Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672c5e00fb88c002976e2d9",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T12:50:00.184Z",
+    "first_name": "Ruth",
+    "last_name": "Ekara",
+    "username": "Ruthekara1",
+    "phone_number": "+2348106551677",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672c5e00fb88c002976e2d6",
+    "recovery_code": "$2a$12$Uo8kDZ7MLqBI0ex7uDvjPuCE78SlAUvkqgwFzqjUVwVslU7gs2OJC",
+    "createdAt": "2024-06-19T11:49:52.847Z",
+    "updatedAt": "2024-06-19T12:50:00.186Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672c77954ee650028f8e225",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-19T12:57:00.206Z",
+    "first_name": "Nine",
+    "last_name": "G",
+    "username": "Nine",
+    "phone_number": "9",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672c77954ee650028f8e222",
+    "recovery_code": "$2a$12$RAEH.Ti9vTfHRv.BHp6vY.bcnQtzJYqjUhOt3qRYMWxQeimnqYl32",
+    "createdAt": "2024-06-19T11:56:41.625Z",
+    "updatedAt": "2024-06-19T12:57:00.207Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672e0cc54ee650028f8e8e3",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-20T22:58:00.434Z",
+    "first_name": "Hephzibah",
+    "last_name": "Ekara",
+    "username": "Hephzibahekara10",
+    "phone_number": "08154512323",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672e0cc54ee650028f8e8e0",
+    "recovery_code": "$2a$12$BiN0WKcFNNImDJzl1WtKIuDbOWoZ/.8DIwSgwZfB8WdcTHFOM8XZW",
+    "createdAt": "2024-06-19T13:44:44.995Z",
+    "updatedAt": "2024-06-20T22:58:00.437Z",
+    "__v": 1
+  },
+  {
+    "_id": "6672e6a754ee650028f8ea4b",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-20T22:58:00.647Z",
+    "first_name": "Christiana",
+    "last_name": "Ozioma",
+    "username": "Amicableella",
+    "phone_number": "08164106339",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6672e6a754ee650028f8ea48",
+    "recovery_code": "$2a$12$wnYbXT2HeifcQYW3yxcak.wezojnA61dc5P7aH3xPFcihOJ2gYNz6",
+    "createdAt": "2024-06-19T14:09:43.309Z",
+    "updatedAt": "2024-06-20T22:58:00.649Z",
+    "__v": 1
+  },
+  {
+    "_id": "6674c455dbdff9002951258a",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-21T01:08:00.230Z",
+    "first_name": "Ten",
+    "last_name": "G",
+    "username": "Ten",
+    "phone_number": "10",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6674c455dbdff90029512587",
+    "recovery_code": "$2a$12$yhoCfkgXc4DUtdukyK/Sauc6NJidrr2pvBa/G7wTBwrE25.LcW0eK",
+    "createdAt": "2024-06-21T00:07:49.428Z",
+    "updatedAt": "2024-06-21T01:08:00.231Z",
+    "__v": 1
+  },
+  {
+    "_id": "6674c486dbdff900295125d5",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-21T01:09:00.215Z",
+    "first_name": "Eleven",
+    "last_name": "G",
+    "username": "Eleven",
+    "phone_number": "11",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6674c486dbdff900295125d2",
+    "recovery_code": "$2a$12$cSOAsl4w5MLBe6.hj.kUfOby94npXYqWPgqcyjVn96rJLcfM/2uKm",
+    "createdAt": "2024-06-21T00:08:38.652Z",
+    "updatedAt": "2024-06-21T01:09:00.216Z",
+    "__v": 1
+  },
+  {
+    "_id": "6674c4a7dbdff90029512620",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-21T01:10:00.228Z",
+    "first_name": "Twelve",
+    "last_name": "G",
+    "username": "Twelve",
+    "phone_number": "12",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6674c4a7dbdff9002951261d",
+    "recovery_code": "$2a$12$dmmYVXatZekrzn1DMMAXv.xMpwQcFgyXkr5MjUDIzQfSabuYaPzQK",
+    "createdAt": "2024-06-21T00:09:11.537Z",
+    "updatedAt": "2024-06-21T01:10:00.235Z",
+    "__v": 1
+  },
+  {
+    "_id": "66759db5dbdff900295147bb",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-21T16:36:00.207Z",
+    "first_name": "Hephzibah",
+    "last_name": "Ekara",
+    "username": "Czibaekara1",
+    "phone_number": "08154512323",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66759db5dbdff900295147b8",
+    "recovery_code": "$2a$12$4fYRrZkHk8e9B..B42GzLeJZrmD1kzyKDkFG02BedZA40KhiQxQL6",
+    "createdAt": "2024-06-21T15:35:17.886Z",
+    "updatedAt": "2024-06-21T16:36:00.208Z",
+    "__v": 1
+  },
+  {
+    "_id": "6675c261dbdff90029514d2c",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-21T19:12:00.243Z",
+    "first_name": "Alex",
+    "last_name": "Desouza",
+    "username": "Lagbaja",
+    "phone_number": "08141229200",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6675c261dbdff90029514d29",
+    "recovery_code": "$2a$12$7LfEX6z0PTtRnMaqdxO.lOJnKNEETnLlgq6kn9QiUVrPwDTECaeUq",
+    "createdAt": "2024-06-21T18:11:45.863Z",
+    "updatedAt": "2024-06-21T19:12:00.245Z",
+    "__v": 1
+  },
+  {
+    "_id": "6675da79dbdff90029515636",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-21T20:55:00.219Z",
+    "first_name": "Emmanuel",
+    "last_name": "Chizzy boy",
+    "username": "Alhaji Ali",
+    "phone_number": "09075746724",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6675da79dbdff90029515633",
+    "recovery_code": "$2a$12$8qEWR8WfyiCKTCHtCU5TYeyt/mNYN0vTidvEgGq/Bh5HCwfaUB8lC",
+    "createdAt": "2024-06-21T19:54:33.354Z",
+    "updatedAt": "2024-06-21T20:55:00.220Z",
+    "__v": 1
+  },
+  {
+    "_id": "66762e35dbdff90029515b4f",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-22T02:52:00.231Z",
+    "first_name": "Thirteen",
+    "last_name": "G",
+    "username": "Thirteen",
+    "phone_number": "13",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66762e35dbdff90029515b4c",
+    "recovery_code": "$2a$12$aCnauRgyosOWZAMK.bbyiuyy.WHtie5EQ/F7foQVXvYa/UEsNhhZ6",
+    "createdAt": "2024-06-22T01:51:49.616Z",
+    "updatedAt": "2024-06-22T02:52:00.232Z",
+    "__v": 1
+  },
+  {
+    "_id": "66762e65dbdff90029515b9a",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-22T02:53:00.210Z",
+    "first_name": "Fourteen",
+    "last_name": "G",
+    "username": "Fourteen",
+    "phone_number": "14",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66762e65dbdff90029515b97",
+    "recovery_code": "$2a$12$5cD15hs2IJs0IIe/gqyXk.vmQPWk0V8oEcIOW3Agy/lpffydpOmwq",
+    "createdAt": "2024-06-22T01:52:37.868Z",
+    "updatedAt": "2024-06-22T02:53:00.212Z",
+    "__v": 1
+  },
+  {
+    "_id": "66762e94dbdff90029515be5",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-22T02:54:00.185Z",
+    "first_name": "Fifteen",
+    "last_name": "G",
+    "username": "Fifteen",
+    "phone_number": "15",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66762e94dbdff90029515be2",
+    "recovery_code": "$2a$12$gHLAotapEXKS/E/aD8X/Q.LTGsD4kuFzo7f/jHIQEvZbk/TWd8Q0i",
+    "createdAt": "2024-06-22T01:53:24.446Z",
+    "updatedAt": "2024-06-22T02:54:00.187Z",
+    "__v": 1
+  },
+  {
+    "_id": "6676c1b2dbdff900295180a3",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-22T13:22:00.228Z",
+    "first_name": "Okeke",
+    "last_name": "Chiamaka",
+    "username": "Glory",
+    "phone_number": "09159527025",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6676c1b2dbdff900295180a0",
+    "recovery_code": "$2a$12$jPg30dzV7JPWBc4tcx0woex1q0CYSJx8vP2jxMGspzZb0SazAYWLC",
+    "createdAt": "2024-06-22T12:21:06.558Z",
+    "updatedAt": "2024-06-22T13:22:00.230Z",
+    "__v": 1
+  },
+  {
+    "_id": "6676debcdbdff900295184ce",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-22T15:26:00.216Z",
+    "first_name": "Sixteen",
+    "last_name": "G",
+    "username": "Sixteen",
+    "phone_number": "16",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6676debcdbdff900295184cb",
+    "recovery_code": "$2a$12$3dPz4FRd.AVY/dqUlfs61uor5D5XLRzeb8pgijaDAd4OpLYVb2CBO",
+    "createdAt": "2024-06-22T14:25:00.979Z",
+    "updatedAt": "2024-06-22T15:26:00.218Z",
+    "__v": 1
+  },
+  {
+    "_id": "6676e1d5dbdff90029518510",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Chukwunenye",
+    "last_name": "Ahanonu",
+    "username": "archnenye",
+    "phone_number": "08062849887",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6676e1d5dbdff9002951850d",
+    "recovery_code": "$2a$12$lL29ZjFNxTb/hhiYmgmsLe7z.uheXh6h8aLxR2s/5.E5GCqtnRLQC",
+    "createdAt": "2024-06-22T14:38:13.345Z",
+    "updatedAt": "2024-06-22T18:17:43.912Z",
+    "__v": 2
+  },
+  {
+    "_id": "6677c5b0dbdff90029519af6",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-23T07:51:00.122Z",
+    "first_name": "Aniekan",
+    "last_name": "Sam",
+    "username": "A5Sam",
+    "phone_number": "07017699651",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6677c5afdbdff90029519af3",
+    "recovery_code": "$2a$12$YlcOeg0hkpsPO2tlq/tqh.obibEY8vfzG.GJ58ylUUIaedoPj8yxW",
+    "createdAt": "2024-06-23T06:50:24.043Z",
+    "updatedAt": "2024-06-23T07:51:00.125Z",
+    "__v": 1
+  },
+  {
+    "_id": "667ad4a1dbdff9002951f527",
+    "parents": [
+      "6661de189c034d00280bbb98"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Prosper",
+    "last_name": "Egemonye",
+    "username": "Prosperity",
+    "phone_number": "07086594243",
+    "parent_id": null,
+    "user_id": "667ad4a1dbdff9002951f524",
+    "recovery_code": "$2a$12$ui5TuGZ/7Hej/F23psxcCe4GgZ1UHGh4QrPRS8PC16MKojGwcGfhW",
+    "createdAt": "2024-06-25T14:30:57.704Z",
+    "updatedAt": "2024-06-25T14:35:20.888Z",
+    "__v": 1
+  },
+  {
+    "_id": "667c494ddbdff90029522e83",
+    "parents": [
+      "666203329c034d00280bc6ae"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Child",
+    "last_name": "Mike",
+    "username": "Month04",
+    "phone_number": "08026541244",
+    "parent_id": null,
+    "user_id": "667c494ddbdff90029522e80",
+    "recovery_code": "$2a$12$C5to3ZybgYWy/gpqF05OduK/AXJOB87LwjM19c8AuVd.KXmz5Uc2O",
+    "createdAt": "2024-06-26T17:01:01.843Z",
+    "updatedAt": "2024-06-26T17:07:06.469Z",
+    "__v": 1
+  },
+  {
+    "_id": "667d3e0adbdff90029524eff",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Precious",
+    "last_name": "Udebuani",
+    "username": "Precious5",
+    "phone_number": "09069705929",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "667d3e0adbdff90029524efc",
+    "recovery_code": "$2a$12$EuOjlYuVpVRaZS77bsdQaewYUbSd1nk9Si1jTeedFZd1i2pFK.0AS",
+    "createdAt": "2024-06-27T10:25:14.294Z",
+    "updatedAt": "2024-06-27T18:48:08.075Z",
+    "__v": 2
+  },
+  {
+    "_id": "667d4182dbdff90029524fbb",
+    "parents": [
+      "666229e59c034d00280bce3a"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Etheldreda",
+    "last_name": "Onoriobe",
+    "username": "Nkiruka",
+    "phone_number": "08033195774",
+    "parent_id": null,
+    "user_id": "667d4182dbdff90029524fb8",
+    "recovery_code": "$2a$12$sbIHbfOYuWC5uJxrIENXEu98syL5Yr5B5c4KR0FaVtI3kRQ0xg/Xe",
+    "createdAt": "2024-06-27T10:40:02.807Z",
+    "updatedAt": "2024-06-27T11:31:15.429Z",
+    "__v": 1
+  },
+  {
+    "_id": "667f0b79dbdff900295277b9",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-28T20:15:00.232Z",
+    "first_name": "Eruchalu",
+    "last_name": "Nneka",
+    "username": "Nneka",
+    "phone_number": "+2348034491150",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "667f0b79dbdff900295277b6",
+    "recovery_code": "$2a$12$bfNkxiXgT4HRPpVam/FKL.pr/YULTSRwF7SWljGOMdjeerWiyJ6ca",
+    "createdAt": "2024-06-28T19:14:01.346Z",
+    "updatedAt": "2024-06-28T20:15:00.233Z",
+    "__v": 1
+  },
+  {
+    "_id": "668198ebc8c7b800282cbd0f",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-06-30T18:43:00.116Z",
+    "first_name": "Uchenna",
+    "last_name": "Ekeruo",
+    "username": "Malarious",
+    "phone_number": "07031241110",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "668198ebc8c7b800282cbd0c",
+    "recovery_code": "$2a$12$swgZ2zDVKd0tCWkL3a8ZBu52LssuF9ESVTjdpKS6.74fTqu9eZdfW",
+    "createdAt": "2024-06-30T17:42:03.238Z",
+    "updatedAt": "2024-06-30T18:43:00.119Z",
+    "__v": 1
+  },
+  {
+    "_id": "668685fdc8c7b800282d0579",
+    "parents": [
+      "6662e72d89fb280028f2e632"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Emmaneul",
+    "last_name": "Udenji",
+    "username": "Formula",
+    "phone_number": "09139989121",
+    "parent_id": null,
+    "user_id": "668685fdc8c7b800282d0576",
+    "recovery_code": "$2a$12$O/EV0JKy78kgFk0JFmiqFuPtVrJWbzLYB.DWGfo5NW1nh5zg2OMT6",
+    "createdAt": "2024-07-04T11:22:37.767Z",
+    "updatedAt": "2024-07-04T12:01:00.871Z",
+    "__v": 1
+  },
+  {
+    "_id": "668691f6c8c7b800282d094e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-07-04T13:14:00.225Z",
+    "first_name": "aladesanmi",
+    "last_name": "Ademola",
+    "username": "Adebright",
+    "phone_number": "08147492080",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "668691f6c8c7b800282d094b",
+    "recovery_code": "$2a$12$wzlPstWZJuYWFsdYrPn7Bu6XmYkVwwUjxwryIii5xdJtI7cbi.Iq6",
+    "createdAt": "2024-07-04T12:13:42.980Z",
+    "updatedAt": "2024-07-04T13:14:00.226Z",
+    "__v": 1
+  },
+  {
+    "_id": "668e9b29c8c7b800282d6433",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-07-10T15:32:00.253Z",
+    "first_name": "Obiora",
+    "last_name": "Mgbakor",
+    "username": "Obm#1.",
+    "phone_number": "08023087726",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "668e9b29c8c7b800282d6430",
+    "recovery_code": "$2a$12$41siyEFZ5QCKGK/rw0JNXuppxG.JQB9RySxv2T6NtBGFmVJrCSbjK",
+    "createdAt": "2024-07-10T14:31:05.084Z",
+    "updatedAt": "2024-07-10T15:32:00.255Z",
+    "__v": 1
+  },
+  {
+    "_id": "66910d13c8c7b800282d80c8",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-07-12T12:02:00.266Z",
+    "first_name": "Godswill",
+    "last_name": "Effiong",
+    "username": "Godswillking",
+    "phone_number": "07045399674",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66910d13c8c7b800282d80c5",
+    "recovery_code": "$2a$12$HXS5rPaSkcC6oD1gbg4Dv.DxxbpvbqsiYecbB1PV.HqaQ8416jJyK",
+    "createdAt": "2024-07-12T11:01:39.595Z",
+    "updatedAt": "2024-07-12T12:02:00.268Z",
+    "__v": 1
+  },
+  {
+    "_id": "669533fdc8c7b800282db96d",
+    "parents": [
+      "6662ece589fb280028f2e890"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Obiora",
+    "last_name": "Mgbakor",
+    "username": "Obm#1",
+    "phone_number": "08023087726",
+    "parent_id": null,
+    "user_id": "669533fdc8c7b800282db96a",
+    "recovery_code": "$2a$12$dsqH6dboUVdXe/ulVJpGFOvnW2BYy5ZuVtncr3nT7S2VWdJBV968u",
+    "createdAt": "2024-07-15T14:36:45.407Z",
+    "updatedAt": "2024-07-15T14:45:42.732Z",
+    "__v": 1
+  },
+  {
+    "_id": "6696b502c8c7b800282dc9c1",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Obiora",
+    "last_name": "Mgbakor",
+    "username": "Obm2",
+    "phone_number": "08023087726",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6696b502c8c7b800282dc9be",
+    "recovery_code": "$2a$12$3Dx20SPBqeTITH1MN5pWC.10NGanlpAKVa.zrg37Ngd8v5DyxoqFy",
+    "createdAt": "2024-07-16T17:59:30.497Z",
+    "updatedAt": "2024-07-16T21:53:09.989Z",
+    "__v": 2
+  },
+  {
+    "_id": "6697a83fc8c7b800282ddca4",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Obiora",
+    "last_name": "Mgbakor",
+    "username": "Obm3",
+    "phone_number": "08023087726",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6697a83fc8c7b800282ddca1",
+    "recovery_code": "$2a$12$.Ry1LY9czHKkqnwor9Vs/e4CFB0DGhA58RcpcCLNATruDuo10JBOq",
+    "createdAt": "2024-07-17T11:17:19.997Z",
+    "updatedAt": "2024-07-17T12:36:58.419Z",
+    "__v": 2
+  },
+  {
+    "_id": "6697cd58c8c7b800282de3dd",
+    "parents": [
+      "6662f28e89fb280028f2eba6"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Obiora",
+    "last_name": "Mgbakor",
+    "username": "Obm4",
+    "phone_number": "08023087726",
+    "parent_id": null,
+    "user_id": "6697cd58c8c7b800282de3da",
+    "recovery_code": "$2a$12$XlkEj5fTEqiAyOkgUhZtI.6CbKPmC3cRXpeRhndk3DZLNTv6GSO5O",
+    "createdAt": "2024-07-17T13:55:36.263Z",
+    "updatedAt": "2024-07-17T14:10:49.643Z",
+    "__v": 1
+  },
+  {
+    "_id": "6697d30cc8c7b800282de5f2",
+    "parents": [
+      "6662f28e89fb280028f2eba6"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Obiora",
+    "last_name": "Mgbakor",
+    "username": "Obm5",
+    "phone_number": "08023087726",
+    "parent_id": null,
+    "user_id": "6697d30cc8c7b800282de5ef",
+    "recovery_code": "$2a$12$hgC05mGAbbWApUUcAceULeGRiC1JVXa2pxUjsXNM6d6q4i7dtzVBi",
+    "createdAt": "2024-07-17T14:19:56.809Z",
+    "updatedAt": "2024-07-17T14:29:57.929Z",
+    "__v": 1
+  },
+  {
+    "_id": "66980f44c8c7b800282df909",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Odinaka Marvelous",
+    "last_name": "Edeh",
+    "username": "Odinaka",
+    "phone_number": "09120965758",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66980f44c8c7b800282df906",
+    "recovery_code": "$2a$12$3gWTomVDW.qqWLSGudGQheGoOhjOuUMO.5q2/3ju7ViMrW8Fv5x8i",
+    "createdAt": "2024-07-17T18:36:52.509Z",
+    "updatedAt": "2024-07-18T09:39:36.973Z",
+    "__v": 2
+  },
+  {
+    "_id": "669810f2c8c7b800282df97f",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Blessing Ijeoma",
+    "last_name": "Edeh",
+    "username": "Bleble",
+    "phone_number": "08108093695",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "669810f2c8c7b800282df97c",
+    "recovery_code": "$2a$12$7aorbY78S0jwzCV72BvL5u33OWzgsvMXBhIn7tHzVneP6NDY04obS",
+    "createdAt": "2024-07-17T18:44:02.210Z",
+    "updatedAt": "2024-07-18T12:30:44.191Z",
+    "__v": 2
+  },
+  {
+    "_id": "66a5e93fc8c7b800282ea8f4",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-07-28T07:47:00.218Z",
+    "first_name": "Jenn",
+    "last_name": "OBINNA",
+    "username": "Puelo",
+    "phone_number": "07036764690",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66a5e93fc8c7b800282ea8f1",
+    "recovery_code": "$2a$12$MB37R6Zb7Nu5x3uDGDiIxO/kIry6gQA.QgNSOwzYGYNHJY6nyJ5.u",
+    "createdAt": "2024-07-28T06:46:23.472Z",
+    "updatedAt": "2024-07-28T07:47:00.219Z",
+    "__v": 1
+  },
+  {
+    "_id": "66a76846c8c7b800282eb84d",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-07-29T11:01:00.224Z",
+    "first_name": "Liu",
+    "last_name": "Uza",
+    "username": "liuliu",
+    "phone_number": "08069524047",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66a76846c8c7b800282eb84a",
+    "recovery_code": "$2a$12$Olk6OtzWZAJERwByqcPhwO7zpcNql77r8riKkSvm7P/GSU8sf.ofO",
+    "createdAt": "2024-07-29T10:00:38.704Z",
+    "updatedAt": "2024-07-29T11:01:00.227Z",
+    "__v": 1
+  },
+  {
+    "_id": "66ad1ea8c8c7b800282ef184",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-08-02T19:01:00.234Z",
+    "first_name": "S",
+    "last_name": "G",
+    "username": "Xy",
+    "phone_number": "08034565045",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66ad1ea8c8c7b800282ef181",
+    "recovery_code": "$2a$12$f3yXhv1e0rTfzKHvn6dM8eGc5xF0cu7H4zi0aA1K3oL3UYwhn9WQS",
+    "createdAt": "2024-08-02T18:00:08.683Z",
+    "updatedAt": "2024-08-02T19:01:00.235Z",
+    "__v": 1
+  },
+  {
+    "_id": "66b33064c8c7b800282f3097",
+    "parents": [
+      "6663565f89fb280028f306c6"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Chinonso Rose",
+    "last_name": "Okpaleke",
+    "username": "Kingvine",
+    "phone_number": "08063499598",
+    "parent_id": null,
+    "user_id": "66b33064c8c7b800282f3094",
+    "recovery_code": "$2a$12$VNNSEmX06pmxuirLADxuoeLNpuxohxOZVymvGtXap2QDYDWoNX4p6",
+    "createdAt": "2024-08-07T08:29:24.338Z",
+    "updatedAt": "2024-08-07T08:41:53.975Z",
+    "__v": 1
+  },
+  {
+    "_id": "66ba023dc8c7b800282f7e50",
+    "parents": [
+      "66660c5cd32bdd0029455775"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Kingsley",
+    "last_name": "Okpaleke",
+    "username": "JBSkings",
+    "phone_number": "09068377230",
+    "parent_id": null,
+    "user_id": "66ba023dc8c7b800282f7e4d",
+    "recovery_code": "$2a$12$USvw4Yf.AQ8bvJ/Tm5GC.eUFHhuqlFReNobaHtM45IIT.Y1Z9L9/.",
+    "createdAt": "2024-08-12T12:38:21.315Z",
+    "updatedAt": "2024-08-12T13:14:51.342Z",
+    "__v": 1
+  },
+  {
+    "_id": "66ba147bc8c7b800282f8050",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-08-12T14:57:00.109Z",
+    "first_name": "Kingsley",
+    "last_name": "Okpaleke",
+    "username": "Xinoki",
+    "phone_number": "09068377230",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66ba147bc8c7b800282f804d",
+    "recovery_code": "$2a$12$R0nsjLZFBD13ybBte7vxQulOm3OHNcFPNUidm73FFaaN1ZiqipNOW",
+    "createdAt": "2024-08-12T13:56:11.248Z",
+    "updatedAt": "2024-08-12T14:57:00.111Z",
+    "__v": 1
+  },
+  {
+    "_id": "66ba8a21c8c7b800282f84b2",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-08-12T23:19:00.221Z",
+    "first_name": "Ade",
+    "last_name": "Bio",
+    "username": "cooldre",
+    "phone_number": "070546678",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66ba8a21c8c7b800282f84af",
+    "recovery_code": "$2a$12$uS8z41NRLsmhcSvDuD/E5uSACSbpeOzIwN0Jh5gWdZ7FrdkTrOc4.",
+    "createdAt": "2024-08-12T22:18:09.099Z",
+    "updatedAt": "2024-08-12T23:19:00.222Z",
+    "__v": 1
+  },
+  {
+    "_id": "66cb2485c8c7b80028303cff",
+    "parents": [
+      "66662d52e7f7850029271198"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ify",
+    "last_name": "Perpy",
+    "username": "Ifeoma",
+    "phone_number": "07037962771",
+    "parent_id": null,
+    "user_id": "66cb2485c8c7b80028303cfc",
+    "recovery_code": "$2a$12$DLkWMrx2qY7wt1MEkKsc4ePTyrCr2Bw3I9DrCxEmScFU8iQsbVtuW",
+    "createdAt": "2024-08-25T12:33:09.467Z",
+    "updatedAt": "2024-08-25T12:59:28.146Z",
+    "__v": 1
+  },
+  {
+    "_id": "66cb873bc8c7b8002830421d",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-08-25T20:35:00.224Z",
+    "first_name": "john",
+    "last_name": "doe",
+    "username": "jd",
+    "phone_number": "08057967883",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66cb873bc8c7b8002830421a",
+    "recovery_code": "$2a$12$5Or3m4a7VgaR2G33gU1kauwTSMOaL4/gzYqFVfS6rH345Ts6SuH9y",
+    "createdAt": "2024-08-25T19:34:19.638Z",
+    "updatedAt": "2024-08-25T20:35:00.225Z",
+    "__v": 1
+  },
+  {
+    "_id": "66cb908ec8c7b80028304300",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-08-25T21:15:00.213Z",
+    "first_name": "Anyanwu",
+    "last_name": "Sunny",
+    "username": "Sunnydbanj",
+    "phone_number": "08053240044",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "66cb908ec8c7b800283042fd",
+    "recovery_code": "$2a$12$m877kObkhXZRYu76joBSlOITvvNWlJ9bRe4.LnzDrLDfUwaLV45ka",
+    "createdAt": "2024-08-25T20:14:06.648Z",
+    "updatedAt": "2024-08-25T21:15:00.215Z",
+    "__v": 1
+  },
+  {
+    "_id": "6710062f794085001e4a70c7",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-10-16T19:31:00.297Z",
+    "first_name": "Gartrude",
+    "last_name": "Ezurueme",
+    "username": "Beauty",
+    "phone_number": "07067202498",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6710062e794085001e4a70c4",
+    "recovery_code": "$2a$12$UImlaEJD.b.bI6dcVOkAnO5DNVpomluSegA7c4eroRQpQ5HMZbLHq",
+    "createdAt": "2024-10-16T18:30:07.051Z",
+    "updatedAt": "2024-10-16T19:31:00.299Z",
+    "__v": 1
+  },
+  {
+    "_id": "6714f34c794085001e4ac6d3",
+    "parents": [
+      "6666bba789d18100296869f1"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Nweke",
+    "last_name": "Chibueze Mishael",
+    "username": "D Basic 3",
+    "phone_number": "09070947739",
+    "parent_id": null,
+    "user_id": "6714f34c794085001e4ac6d0",
+    "recovery_code": "$2a$12$DExR4HuX4PlB/rCpuo/EnuI4.e72F2lQr4RgpEcJkJmdO73zdxe1S",
+    "createdAt": "2024-10-20T12:10:52.480Z",
+    "updatedAt": "2024-10-20T12:55:20.905Z",
+    "__v": 1
+  },
+  {
+    "_id": "6718d4c8794085001e4af22e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-10-23T11:50:00.216Z",
+    "first_name": "Favour",
+    "last_name": "Onwugbenu",
+    "username": "FavourON",
+    "phone_number": "07046153691",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6718d4c8794085001e4af22b",
+    "recovery_code": "$2a$12$85Fnd5..2w0XOeA3eL.IW.3jy8lD3aFhg3fdStoKV47iUeSYJFUai",
+    "createdAt": "2024-10-23T10:49:44.912Z",
+    "updatedAt": "2024-10-23T11:50:00.217Z",
+    "__v": 1
+  },
+  {
+    "_id": "6721dd52794085001e4b6367",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-10-30T08:21:00.206Z",
+    "first_name": "Mr odinaka",
+    "last_name": "Oibamakm",
+    "username": "Car Air a/c",
+    "phone_number": "08029100818",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6721dd52794085001e4b6364",
+    "recovery_code": "$2a$12$RUU5fR3si3Sk.QggN7vpzeZl5qgU/uqEO.q0oaNOvfAcRm1nLjk0S",
+    "createdAt": "2024-10-30T07:16:34.285Z",
+    "updatedAt": "2024-10-30T08:21:00.207Z",
+    "__v": 1
+  },
+  {
+    "_id": "67268c3c794085001e4b9723",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ijeoma",
+    "last_name": "Okereke",
+    "username": "Ijokereke 1",
+    "phone_number": "08027897662",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67268c3c794085001e4b9720",
+    "recovery_code": "$2a$12$.U4sfB9CqK0TA/58jrlsMuYd3zOtgfm0kHQgksJBAXVWWU.q/8Ygm",
+    "createdAt": "2024-11-02T20:31:56.927Z",
+    "updatedAt": "2024-11-02T22:06:29.198Z",
+    "__v": 2
+  },
+  {
+    "_id": "672690ba794085001e4b97ff",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ijeoma",
+    "last_name": "Okereke",
+    "username": "Ijokereke 2",
+    "phone_number": "08027897662",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "672690ba794085001e4b97fc",
+    "recovery_code": "$2a$12$.X1CnT2hej6lf2ZAOERXWOMFQrXdxbFL5t53664gnRLuLRhtENvdy",
+    "createdAt": "2024-11-02T20:51:06.991Z",
+    "updatedAt": "2024-11-02T22:06:33.401Z",
+    "__v": 2
+  },
+  {
+    "_id": "6729e102794085001e4bbfaa",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "olupinla",
+    "last_name": "Ayomide",
+    "username": "Aykerrigan",
+    "phone_number": "07042095806",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6729e102794085001e4bbfa7",
+    "recovery_code": "$2a$12$qEVaYSzytMIQ1VNqd8G8h.WTH7iw.uNzTm8U0aZMXoW.CmdpTzRT.",
+    "createdAt": "2024-11-05T09:10:26.764Z",
+    "updatedAt": "2024-11-06T15:00:45.988Z",
+    "__v": 2
+  },
+  {
+    "_id": "672a88bd794085001e4bc9cc",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Onyekachi Paul",
+    "last_name": "Okereke",
+    "username": "Pauline",
+    "phone_number": "08032724425",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "672a88bc794085001e4bc9c9",
+    "recovery_code": "$2a$12$.ptZGoRTFhkn0jq0Xiu.iefdkLYJh2yHi7uzKC/tA.wrg7bTUzHh.",
+    "createdAt": "2024-11-05T21:06:05.036Z",
+    "updatedAt": "2024-11-06T12:50:22.129Z",
+    "__v": 2
+  },
+  {
+    "_id": "673a55fc794085001e4c753f",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ikechukwu",
+    "last_name": "Emmanuel",
+    "username": "Lalaboy",
+    "phone_number": "08140146368",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673a55fb794085001e4c753c",
+    "recovery_code": "$2a$12$4kEePTUmQ78yxT6WcitDquagAHT8VHLMAAw.4.7sFqg6FrjeL6X4O",
+    "createdAt": "2024-11-17T20:45:48.019Z",
+    "updatedAt": "2024-11-18T10:50:39.134Z",
+    "__v": 2
+  },
+  {
+    "_id": "673b2d5c794085001e4c809e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-18T13:05:00.211Z",
+    "first_name": "MADUBUEZE",
+    "last_name": "SAMUEL CHUKWUNWEIKE",
+    "username": "Sam Walker",
+    "phone_number": "08105562226",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673b2d5c794085001e4c809b",
+    "recovery_code": "$2a$12$c4sihp0z35Wy8O584M05/uM35HiJTd4fa2s7Vdw3pgEJ7GtPnOQmW",
+    "createdAt": "2024-11-18T12:04:44.538Z",
+    "updatedAt": "2024-11-18T13:05:00.213Z",
+    "__v": 1
+  },
+  {
+    "_id": "673b46a2794085001e4c83c8",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-18T14:53:00.220Z",
+    "first_name": "Otuamah",
+    "last_name": "Kenneth Thompson",
+    "username": "Otuamah2",
+    "phone_number": "+2347060865134",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673b46a2794085001e4c83c5",
+    "recovery_code": "$2a$12$1o601LgEz7tPW2bkiaV85OJVcUKzjd/mA3gX7odMBUS3Aa401BpOy",
+    "createdAt": "2024-11-18T13:52:34.226Z",
+    "updatedAt": "2024-11-18T14:53:00.221Z",
+    "__v": 1
+  },
+  {
+    "_id": "673c8eb9794085001e4c9cab",
+    "parents": [
+      "6666c1e089d1810029686b3e"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Sameul",
+    "last_name": "Chibuihe",
+    "username": "Samuel",
+    "phone_number": "07075770520",
+    "parent_id": null,
+    "user_id": "673c8eb9794085001e4c9ca8",
+    "recovery_code": "$2a$12$ds6CezwGRgTRpTJHY8zOeufdkFrGHoUX90GYH5RfLz3sqiHBCJ4XW",
+    "createdAt": "2024-11-19T13:12:25.500Z",
+    "updatedAt": "2024-11-19T13:29:03.033Z",
+    "__v": 1
+  },
+  {
+    "_id": "673d8692794085001e4cc337",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Princess",
+    "last_name": "Nneoma dike",
+    "username": "Pribaby",
+    "phone_number": "09136864022",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673d8692794085001e4cc334",
+    "recovery_code": "$2a$12$vMQfJEVbXuj1YMhfpOcHwOrfhvitrWV/2zT/xaykF5RxLHCSqxgNO",
+    "createdAt": "2024-11-20T06:49:54.558Z",
+    "updatedAt": "2024-11-22T06:17:17.036Z",
+    "__v": 2
+  },
+  {
+    "_id": "673e11cd794085001e4cd068",
+    "parents": [
+      "6666d9b189d1810029687663"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ada",
+    "last_name": "Ibeh",
+    "username": "Adagold",
+    "phone_number": "09039393857",
+    "parent_id": null,
+    "user_id": "673e11cd794085001e4cd065",
+    "recovery_code": "$2a$12$jmfxut0B1ie90zVZSg.jV.QY2FZWXDSHQD6UXJr9WQTuYKEm7NdEi",
+    "createdAt": "2024-11-20T16:43:57.943Z",
+    "updatedAt": "2024-11-20T17:02:25.709Z",
+    "__v": 1
+  },
+  {
+    "_id": "673e1d1d794085001e4cd565",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-20T18:33:00.212Z",
+    "first_name": "Chibuike",
+    "last_name": "Augustine",
+    "username": "Television1996",
+    "phone_number": "09129435601",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673e1d1d794085001e4cd562",
+    "recovery_code": "$2a$12$mc64tnta0ywxow7fHnKX0u8E54VFNa.LJMcBPGCKrmYmkoKgFlfRy",
+    "createdAt": "2024-11-20T17:32:13.514Z",
+    "updatedAt": "2024-11-20T18:33:00.214Z",
+    "__v": 1
+  },
+  {
+    "_id": "673e3611794085001e4cd933",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Odili",
+    "last_name": "Okwuchukwu",
+    "username": "palmereck@gmail.com",
+    "phone_number": "09058724970",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673e3611794085001e4cd930",
+    "recovery_code": "$2a$12$Z3wHsT1Vw49CQw/P5sGQ4uSATKEvCBC7PXgXLoSx4mBuVnOdkq1gy",
+    "createdAt": "2024-11-20T19:18:41.777Z",
+    "updatedAt": "2024-11-21T14:57:54.992Z",
+    "__v": 2
+  },
+  {
+    "_id": "673f0734794085001e4cf350",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-21T11:12:00.228Z",
+    "first_name": "John",
+    "last_name": "Mercy titilayo",
+    "username": "Success 429",
+    "phone_number": "09053506785",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673f0734794085001e4cf34d",
+    "recovery_code": "$2a$12$dp2HXvFwM9w5lHC/IxG94OwOFASGc9wRAgBPuBrrvPyE45Taseyp2",
+    "createdAt": "2024-11-21T10:11:00.681Z",
+    "updatedAt": "2024-11-21T11:12:00.228Z",
+    "__v": 1
+  },
+  {
+    "_id": "673f1724794085001e4cfa8c",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-21T12:20:00.227Z",
+    "first_name": "Solomon",
+    "last_name": "Ogbonna",
+    "username": "Solozo",
+    "phone_number": "08032762610",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673f1724794085001e4cfa89",
+    "recovery_code": "$2a$12$OFtTF1ruFRVUGDRp764biOEDf.Iwh1E5xAzCCMc7tzq56ixu9TRem",
+    "createdAt": "2024-11-21T11:19:00.437Z",
+    "updatedAt": "2024-11-21T12:20:00.227Z",
+    "__v": 1
+  },
+  {
+    "_id": "673f19f0794085001e4cfc60",
+    "parents": [
+      "6666f44789d1810029688056"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Chibueze",
+    "last_name": "Nweke",
+    "username": "Basic4",
+    "phone_number": "09070947739",
+    "parent_id": null,
+    "user_id": "673f19f0794085001e4cfc5d",
+    "recovery_code": "$2a$12$vMJClBA3KCkU//Wm1cajgO7nMImPgOTDTQFecxYu.IKOhO8WdhwgK",
+    "createdAt": "2024-11-21T11:30:56.459Z",
+    "updatedAt": "2024-11-21T11:33:43.375Z",
+    "__v": 1
+  },
+  {
+    "_id": "673f1bae794085001e4cfd74",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-21T12:39:00.217Z",
+    "first_name": "Smart",
+    "last_name": "Edet",
+    "username": "Smartboy",
+    "phone_number": "07086885311",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673f1bae794085001e4cfd71",
+    "recovery_code": "$2a$12$0jDi70AEVzlnGN1U9u2EteB.aJEGomtUSJmjX9GbnKOQLvIQzZxPC",
+    "createdAt": "2024-11-21T11:38:22.243Z",
+    "updatedAt": "2024-11-21T12:39:00.217Z",
+    "__v": 1
+  },
+  {
+    "_id": "673f3015794085001e4d0147",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-21T14:06:00.216Z",
+    "first_name": "Akinsehinwa",
+    "last_name": "Peter",
+    "username": "Olafusi",
+    "phone_number": "08166471839",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673f3015794085001e4d0144",
+    "recovery_code": "$2a$12$Rgqi/8gV7M1sVhbTb7NvJupXiyke7t/olACMVpIRksjG3Htl1EQfe",
+    "createdAt": "2024-11-21T13:05:25.293Z",
+    "updatedAt": "2024-11-21T14:06:00.218Z",
+    "__v": 1
+  },
+  {
+    "_id": "673f3c6f794085001e4d036c",
+    "parents": [
+      "6666f98a89d1810029688392"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ani",
+    "last_name": "Silvester Onyeka",
+    "username": "Kelvin23",
+    "phone_number": "09026638327",
+    "parent_id": null,
+    "user_id": "673f3c6f794085001e4d0369",
+    "recovery_code": "$2a$12$L9b3qtdoGBzqvUTsQTduBuJ8KHlqSlq03NH9I2ROIHZjFEgnx3wUO",
+    "createdAt": "2024-11-21T13:58:07.579Z",
+    "updatedAt": "2024-11-21T14:21:24.942Z",
+    "__v": 1
+  },
+  {
+    "_id": "673f508c794085001e4d0b22",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-21T16:24:00.218Z",
+    "first_name": "Sherif",
+    "last_name": "Adekunle",
+    "username": "olafty",
+    "phone_number": "08071215442",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673f508c794085001e4d0b1f",
+    "recovery_code": "$2a$12$LV3gj4QrJeKbM36oD41gxenNbhTicHcdJvVUWImyBhYO4l4QLgM8W",
+    "createdAt": "2024-11-21T15:23:56.067Z",
+    "updatedAt": "2024-11-21T16:24:00.219Z",
+    "__v": 1
+  },
+  {
+    "_id": "673f6e59794085001e4d10c8",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-21T18:32:00.115Z",
+    "first_name": "Okeoghene",
+    "last_name": "Prosper",
+    "username": "Sunday",
+    "phone_number": "07031679842",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "673f6e58794085001e4d10c5",
+    "recovery_code": "$2a$12$kFg56qwt2h6I/LvL/X8pVOCF0jUHJHFZNlRqZDHYad9vVHkZ03Tfa",
+    "createdAt": "2024-11-21T17:31:05.004Z",
+    "updatedAt": "2024-11-21T18:32:00.117Z",
+    "__v": 1
+  },
+  {
+    "_id": "6740349d794085001e4d2b56",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Olawale",
+    "last_name": "Awobiyi",
+    "username": "Walephilip",
+    "phone_number": "09136745878",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6740349d794085001e4d2b53",
+    "recovery_code": "$2a$12$WM0hg1LO.OGzspMdxNlNaOecTSxqyXAzANvx4t87hc3q7JMIaSc9e",
+    "createdAt": "2024-11-22T07:37:01.639Z",
+    "updatedAt": "2025-01-18T14:03:43.350Z",
+    "__v": 2
+  },
+  {
+    "_id": "67405641794085001e4d2ec2",
+    "parents": [
+      "666714ae89d1810029688d1b"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Precious",
+    "last_name": "Boluwatife",
+    "username": "Wilson",
+    "phone_number": "09021241658",
+    "parent_id": null,
+    "user_id": "67405641794085001e4d2ebf",
+    "recovery_code": "$2a$12$7ezRlkqSMbvmWS9K6uuODOuenaKj9Jw22Wp9xg4hPFUTwdmOcXfAG",
+    "createdAt": "2024-11-22T10:00:33.471Z",
+    "updatedAt": "2024-11-22T10:27:16.617Z",
+    "__v": 1
+  },
+  {
+    "_id": "67405848794085001e4d2f14",
+    "parents": [
+      "666714ae89d1810029688d1b"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Nkechi",
+    "last_name": "Nnamani",
+    "username": "Mega20",
+    "phone_number": "08034066295",
+    "parent_id": null,
+    "user_id": "67405848794085001e4d2f11",
+    "recovery_code": "$2a$12$P8IydDOQY6txBYEtTNs2ReCUlhDAbviETlpCqB8uB4haVdlyVXEYy",
+    "createdAt": "2024-11-22T10:09:12.510Z",
+    "updatedAt": "2024-11-22T10:27:20.944Z",
+    "__v": 1
+  },
+  {
+    "_id": "67405cb8794085001e4d314d",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Adebiyi",
+    "last_name": "Ruth",
+    "username": "Queen  dolamu",
+    "phone_number": "07025913739",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67405cb8794085001e4d314a",
+    "recovery_code": "$2a$12$SGLPfRFYvEt1ZiJrxe4AD.5VsvbndJnlGnDkoTxgXmfpuHEqjgdgS",
+    "createdAt": "2024-11-22T10:28:08.196Z",
+    "updatedAt": "2024-11-22T17:15:00.380Z",
+    "__v": 2
+  },
+  {
+    "_id": "6740f857794085001e4d426d",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-22T22:33:00.223Z",
+    "first_name": "Israel",
+    "last_name": "Majoyegbe",
+    "username": "Majis",
+    "phone_number": "08164756798",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6740f857794085001e4d426a",
+    "recovery_code": "$2a$12$Ov5Ie4t5hlrbHH65mGV4AOPUFA7K5S5j7s45njMbZPXNlK4DETyVe",
+    "createdAt": "2024-11-22T21:32:07.208Z",
+    "updatedAt": "2024-11-22T22:33:00.223Z",
+    "__v": 1
+  },
+  {
+    "_id": "67418046794085001e4d498c",
+    "parents": [
+      "66671ebf89d1810029689025"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Eweje",
+    "last_name": "Akeem",
+    "username": "Akeem I",
+    "phone_number": "08164221900",
+    "parent_id": null,
+    "user_id": "67418046794085001e4d4989",
+    "recovery_code": "$2a$12$OvN6mmr8R/ml.wMJFKH01uZRjHjEi6zy.Q27bZSZkOYrJVRemsmdW",
+    "createdAt": "2024-11-23T07:12:06.756Z",
+    "updatedAt": "2024-11-23T07:34:38.698Z",
+    "__v": 1
+  },
+  {
+    "_id": "674196d5794085001e4d4ba8",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-23T09:49:00.204Z",
+    "first_name": "Kazeem",
+    "last_name": "Yesiminat Arike",
+    "username": "Yesmeenah",
+    "phone_number": "09035648692",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "674196d5794085001e4d4ba5",
+    "recovery_code": "$2a$12$6QtyLYXSPI8b0iatdU4/n.Ozr9LyP8FxUp/OYQv0dTOpQ4Hjoh3ve",
+    "createdAt": "2024-11-23T08:48:21.905Z",
+    "updatedAt": "2024-11-23T09:49:00.205Z",
+    "__v": 1
+  },
+  {
+    "_id": "6741e548794085001e4d5139",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-23T15:24:00.214Z",
+    "first_name": "Umar",
+    "last_name": "Farouk",
+    "username": "Umar farouk",
+    "phone_number": "07079198761",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6741e548794085001e4d5136",
+    "recovery_code": "$2a$12$mk1J6FTcTWcCDzeLYBgMaOTcLE9hwlRr2igp7OFzhlrG5zGSEfrWG",
+    "createdAt": "2024-11-23T14:23:04.783Z",
+    "updatedAt": "2024-11-23T15:24:00.216Z",
+    "__v": 1
+  },
+  {
+    "_id": "6741e72c794085001e4d5281",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-23T15:32:00.208Z",
+    "first_name": "Abdulwaasii",
+    "last_name": "Opeyemi",
+    "username": "Abdulwaasii",
+    "phone_number": "09155270910",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6741e72c794085001e4d527e",
+    "recovery_code": "$2a$12$.jAKlj4pIpzQJ78n4aJmpO6IQ1jIRxKnPTGChHTD4QZ64W0zhdWDi",
+    "createdAt": "2024-11-23T14:31:08.738Z",
+    "updatedAt": "2024-11-23T15:32:00.208Z",
+    "__v": 1
+  },
+  {
+    "_id": "6741ff3b794085001e4d5550",
+    "parents": [
+      "6667e58389d181002968a9bb"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Chinonso",
+    "last_name": "Udeze",
+    "username": "Udeze24",
+    "phone_number": "08140061166",
+    "parent_id": null,
+    "user_id": "6741ff3b794085001e4d554d",
+    "recovery_code": "$2a$12$GBhoeTjCK.sS8c6rgPZS8.wEZQdJVxxlexQB1UXWh7SObMIL/i4.S",
+    "createdAt": "2024-11-23T16:13:47.441Z",
+    "updatedAt": "2024-11-23T16:28:59.061Z",
+    "__v": 1
+  },
+  {
+    "_id": "674317ab794085001e4d67b6",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Carl",
+    "last_name": "Agbaih",
+    "username": "Dove",
+    "phone_number": "08033064573",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "674317ab794085001e4d67b3",
+    "recovery_code": "$2a$12$lbfBDltA3GA5SMu2sKrbsuTZ/JuG5pNOgSPj0Snmbh8/CIsSRxSKK",
+    "createdAt": "2024-11-24T12:10:19.269Z",
+    "updatedAt": "2024-11-25T12:16:19.134Z",
+    "__v": 2
+  },
+  {
+    "_id": "6743470c794085001e4d6ac9",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-24T16:33:00.216Z",
+    "first_name": "Kingsley",
+    "last_name": "Friday",
+    "username": "Kizo",
+    "phone_number": "09069950397",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6743470c794085001e4d6ac6",
+    "recovery_code": "$2a$12$oXfiSzqiTwlgSpKpWB.38uSnbW6IHX.x1XEiCR8JERbOZEXxB5jfi",
+    "createdAt": "2024-11-24T15:32:28.158Z",
+    "updatedAt": "2024-11-24T16:33:00.217Z",
+    "__v": 1
+  },
+  {
+    "_id": "67437ab3794085001e4d6dbe",
+    "parents": [
+      "6668044389d181002968b0c3"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Prosper",
+    "last_name": "Robert",
+    "username": "Robert121",
+    "phone_number": "09043781104",
+    "parent_id": null,
+    "user_id": "67437ab3794085001e4d6dbb",
+    "recovery_code": "$2a$12$jCr/3.3i212vpMfVSqqjG.3cM992gPtUkv50K.70GftUv8Af3/4j.",
+    "createdAt": "2024-11-24T19:12:51.480Z",
+    "updatedAt": "2024-11-24T19:23:15.690Z",
+    "__v": 1
+  },
+  {
+    "_id": "67438e94794085001e4d7082",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Olanrewaju",
+    "last_name": "Sobande",
+    "username": "Fatfaith1",
+    "phone_number": "08023979864",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67438e94794085001e4d707f",
+    "recovery_code": "$2a$12$qpfkCxlsIqvZv7wnXZT9/.CicuMLX8OuXQ0ipla9nT9FTxLr9SzHC",
+    "createdAt": "2024-11-24T20:37:40.634Z",
+    "updatedAt": "2024-11-25T10:00:30.911Z",
+    "__v": 2
+  },
+  {
+    "_id": "674468a5794085001e4d83b5",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Folake mercy",
+    "last_name": "Ariyo",
+    "username": "Flakky123",
+    "phone_number": "08027170645",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "674468a5794085001e4d83b2",
+    "recovery_code": "$2a$12$9dDfWkmGDEW1Ilvcx44maORR5RyIN0lqqAnWKMdLO8rHsJEtRSWBi",
+    "createdAt": "2024-11-25T12:08:05.953Z",
+    "updatedAt": "2024-11-25T20:57:21.328Z",
+    "__v": 2
+  },
+  {
+    "_id": "67446ac7794085001e4d848f",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Oreofe",
+    "last_name": "Ariyo",
+    "username": "Kim",
+    "phone_number": "‪+234 707 725 5998‬",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67446ac7794085001e4d848c",
+    "recovery_code": "$2a$12$OUGMEE3HxB8ZV23XT2eeHeFuUlYHsFiVHb0uArZmVKxOtx9kkuw.e",
+    "createdAt": "2024-11-25T12:17:11.190Z",
+    "updatedAt": "2024-11-26T08:39:33.260Z",
+    "__v": 2
+  },
+  {
+    "_id": "6745c2b5794085001e4da19a",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-26T13:45:00.215Z",
+    "first_name": "TALABI",
+    "last_name": "OLALEKAN",
+    "username": "UNION",
+    "phone_number": "09056759424",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6745c2b5794085001e4da197",
+    "recovery_code": "$2a$12$TQASPBgBzbc72g9B5eMu7OYJcGlrFBGUQeoDDQRZ.cjplMAB23cNm",
+    "createdAt": "2024-11-26T12:44:37.357Z",
+    "updatedAt": "2024-11-26T13:45:00.216Z",
+    "__v": 1
+  },
+  {
+    "_id": "6745e9bb794085001e4da9c0",
+    "parents": [
+      "665fcd359c034d00280b2b9d",
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "gboyega",
+    "last_name": "adeniran",
+    "username": "joshegaman",
+    "phone_number": "08147004443",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6745e9bb794085001e4da9bd",
+    "recovery_code": "$2a$12$Ko6bT4yR9WI1hXEDkTZZ1.gfWkanX0SYC3aiNB95wdk226hV05DlS",
+    "createdAt": "2024-11-26T15:31:07.336Z",
+    "updatedAt": "2024-11-26T19:14:42.179Z",
+    "__v": 2
+  },
+  {
+    "_id": "6745f32b794085001e4daae5",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-26T17:12:00.206Z",
+    "first_name": "Okeadinma",
+    "last_name": "Ibe",
+    "username": "Okeadi",
+    "phone_number": "08037180894",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6745f32b794085001e4daae2",
+    "recovery_code": "$2a$12$HW00puARc5.BiRCR5NaaWuFf2y4FnlEqc0jOwbTSlKafXlGKF1UUG",
+    "createdAt": "2024-11-26T16:11:23.121Z",
+    "updatedAt": "2024-11-26T17:12:00.207Z",
+    "__v": 1
+  },
+  {
+    "_id": "67481646794085001e4de11e",
+    "parents": [
+      "6668933989d181002968bfb0"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Ngozi",
+    "last_name": "Samuel",
+    "username": "Ngozi 74",
+    "phone_number": "08039259649",
+    "parent_id": null,
+    "user_id": "67481646794085001e4de11b",
+    "recovery_code": "$2a$12$lY5blMh1shbC3GmSYEYuDu.USnykdp2w0Q750EbD4tYNJYeinrcEC",
+    "createdAt": "2024-11-28T07:05:42.339Z",
+    "updatedAt": "2024-11-28T07:09:02.683Z",
+    "__v": 1
+  },
+  {
+    "_id": "6749715e794085001e4e0bea",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-29T08:47:00.210Z",
+    "first_name": "ANGELA",
+    "last_name": "CHUKWUMA",
+    "username": "Angichuks",
+    "phone_number": "08033103157",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6749715e794085001e4e0be7",
+    "recovery_code": "$2a$12$/zF9fkioii1CB5rKk4J9p.Q5Kh/PbNiPfSK/6xWkQV7XMAgVLDMnq",
+    "createdAt": "2024-11-29T07:46:38.589Z",
+    "updatedAt": "2024-11-29T08:47:00.211Z",
+    "__v": 1
+  },
+  {
+    "_id": "674ad51f794085001e4e211b",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-30T10:05:00.201Z",
+    "first_name": "Delight",
+    "last_name": "Chiemerie",
+    "username": "Chidel123",
+    "phone_number": "08065407070",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "674ad51f794085001e4e2118",
+    "recovery_code": "$2a$12$WcE5FjvDuinHDNaOn9sEpOeKECp1YZOlzLkn356uxJY270LGOO6Ke",
+    "createdAt": "2024-11-30T09:04:31.558Z",
+    "updatedAt": "2024-11-30T10:05:00.202Z",
+    "__v": 1
+  },
+  {
+    "_id": "674ad99f794085001e4e2193",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-30T10:24:00.211Z",
+    "first_name": "John",
+    "last_name": "Mercy titilayo",
+    "username": "Mercy1429",
+    "phone_number": "09053506785",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "674ad99f794085001e4e2190",
+    "recovery_code": "$2a$12$1vVJoYt4kaqHjrbAQlSiMevUPhjTkrUakpOWGMr0oyARN5h.AAhC.",
+    "createdAt": "2024-11-30T09:23:43.365Z",
+    "updatedAt": "2024-11-30T10:24:00.212Z",
+    "__v": 1
+  },
+  {
+    "_id": "674aed0b794085001e4e22a8",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-30T11:47:00.211Z",
+    "first_name": "Omoba",
+    "last_name": "Lawreta",
+    "username": "Joy4ever",
+    "phone_number": "09153851769",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "674aed0b794085001e4e22a5",
+    "recovery_code": "$2a$12$6bBZpg4ygfysM3q5.CHqb.BriHNrzS/0sKSINKocr0Ieh6s4yL2AS",
+    "createdAt": "2024-11-30T10:46:35.422Z",
+    "updatedAt": "2024-11-30T11:47:00.213Z",
+    "__v": 1
+  },
+  {
+    "_id": "674af3ed794085001e4e2320",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-11-30T12:16:00.210Z",
+    "first_name": "Nzefili",
+    "last_name": "Favour",
+    "username": "NzefiliFavour",
+    "phone_number": "08135048426",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "674af3ed794085001e4e231d",
+    "recovery_code": "$2a$12$7cXQUGRZPp1iBK4./CZxCu/7xlAilkgL2oNHJ712bkA4Z7iPfo8xS",
+    "createdAt": "2024-11-30T11:15:57.423Z",
+    "updatedAt": "2024-11-30T12:16:00.210Z",
+    "__v": 1
+  },
+  {
+    "_id": "674dda19794085001e4e4ded",
+    "parents": [
+      "66689b0589d181002968c22b"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Omoba",
+    "last_name": "Lawreta",
+    "username": "Joyforlife",
+    "phone_number": "09153851769",
+    "parent_id": null,
+    "user_id": "674dda19794085001e4e4dea",
+    "recovery_code": "$2a$12$LjJA/Zct7UJnGzIinzEnCu9qluJz3GQCtzWQ0nzMoD9vrvG6xg54i",
+    "createdAt": "2024-12-02T16:02:33.461Z",
+    "updatedAt": "2024-12-02T16:11:29.987Z",
+    "__v": 1
+  },
+  {
+    "_id": "675181cf794085001e4e7559",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-12-05T11:35:00.207Z",
+    "first_name": "Babatunde",
+    "last_name": "Lukman",
+    "username": "Confidence",
+    "phone_number": "08136227926",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "675181cf794085001e4e7556",
+    "recovery_code": "$2a$12$rz8d/Q7R4M8lwbzrf.9hDeMm/8DZBIeJ66XIyUSPQoak1pew7VW/i",
+    "createdAt": "2024-12-05T10:34:55.536Z",
+    "updatedAt": "2024-12-05T11:35:00.208Z",
+    "__v": 1
+  },
+  {
+    "_id": "6751db50794085001e4e7b77",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-12-05T17:57:00.212Z",
+    "first_name": "Olufunso",
+    "last_name": "Ayelagbe",
+    "username": "Divinecash70",
+    "phone_number": "08135106167",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6751db50794085001e4e7b74",
+    "recovery_code": "$2a$12$CfNsSeR9fdwIyCsHrMAC2utV7ASdkkNh6rXUvnf3Sh47TWffDSF9G",
+    "createdAt": "2024-12-05T16:56:48.229Z",
+    "updatedAt": "2024-12-05T17:57:00.215Z",
+    "__v": 1
+  },
+  {
+    "_id": "6752e6c8794085001e4e87ce",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-12-06T12:59:00.210Z",
+    "first_name": "Louis",
+    "last_name": "Pidou  Ogueli",
+    "username": "Pidouogu53",
+    "phone_number": "08037195308",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6752e6c8794085001e4e87cb",
+    "recovery_code": "$2a$12$x1kVJ7Z49gNxx/AFhpixEe.D9Q1j5QTxrfouEU7fGXS00QzNQPYz6",
+    "createdAt": "2024-12-06T11:58:00.878Z",
+    "updatedAt": "2024-12-06T12:59:00.211Z",
+    "__v": 1
+  },
+  {
+    "_id": "675868cd794085001e4ec678",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-12-10T17:15:00.299Z",
+    "first_name": "Daniel",
+    "last_name": "Egbo",
+    "username": "Frank",
+    "phone_number": "09164701675",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "675868cd794085001e4ec675",
+    "recovery_code": "$2a$12$.h0lMJJsCKKul/0YdQ310.gED5PPPl6wwB3kBT1ZdlIkSf3ZOVbP6",
+    "createdAt": "2024-12-10T16:14:05.234Z",
+    "updatedAt": "2024-12-10T17:15:00.301Z",
+    "__v": 1
+  },
+  {
+    "_id": "675fe10b794085001e4f15d5",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-12-16T09:13:00.204Z",
+    "first_name": "Ikechukwu",
+    "last_name": "Omenuwa",
+    "username": "Iykay",
+    "phone_number": "08065764195",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "675fe10b794085001e4f15d2",
+    "recovery_code": "$2a$12$CT2tsZuLZYlJB0c.8qSdA..4B6zrpS4ZAo2MZXFPcNThd7RBlQtaK",
+    "createdAt": "2024-12-16T08:12:59.067Z",
+    "updatedAt": "2024-12-16T09:13:00.205Z",
+    "__v": 1
+  },
+  {
+    "_id": "67604c53794085001e4f1a6e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-12-16T16:51:00.220Z",
+    "first_name": "Ojukwu",
+    "last_name": "Chinenye",
+    "username": "Ammygrace03",
+    "phone_number": "07062401169",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67604c52794085001e4f1a6b",
+    "recovery_code": "$2a$12$Nnb6aAsrcW1T7.YSwiXJTegfXpr0fjC77ByzSPNGn/BUzQx0i3cq6",
+    "createdAt": "2024-12-16T15:50:43.041Z",
+    "updatedAt": "2024-12-16T16:51:00.221Z",
+    "__v": 1
+  },
+  {
+    "_id": "676acc20794085001e4f8178",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2024-12-24T15:59:00.234Z",
+    "first_name": "Samuel",
+    "last_name": "Akiniyi",
+    "username": "Sammy raj",
+    "phone_number": "09110167045",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "676acc20794085001e4f8175",
+    "recovery_code": "$2a$12$cpAvmromuWbhhaz7Pvu0suZ4HBPVLSyJoVE/YKo7yNS1NfMx4673O",
+    "createdAt": "2024-12-24T14:58:40.101Z",
+    "updatedAt": "2024-12-24T15:59:00.235Z",
+    "__v": 1
+  },
+  {
+    "_id": "676acdb8794085001e4f8252",
+    "parents": [
+      "6668a5aa89d181002968c7cd"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": null,
+    "first_name": "Emmanuel",
+    "last_name": "Adeyemi",
+    "username": "Emmy",
+    "phone_number": "09110167045",
+    "parent_id": null,
+    "user_id": "676acdb8794085001e4f824f",
+    "recovery_code": "$2a$12$QVQgbOfowNq.X6p1FdEyG.t8besZUxNRvqq.64VuRZUSmWovKwT0G",
+    "createdAt": "2024-12-24T15:05:28.105Z",
+    "updatedAt": "2024-12-24T16:03:46.583Z",
+    "__v": 1
+  },
+  {
+    "_id": "6775cd77794085001e4fecb6",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-02T00:20:00.229Z",
+    "first_name": "Fuck",
+    "last_name": "Your",
+    "username": "Father",
+    "phone_number": "07055224362",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6775cd77794085001e4fecb3",
+    "recovery_code": "$2a$12$rZ9GEZr1DBlr2FILyLzPNuirugj5/ZOWnkpDxbHgEJPOp.moodicS",
+    "createdAt": "2025-01-01T23:19:19.862Z",
+    "updatedAt": "2025-01-02T00:20:00.230Z",
+    "__v": 1
+  },
+  {
+    "_id": "677c2b3b794085001e502fdd",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-06T20:13:00.231Z",
+    "first_name": "Ogechukwu",
+    "last_name": "Okeke",
+    "username": "Lilian Ogechukwu",
+    "phone_number": "08132408046",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "677c2b3b794085001e502fda",
+    "recovery_code": "$2a$12$XTZr5c0DDhzPpDjJMdCXHuVtTJ1K4YftrEinhDNghK2dg.YOqGfUe",
+    "createdAt": "2025-01-06T19:12:59.226Z",
+    "updatedAt": "2025-01-06T20:13:00.233Z",
+    "__v": 1
+  },
+  {
+    "_id": "677ee4ce794085001e504d9e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-08T21:50:00.257Z",
+    "first_name": "Obika",
+    "last_name": "Onyinye Jane",
+    "username": "Jenny",
+    "phone_number": "07025598251",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "677ee4ce794085001e504d9b",
+    "recovery_code": "$2a$12$LokTtlLFPXXCx3dQLBSE8ufb4X1Xuc.wzy5KommmOWCJ4DtpRzGji",
+    "createdAt": "2025-01-08T20:49:18.471Z",
+    "updatedAt": "2025-01-08T21:50:00.258Z",
+    "__v": 1
+  },
+  {
+    "_id": "6782a361794085001e507491",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-11T18:00:00.232Z",
+    "first_name": "Victor06",
+    "last_name": "Victor06",
+    "username": "Victor06",
+    "phone_number": "08033757423",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6782a361794085001e50748e",
+    "recovery_code": "$2a$12$soH1ARyrsmi9zZzS1stovOROcsxi3j2JLmi/n0Ghn091iOIfw.FGK",
+    "createdAt": "2025-01-11T16:59:13.969Z",
+    "updatedAt": "2025-01-11T18:00:00.233Z",
+    "__v": 1
+  },
+  {
+    "_id": "678e2b8b794085001e50e946",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-20T11:56:00.242Z",
+    "first_name": "Mohammed",
+    "last_name": "Badmus",
+    "username": "0xglobalsmile",
+    "phone_number": "09043647822",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "678e2b8b794085001e50e943",
+    "recovery_code": "$2a$12$p9Me1WO0P1.Fsa13A5k5TeJuFWdi/EZMyi6nsdH3XOZYFF.Z2qVJu",
+    "createdAt": "2025-01-20T10:55:07.727Z",
+    "updatedAt": "2025-01-20T11:56:00.244Z",
+    "__v": 1
+  },
+  {
+    "_id": "678e75f9794085001e50ed0e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-20T17:13:00.360Z",
+    "first_name": "Balogun",
+    "last_name": "Abiola",
+    "username": "baloo009",
+    "phone_number": "07040183015",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "678e75f9794085001e50ed0b",
+    "recovery_code": "$2a$12$GiJ.R6Oyw521tokO9KL9WeXYLZxlxvJDI.n1O1JTlMEAPORNrOjKm",
+    "createdAt": "2025-01-20T16:12:41.401Z",
+    "updatedAt": "2025-01-20T17:13:00.361Z",
+    "__v": 1
+  },
+  {
+    "_id": "6790d1d9794085001e51062c",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-22T12:10:00.203Z",
+    "first_name": "TestU",
+    "last_name": "User",
+    "username": "testuser007",
+    "phone_number": "09022775979",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6790d1d9794085001e510629",
+    "recovery_code": "$2a$12$5ZQlm7xrAv4D9CqrlaMO5uWEBVIQ5A5ag2t7LjUmgH6lVQDgbCWxG",
+    "createdAt": "2025-01-22T11:09:13.845Z",
+    "updatedAt": "2025-01-22T12:10:00.205Z",
+    "__v": 1
+  },
+  {
+    "_id": "6790f530794085001e51091d",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-22T14:41:00.419Z",
+    "first_name": "tester",
+    "last_name": "soft",
+    "username": "tester007",
+    "phone_number": "08123456789",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6790f530794085001e510919",
+    "recovery_code": "$2a$12$IiAb8IHmDzjkzrCBR5ic7eOx.PXZ1zPFPbQOG8nTYmfuFAhTLdRu2",
+    "createdAt": "2025-01-22T13:40:00.128Z",
+    "updatedAt": "2025-01-22T14:41:00.420Z",
+    "__v": 1
+  },
+  {
+    "_id": "6790fb7b794085001e5109ce",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-22T15:07:00.204Z",
+    "first_name": "tester",
+    "last_name": "soft",
+    "username": "testersoft007",
+    "phone_number": "0812345678",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6790fb7a794085001e5109cb",
+    "recovery_code": "$2a$12$IyW9y.ptuo.PuFV7mfS8/eAaWByibYRelFoEzhox3t.ZTVl1gbRf2",
+    "createdAt": "2025-01-22T14:06:51.148Z",
+    "updatedAt": "2025-01-22T15:07:00.205Z",
+    "__v": 1
+  },
+  {
+    "_id": "67910cb0794085001e510b6e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-22T16:21:00.291Z",
+    "first_name": "Godfrey",
+    "last_name": "free",
+    "username": "godfrey009",
+    "phone_number": "0803214578",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67910cb0794085001e510b6b",
+    "recovery_code": "$2a$12$vnzafYZ2DtGAZ7e2qnAEiOnybCKgo5UI.AZ1GFk2RzAPaHWF1wG1e",
+    "createdAt": "2025-01-22T15:20:16.949Z",
+    "updatedAt": "2025-01-22T16:21:00.293Z",
+    "__v": 1
+  },
+  {
+    "_id": "67911a04794085001e510c81",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-22T17:18:00.377Z",
+    "first_name": "test godfrey",
+    "last_name": "cool head",
+    "username": "coolhead",
+    "phone_number": "09087641324",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67911a04794085001e510c7e",
+    "recovery_code": "$2a$12$rWpUktI3X3HnIIryE5ZeTOCN62/kW36zf5LP.l9L5vWfE7mK4tZvi",
+    "createdAt": "2025-01-22T16:17:08.673Z",
+    "updatedAt": "2025-01-22T17:18:00.377Z",
+    "__v": 1
+  },
+  {
+    "_id": "67912482794085001e510ea3",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-22T18:02:00.332Z",
+    "first_name": "eniola",
+    "last_name": "enimoney",
+    "username": "eniola",
+    "phone_number": "080123456987",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67912482794085001e510ea0",
+    "recovery_code": "$2a$12$1aDvwl5m.Pm.m.rxls2lsORxPaZg/4t4VPHgEx9C9Cl0hEz2kNzTu",
+    "createdAt": "2025-01-22T17:01:54.846Z",
+    "updatedAt": "2025-01-22T18:02:00.333Z",
+    "__v": 1
+  },
+  {
+    "_id": "6792259b794085001e51191d",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-23T12:19:00.247Z",
+    "first_name": "new user",
+    "last_name": "new user",
+    "username": "newuser",
+    "phone_number": "02245638754",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6792259b794085001e51191a",
+    "recovery_code": "$2a$12$JzpN6w4P57smK.yRmwexju1DYWLZGhqIuvWyUCy4OpFx344jW7h6i",
+    "createdAt": "2025-01-23T11:18:51.751Z",
+    "updatedAt": "2025-01-23T12:19:00.248Z",
+    "__v": 1
+  },
+  {
+    "_id": "67923e4e794085001e511a6f",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-23T14:05:00.293Z",
+    "first_name": "latest user",
+    "last_name": "latest user",
+    "username": "latestuser",
+    "phone_number": "02014569874",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67923e4e794085001e511a6c",
+    "recovery_code": "$2a$12$RVzTKy6UA.JTN0De3LppfeF5KHdYWgD30jBO5pEL4dAj7oxAeretC",
+    "createdAt": "2025-01-23T13:04:14.596Z",
+    "updatedAt": "2025-01-23T14:05:00.294Z",
+    "__v": 1
+  },
+  {
+    "_id": "679244fc794085001e511b0f",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-23T14:33:00.343Z",
+    "first_name": "new test",
+    "last_name": "user",
+    "username": "newtestuser",
+    "phone_number": "2054578225",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "679244fc794085001e511b0c",
+    "recovery_code": "$2a$12$MfACC3akcw2GFdlht1lZhuiiuSbSjyPfyO2pGYB3nIu1HRhcHar16",
+    "createdAt": "2025-01-23T13:32:44.080Z",
+    "updatedAt": "2025-01-23T14:33:00.344Z",
+    "__v": 1
+  },
+  {
+    "_id": "67924a07794085001e511ba0",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-23T14:55:00.567Z",
+    "first_name": "LAST TIME USER",
+    "last_name": "LAST TIME USER",
+    "username": "lasttimeuser",
+    "phone_number": "030145278",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67924a07794085001e511b9d",
+    "recovery_code": "$2a$12$vk9.zi97TL4oIIXsQ7Ysf.JdfmcYt5GHrI4wyVvp2iT7IfXP14y8K",
+    "createdAt": "2025-01-23T13:54:15.981Z",
+    "updatedAt": "2025-01-23T14:55:00.568Z",
+    "__v": 1
+  },
+  {
+    "_id": "67924a73794085001e511c28",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-23T14:57:00.213Z",
+    "first_name": "current user",
+    "last_name": "current user",
+    "username": "currentuser",
+    "phone_number": "0123698547",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67924a73794085001e511c25",
+    "recovery_code": "$2a$12$ylIlEkB0zaYQ/Mzh6X6FwOhluackvrMAsPfc1akHEJ0pBHfYXK.vy",
+    "createdAt": "2025-01-23T13:56:03.344Z",
+    "updatedAt": "2025-01-23T14:57:00.214Z",
+    "__v": 1
+  },
+  {
+    "_id": "67924ec6794085001e511d0b",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-23T15:15:00.561Z",
+    "first_name": "sudo user",
+    "last_name": "sudo user",
+    "username": "sudouser",
+    "phone_number": "02354698745",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67924ec6794085001e511d08",
+    "recovery_code": "$2a$12$pWkMIJl3yYVFyEQ3WzgUOu7oePmJfWUH0DHvGE4/gwuZ1crGxE.0q",
+    "createdAt": "2025-01-23T14:14:30.467Z",
+    "updatedAt": "2025-01-23T15:15:00.561Z",
+    "__v": 1
+  },
+  {
+    "_id": "6793c401794085001e512bf8",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-24T17:47:00.276Z",
+    "first_name": "Mike",
+    "last_name": "Ndu",
+    "username": "MikeO",
+    "phone_number": "08040207138",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6793c400794085001e512bf5",
+    "recovery_code": "$2a$12$feerJvPzoO580zyg9gn7JeVHYsMNOs0n8axTAzgBPppi1WGUsIAKm",
+    "createdAt": "2025-01-24T16:46:57.066Z",
+    "updatedAt": "2025-01-24T17:47:00.276Z",
+    "__v": 1
+  },
+  {
+    "_id": "6793dbcf794085001e512d2e",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-24T19:29:00.266Z",
+    "first_name": "Badboi",
+    "last_name": "Badboi",
+    "username": "Badboi",
+    "phone_number": "09043647822",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6793dbcf794085001e512d2b",
+    "recovery_code": "$2a$12$4067.MiWkrNYt3.MKADEYOp1/5GPx.WI.H3h5Ao8Jypx.SvtssWz.",
+    "createdAt": "2025-01-24T18:28:31.580Z",
+    "updatedAt": "2025-01-24T19:29:00.267Z",
+    "__v": 1
+  },
+  {
+    "_id": "6794ab08794085001e513601",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-01-25T10:13:00.221Z",
+    "first_name": "Og monkey",
+    "last_name": "Og monkey",
+    "username": "Ogmonkey",
+    "phone_number": "254870794631",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "6794ab08794085001e5135fe",
+    "recovery_code": "$2a$12$M8UtVWLO7inmp9OmI6ciy.3osfUgtxW5R7P35AGSvIZCUgrXtwHHC",
+    "createdAt": "2025-01-25T09:12:40.704Z",
+    "updatedAt": "2025-01-25T10:13:00.222Z",
+    "__v": 1
+  },
+  {
+    "_id": "679f20f9794085001e51a371",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-02-02T08:39:00.288Z",
+    "first_name": "Mike",
+    "last_name": "Mark",
+    "username": "Testpoint",
+    "phone_number": "09040207138",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "679f20f9794085001e51a36e",
+    "recovery_code": "$2a$12$y9Cu2dH0JrR0IYuoZXYPyuSSiXIdrQy4L4k/1pJzuc7nn2eWATyPC",
+    "createdAt": "2025-02-02T07:38:33.220Z",
+    "updatedAt": "2025-02-02T08:39:00.288Z",
+    "__v": 1
+  },
+  {
+    "_id": "67a0ccc9794085001e51b4ae",
+    "parents": [
+      "665fcd359c034d00280b2b9d"
+    ],
+    "isAdmin": false,
+    "isSecondary": false,
+    "deleted_at": "2025-02-03T15:04:00.570Z",
+    "first_name": "Harrison",
+    "last_name": "Uzozie",
+    "username": "Ndisonl",
+    "phone_number": "08034040864",
+    "parent_id": "665fcd359c034d00280b2b9d",
+    "user_id": "67a0ccc9794085001e51b4ab",
+    "recovery_code": "$2a$12$YYIKEs5Fxvz8LcAaQhGX8Om5x6ZP8BxVeC4aO7Deokgjd6dmOxJCq",
+    "createdAt": "2025-02-03T14:03:53.991Z",
+    "updatedAt": "2025-02-03T15:04:00.571Z",
+    "__v": 1
+  }
+]
