@@ -321,6 +321,46 @@ const deleteDeactivatedAccountsCron = async () => {
   }
 };
 
+// This cron job checks for pending transactions that are older than one hour
+// and marks them as expired, then decrements the parent's count accordingly.
+const clearUnapprovedPaymentsCron = async () => {
+  try {
+    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+
+    // Find transactions that are still pending and older than one hour.
+    // (Adjust the query criteria based on your payment model.)
+    const unapprovedTransactions = await Transaction.find({
+      transaction_status: "pending",
+      createdAt: { $lte: oneHourAgo },
+      transaction_reason: "allocated member payment" // adjust if needed
+    });
+
+    console.log(`Found ${unapprovedTransactions.length} unapproved transactions older than one hour.`);
+
+    for (const tx of unapprovedTransactions) {
+      // Mark the transaction as expired so it won't be counted anymore.
+      tx.transaction_status = "expired";
+      await tx.save();
+
+      // Decrease the parent's assigned member count by one if possible.
+      // Here, we assume that for an allocated payment, the parent's ID is stored in tx.ref_id.
+      const parentAssigned = await AssignedMembers.findOne({ user_id: tx.ref_id });
+      if (parentAssigned && parentAssigned.count > 0) {
+        parentAssigned.count = Math.max(0, parentAssigned.count - 1);
+        await parentAssigned.save();
+        console.log(`Decremented assigned count for parent ${tx.ref_id}.`);
+      }
+    }
+  } catch (error) {
+    console.error("Error in clearUnapprovedPaymentsCron:", error);
+  }
+};
+
+// Schedule the clearUnapprovedPaymentsCron job to run every minute.
+let clearPaymentsRule = new schedule.RecurrenceRule();
+clearPaymentsRule.minute = new schedule.Range(0, 59, 1);
+schedule.scheduleJob(clearPaymentsRule, clearUnapprovedPaymentsCron);
+
 // Schedule the new cron job to run every minute.
 let delete_accounts_rule = new schedule.RecurrenceRule();
 delete_accounts_rule.minute = new schedule.Range(0, 59, 1);

@@ -52,7 +52,7 @@ async function runScript() {
     console.log(`Found ${results.length} users in Level 1 (sorted FIFO by createdAt).`);
 
     // Prepare the output file.
-    const outputFile = path.join(__dirname, 'level1_users_fifo.txt');
+    const outputFile = path.join(__dirname, 'level1_users_fifo.txt_2');
     const fileContent = results.map(user => JSON.stringify(user, null, 2)).join('\n\n');
 
     fs.writeFileSync(outputFile, fileContent);
