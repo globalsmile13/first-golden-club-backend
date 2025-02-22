@@ -42,7 +42,7 @@ async function runScript() {
         $unwind: "$levelData"       // flatten the levelData array
       },
       { 
-        $match: { "levelData.level_number": 2 }  // select only users in level 1
+        $match: { "levelData.level_number": 1 }  // select only users in level 1
       },
       { 
         $sort: { createdAt: 1 }     // FIFO: sort by createdAt in ascending order (oldest first)
