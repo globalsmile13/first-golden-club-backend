@@ -202,10 +202,11 @@ exports.reassignUser = async (req, res, next) => {
       // Retrieve all candidates from the next level.
       const candidates = await User.find({
         _id: { $ne: userId },
-        $or: [
+        'profile.deleted_at': null
+        /*$or: [
           { 'profile.parents': { $nin: [userId] }, 'profile.deleted_at': null },
-          { 'profile.isAdmin': true, 'profile.deleted_at': null }
-        ]
+          //{ 'profile.isAdmin': true, 'profile.deleted_at': null }
+        ]*/
       })
         .populate('profile')
         .populate('level_id')
@@ -223,6 +224,7 @@ exports.reassignUser = async (req, res, next) => {
           candidate.level_id.level_number === (currentUserLevelNumber + 1) &&
           candidate.assigned_members.state === "unachieved" &&
           candidate.assigned_members.count < candidate.level_id.members_number &&
+          candidate.assigned_members.upgrade_date == null &&
           candidate.profile.deleted_at === null
         );
       });
