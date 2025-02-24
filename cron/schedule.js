@@ -293,12 +293,15 @@ const deleteNoPaymentAccountsCron = async () => {
 
 const clearUnapprovedPaymentsCron = async () => {
   try {
-    //const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
-    const fiveMinuteAgo = new Date(Date.now() - 60 * 5 * 1000)
+    // const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+    const fiveMinuteAgo = new Date(Date.now() - 60 * 5 * 1000);
     const unapprovedTransactions = await Transaction.find({
       transaction_status: "pending",
       createdAt: { $lte: fiveMinuteAgo },
-      transaction_reason: "member payment"
+      $or: [
+        { transaction_type: "debit", transaction_reason: "allocated member payment" },
+        { transaction_type: "credit", transaction_reason: "member payment" }
+      ]
     });
     
     console.log(`clearUnapprovedPaymentsCron - Found ${unapprovedTransactions.length} unapproved transactions older than one hour.`);
@@ -308,22 +311,27 @@ const clearUnapprovedPaymentsCron = async () => {
       tx.transaction_status = "failure";
       await tx.save();
       
-      // Only decrement parent's count if this is a debit transaction.
-      if (tx.transaction_type === "debit") {
+      // Process debit transactions: decrement parent's assigned count.
+      if (tx.transaction_type && tx.transaction_type.toLowerCase() === "debit") {
         const parentAssigned = await AssignedMembers.findOne({ user_id: tx.ref_id });
         if (parentAssigned && parentAssigned.count > 0) {
           parentAssigned.count = Math.max(0, parentAssigned.count - 1);
           await parentAssigned.save();
           console.log(`clearUnapprovedPaymentsCron - Decremented assigned count for parent ${tx.ref_id}.`);
+        } else {
+          console.log(`clearUnapprovedPaymentsCron - No assigned count to decrement for parent ${tx.ref_id}.`);
         }
+      } else if (tx.transaction_type && tx.transaction_type.toLowerCase() === "credit") {
+        console.log(`clearUnapprovedPaymentsCron - Transaction is credit; no change to parent's count for parent ${tx.ref_id}.`);
       } else {
-        console.log(`clearUnapprovedPaymentsCron - Transaction type is credit; no change to parent's count for parent ${tx.ref_id}.`);
+        console.log(`clearUnapprovedPaymentsCron - Unknown transaction type ${tx.transaction_type}.`);
       }
     }
   } catch (error) {
     console.error("Error in clearUnapprovedPaymentsCron:", error);
   }
 };
+
 
 
 // --- Scheduling Cron Jobs ---
