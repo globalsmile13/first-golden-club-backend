@@ -293,11 +293,11 @@ const deleteNoPaymentAccountsCron = async () => {
 
 const clearUnapprovedPaymentsCron = async () => {
   try {
-    // const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
-    const fiveMinuteAgo = new Date(Date.now() - 60 * 5 * 1000);
+    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+    // const fiveMinuteAgo = new Date(Date.now() - 60 * 5 * 1000);
     const unapprovedTransactions = await Transaction.find({
       transaction_status: "pending",
-      createdAt: { $lte: fiveMinuteAgo },
+      createdAt: { $lte: oneHourAgo },
       $or: [
         { transaction_type: "debit", transaction_reason: "allocated member payment" },
         { transaction_type: "credit", transaction_reason: "member payment" }
