@@ -59,7 +59,7 @@ exports.reassignUser = async (req, res, next) => {
     }
 
     // Decrement the assigned members count of the current parent by one.
-    await AssignedMembers.findOneAndUpdate({ user_id: currentParent._id }, { $inc: { count: -1 } });
+    // await AssignedMembers.findOneAndUpdate({ user_id: currentParent._id }, { $inc: { count: -1 } });
     
     // Clear the current parent assignment.
     await Profile.findOneAndUpdate({ user_id: userId }, { parent_id: null });
@@ -105,10 +105,10 @@ exports.reassignUser = async (req, res, next) => {
     await Profile.findOneAndUpdate({ user_id: userId }, { parent_id: parentUser._id });
 
     // Increment the new parent's assigned members count.
-    await AssignedMembers.findOneAndUpdate(
+    /*await AssignedMembers.findOneAndUpdate(
       { user_id: parentUser._id },
       { $inc: { count: 1 } }
-    );
+    );*/
 
     // Retrieve the new parent's wallet details.
     let parentWallet = await Wallet.findOne({ user_id: parentUser._id }).lean();
