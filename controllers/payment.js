@@ -84,7 +84,7 @@ exports.reassignUser = async (req, res, next) => {
         candidate.assigned_members.upgrade_date === null &&
         candidate.level_id.level_number === (currentUserLevelNumber + 1) &&
         candidate.assigned_members.state === "unachieved" &&
-        candidate.assigned_members.count < candidate.level_id.members_number &&
+        candidate.assigned_members.count <= candidate.level_id.members_number &&
         candidate.profile.deleted_at === null
       );
     });
@@ -223,7 +223,7 @@ exports.reassignUser = async (req, res, next) => {
           !restriction &&
           candidate.level_id.level_number === (currentUserLevelNumber + 1) &&
           candidate.assigned_members.state === "unachieved" &&
-          candidate.assigned_members.count < candidate.level_id.members_number &&
+          candidate.assigned_members.count <= candidate.level_id.members_number &&
           candidate.assigned_members.upgrade_date == null &&
           candidate.profile.deleted_at === null
         );
