@@ -251,10 +251,11 @@ const upgrade_account_cron = async () => {
 // Deletes users, profiles, and wallets for accounts deactivated over one hour ago.
 const deleteNoPaymentAccountsCron = async () => {
   try {
-    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+    // const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+    const fiveMinuteAgo = new Date(Date.now() - 60 * 5 * 1000);
     // Find non-admin users registered more than one hour ago
     const usersToCheck = await User.find({
-      createdAt: { $lte: oneHourAgo },
+      createdAt: { $lte: fiveMinuteAgo },
       isAdmin: { $ne: true }
     });
 
