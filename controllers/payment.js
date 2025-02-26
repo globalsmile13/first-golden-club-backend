@@ -91,8 +91,8 @@ exports.reassignUser = async (req, res, next) => {
 
     // Sort eligible candidates FIFO: primary by assigned_members.count (lowest first), then by createdAt (oldest first).
     eligibleCandidates.sort((a, b) => {
-      const countDiff = a.assigned_members.count - b.assigned_members.count;
-      if (countDiff !== 0) return countDiff;
+      /*const countDiff = a.assigned_members.count - b.assigned_members.count;
+      if (countDiff !== 0) return countDiff;*/
       return new Date(a.createdAt) - new Date(b.createdAt);
     });
 
